@@ -1,0 +1,8 @@
+title: Jolosan.GitHub.io
+description: En este sitio web se alojan algunos pasos para trabajar con la Raspberry Pi y Arduino
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
