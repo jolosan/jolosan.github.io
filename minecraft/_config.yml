@@ -1,0 +1,8 @@
+title: Programar Minecraft desde Python
+description: En este sitio web se alojan algunos apuntes para programar Minecraft desde Python
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-hacker
+
+gems:
+  - jekyll-mentions
