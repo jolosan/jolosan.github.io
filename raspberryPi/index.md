@@ -1,7 +1,7 @@
 # Prácticas con la Raspberry Pi
 
 
-![Raspberry Pi logo](images/raspberryPi-logo.jpg)
+![Raspberry Pi logo](images/pi_logo.png)
 
 
 ## Licencia
