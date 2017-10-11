@@ -1,25 +1,8 @@
-# Guia de inicio para programar el mundo de Minecraft 
+# Prácticas con la Raspberry Pi
 
-![](images/cover.png)
 
-Minecraft es un juego popular de construir mundos. Hay una versión gratuita de Minecraft disponible en la Raspberry Pi y también viene con un interfaz para programar. Esto significa que podemos escribir órdenes y scripts en Python para construir cosas en el juego de forma automática. ¡Es una forma entretenida de aprender Python!
+![Raspberry Pi logo](images/raspberryPi-logo.jpg)
 
-![Minecraft Pi banner](images/minecraft-pi-banner.png)
-
-## Requisitos
-### Hardware
-
-Este recurso no requiere hardware adicional además de la Raspberry Pi con Raspbian instalado en la tarjeta SD.
-
-### Software
-
-Minecraft está instalado por defecto en Raspbian desde septiembre de 2014.
-
-Si no lo tienes instalado, o necesitas probar si funciona, mira la página [instalación del software](software.md).
-
-## La práctica inicial
-
-- [La práctica inicial](practicaInicial.md)
 
 ## Licencia
 
