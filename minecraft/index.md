@@ -21,6 +21,10 @@ Si no lo tienes instalado, o necesitas probar si funciona, mira la página [inst
 
 - [La práctica inicial](practicaInicial.md)
 
+
+## Aprender python programando Minecraft
+- [Apender Python](aprende.md) 
+
 ## Licencia
 
 A menos que se especifique otra cosa, todo lo que hay en éste repositorio está cubierto por la siguiente liciencia: 
