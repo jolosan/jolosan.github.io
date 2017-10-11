@@ -1,0 +1,14 @@
+- name: 1 x Solderless breadboard
+  img: breadboard
+- name: 4 x Male-to-female jumper leads
+  img: jumper-male-to-female
+- name: 1 x Tactile push button
+  img: tactile-push-button
+- name: 1 x LED
+  img: led
+- name: 1 x PIR sensor
+  img: pir
+- name: 1 x Buzzer
+  img: piezo-buzzer
+- name: 1 x 330 Ohm resistor
+  img: resistor-330r
