@@ -1,4 +1,4 @@
-# Guia de inicio para programar el mundo de Minecraft 
+# Práctica inicial para programar el mundo de Minecraft 
 
 Minecraft es un juego popular de construir mundos. Hay una versión gratuita de Minecraft disponible en la Raspberry Pi y también viene con un interfaz para programar. Esto significa que podemos escribir órdenes y scripts en Python para construir cosas en el juego de forma automática. ¡Es una forma entretenida de aprender Python!
 
