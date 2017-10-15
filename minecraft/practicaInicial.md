@@ -1,4 +1,4 @@
-# Práctica inicial para programar el mundo de Minecraft 
+# Prácticas con la raspberry pi  inicial para programar el mundo de Minecraft 
 
 
 ## Ejecutar Minecraft
@@ -54,7 +54,7 @@ from mcpi import minecraft
 
 mc = minecraft.Minecraft.create()
 
-mc.postToChat("Hello world")
+mc.postToChat("Hola Mundo")
 ```
 
 Si estás escribiendo órdenes directamente en la ventana de Python, únicamente pulsa `Intro` después de cada línea. Si es un fichero, guárdalo con `Ctrl + S` y ejecutalo con `F5`. Cuando se ejecuta el código, deberías ver tu mensaje en la pantalla del juego.
@@ -89,7 +89,7 @@ Además de encontrar tu ubicación actual, puedes especificar una ubicación par
 x, y, z = mc.player.getPos()
 mc.player.setPos(x, y+100, z)
 ```
-Esta instrucción transportará al jugador 100 espacios en el aire. Esto significará que serás transportado a mitad del cielo y caerás donde habías empezado.
+Esta instrucción transportará al jugador 100 espacios en el airee. Esto significará que serás transportado a mitad del cielo y caerás donde habías empezado.
 
 ¡Intenta teletransportarte a cualquier otro lugar!
 
@@ -111,7 +111,7 @@ Los argumentos que se pasan a  `set block` son `x`, `y`, `z` y `id`. Los `(x, y,
 Otros bloques que puedes probar:
 
 ```
-Aire:   0
+airee:   0
 Césped: 2
 Suciedad:  3
 ```
@@ -137,14 +137,14 @@ from mcpi import block
 Ahora puedes poner un bloque de la siguiente manera: 
 
 ```python
-mc.setBlock(x+3, y, z, block.STONE.id)
+mc.setBlock(x+3, y, z, block.piedra.id)
 ```
 
 Los id (identificadores) de bloque son bastante fáciles de adivinar, únicamente usa las mayúsculas, pero aquí hay algunos ejemplos para que te acostumbres a la forma en que se nombran.
 
 ```
 WOOD_PLANKS
-WATER_STATIONARY
+agua_STATIONARY
 GOLD_ORE
 GOLD_BLOCK
 DIAMOND_BLOCK
@@ -156,27 +156,27 @@ NETHER_REACTOR_CORE
 Si conoces el id de un bloque, puede ser útil para utilizarlo como variable. Puedes usar el nombre o el id entero. 
 
 ```python
-dirt = 3
-mc.setBlock(x, y, z, dirt)
+suciedad = 3
+mc.setBlock(x, y, z, suciedad)
 ```
 
 o
 
 ```python
-dirt = block.DIRT.id
-mc.setBlock(x, y, z, dirt)
+suciedad = block.suciedad.id
+mc.setBlock(x, y, z, suciedad)
 ```
 
 ### Bloques especiales
 
-Hay algunos bloques que tienen propiedades extra, como Wool que tiene una configuración extra como el color.
+Hay algunos bloques que tienen propiedades extra, como lana que tiene una configuración extra como el color.
 Para ponerlo, usa el cuarto parámetro opcional en `setBlock`:
 
 ```python
-wool = 35
-mc.setBlock(x, y, z, wool, 1)
+lana = 35
+mc.setBlock(x, y, z, lana, 1)
 ```
-Aquí el cuarto parámetro `1` configura el color de wool como naranja. Sin el cuarto parámetro, el color sería por defecto (`0`) que es blanco. Algunos colores son:
+Aquí el cuarto parámetro `1` configura el color de lana como naranja. Sin el cuarto parámetro, el color sería por defecto (`0`) que es blanco. Algunos colores son:
 
 ```
 2: Magenta
@@ -192,9 +192,9 @@ Otros bloques que tienen propiedades extra son madera (`17`): roble, abeto, abed
 Así como para poner un único bloque utilizamos `setBlock` podemos rellenar un volumen de espacio de una vez con `setBlocks`:
 
 ```python
-stone = 1
+piedra = 1
 x, y, z = mc.player.getPos()
-mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, stone)
+mc.setBlocks(x+1, y+1, z+1, x+11, y+11, z+11, piedra)
 ```
 
 Esto rellenará un cubo de 10 x 10 x 10 de piedra sólida.
@@ -215,38 +215,38 @@ from time import sleep
 
 mc = Minecraft.create()
 
-flower = 38
+flor = 38
 
 while True:
     x, y, z = mc.player.getPos()
-    mc.setBlock(x, y, z, flower)
+    mc.setBlock(x, y, z, flor)
     sleep(0.1)
 ```
 
 Ahora camina hacia adelante un poco y gírate para ver las flores que has dejado detrás tuyo. 
 
-![](images/mcpi-flowers.png)
+![](images/mcpi-flors.png)
 
 Dado que hemos usado un bucle `while True` esto se ejecutará indefinidamente. Para pararlo, pulsa `Ctrl + C` en la ventana de Python.
 
-Prueba a volar en el aire y observa las flores que dejas en el cielo:
+Prueba a volar en el airee y observa las flores que dejas en el cielo:
 
-![](images/mcpi-flowers-sky.png)
+![](images/mcpi-flors-sky.png)
 
 ¿Y si únicamente quisiéramos soltar flores cuando el jugador camina sobre césped? Podemos usar `getBlock` para averiguar qué tipo de bloque es:
 
 ```python
 x, y, z = mc.player.getPos()  # posición del jugador (x, y, z)
-this_block = mc.getBlock(x, y, z)  # ID del bloque
-print(this_block)
+este_bloque = mc.getBlock(x, y, z)  # ID del bloque
+print(este_bloque)
 ```
 
-Esto nos dice la ubicación del bloque *en* el que estamos situados (esta será `0` - un bloque de aire). Queremos saber el tipo de bloque *sobre* el que estamos situados. Para ello restamos 1 del valor `y` y usamos `getBlock()` para determinar el tipo de bloque sobre el que estamos:
+Esto nos dice la ubicación del bloque *en* el que estamos situados (esta será `0` - un bloque de airee). Queremos saber el tipo de bloque *sobre* el que estamos situados. Para ello restamos 1 del valor `y` y usamos `getBlock()` para determinar el tipo de bloque sobre el que estamos:
 
 ```python
 x, y, z = mc.player.getPos()  # posición del jugador (x, y, z)
-block_beneath = mc.getBlock(x, y-1, z)  # ID del bloque
-print(block_beneath)
+bloque_debajo = mc.getBlock(x, y-1, z)  # ID del bloque
+print(bloque_debajo)
 ```
 
 Esto nos dice el ID del bloque sobre el que está situado el jugador.
@@ -256,8 +256,8 @@ Prueba ésto ejecutando un bucle para escribir el ID de cualquier bloque sobre e
 ```python
 while True:
     x, y, z = mc.player.getPos()
-    block_beneath = mc.getBlock(x, y-1, z)
-    print(block_beneath)
+    bloque_debajo = mc.getBlock(x, y-1, z)
+    print(bloque_debajo)
 ```
 
 ![](images/mcpi-block-test.png)
@@ -265,15 +265,15 @@ while True:
 Podemos usar la instrucción `if` para determinar si plantamos una flor o no: 
 
 ```python
-grass = 2
-flower = 38
+hierba = 2
+flor = 38
 
 while True:
     x, y, z = mc.player.getPos()  # posición del jugador (x, y, z)
-    block_beneath = mc.getBlock(x, y-1, z)  # ID del bloque
+    bloque_debajo = mc.getBlock(x, y-1, z)  # ID del bloque
 
-    if block_beneath == grass:
-        mc.setBlock(x, y, z, flower)
+    if bloque_debajo == hierba:
+        mc.setBlock(x, y, z, flor)
     sleep(0.1)
 ```
 
@@ -281,15 +281,15 @@ Quizás podráimos cambiar la baldosa sobre la que estamos en césped si todaví
 
 
 ```python
-if block_beneath == grass:
-    mc.setBlock(x, y, z, flower)
+if bloque_debajo == hierba:
+    mc.setBlock(x, y, z, flor)
 else:
-    mc.setBlock(x, y-1, z, grass)
+    mc.setBlock(x, y-1, z, hierba)
 ```
 
 Ahora podemos caminar hacia adelante sobre césped, dejaremos una flor detrás. Si el bloque siguiente no es césped, lo cambia a césped. Cuando giramos y caminamos de vuelta, dejamos una flor detrás nuestra.
 
-![](images/mcpi-flowers-grass.png)
+![](images/mcpi-flors-hierba.png)
 
 ## Jugando con los bloques TNT 
 
@@ -355,14 +355,14 @@ mc = Minecraft.create()
 x, y, z = mc.player.getPos()
 
 lava = 10
-water = 8
-air = 0
+agua = 8
+aire = 0
 
 mc.setBlock(x+3, y+3, z, lava)
 sleep(20)
-mc.setBlock(x+3,y+5, z, water)
+mc.setBlock(x+3,y+5, z, agua)
 sleep(4)
-mc.setBlock(x+3, y+5, z, air)
+mc.setBlock(x+3, y+5, z, aire)
 
 ```
 
