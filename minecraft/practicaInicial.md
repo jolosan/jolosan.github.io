@@ -378,6 +378,10 @@ Hay muchas cosas que puedes hacer ahora que sabes moverte por el mundo Minecraft
 
 Si varias personas conectan las Raspberry Pi a una red local, pueden unirse al mismo mundo Minecraft y jugar juntos. Los jugadores pueden verse entre ellos en el mundo de Minecraft.
 
+### Profundiza en el lenguaje python
+
+En el [siguiente enlace](https://jolosan.github.io/minecraft/aprende.html) se profundiza en el lenguaje python programando el mundo de Minecraft. 
+
 ### Referencia API 
 
 Para una documentación más extensa de las funciones y una lista completa de los IDs de los bloques, pudes ver una referencia de la API en [stuffaboutcode.com](http://www.stuffaboutcode.com/p/minecraft-api-reference.html).

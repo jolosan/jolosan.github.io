@@ -8,9 +8,9 @@ Si sigues este recurso con tu Raspberry Pi aprenderás:
 
 ## Indice de contenidos:
 
-1. [Elementos básicos del lenguaje Python](https://github.com/jolosan/minecraftpi/blob/master/py-elementosBasicos.md)
-2. [Operaciones Aritméticas y Lógicas](https://github.com/jolosan/minecraftpi/blob/master/py-operacionesAritmeticasLogicas.md)
-3. [Entrada/Salida](https://github.com/jolosan/minecraftpi/blob/master/py-EntradaSalida.md)
-4. [Condicionales](https://github.com/jolosan/minecraftpi/blob/master/py-condicionales.md)
-5. [Bucles](https://github.com/jolosan/minecraftpi/blob/master/py-bucles.md)
-6. [Funciones](https://github.com/jolosan/minecraftpi/blob/master/py-funciones.md)
+1. [Elementos básicos del lenguaje Python](https://jolosan.github.io/minecraft/py-elementosBasicos.html)
+2. [Operaciones Aritméticas y Lógicas](https://jolosan.github.io/minecraft/py-operacionesAritmeticasLogicas.html)
+3. [Entrada/Salida](https://jolosan.github.io/minecraft/py-EntradaSalida.html)
+4. [Condicionales](https://jolosan.github.io/minecraft/py-condicionales.html)
+5. [Bucles](https://jolosan.github.io/minecraft/py-bucles.html)
+6. [Funciones](https://jolosan.github.io/minecraft/py-funciones.html)
