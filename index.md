@@ -6,13 +6,17 @@
 ### Programar Minecraft desde python
 
 ![](images/minecraft-python.png)
+
 Si tienes una raspberry pi, puedes ir directamente a la [práctica inicial](https://jolosan.github.io/minecraft/practicaInicial.html).
 
 Si trabajas con Ubuntu o similar, primero deberás realizar la [instalación del software](https://jolosan.github.io/minecraft/minecraftUbuntu.html).
 
+
+
 ## Raspberry pi
 
 ![](images/raspberryPi.png)
+
 - [Prácticas con la raspberry pi](https://jolosan.github.io/raspberryPi/index.html)
 
 ## Licencia
