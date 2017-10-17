@@ -89,7 +89,7 @@ Además de encontrar tu ubicación actual, puedes especificar una ubicación par
 x, y, z = mc.player.getPos()
 mc.player.setPos(x, y+100, z)
 ```
-Esta instrucción transportará al jugador 100 espacios en el airee. Esto significará que serás transportado a mitad del cielo y caerás donde habías empezado.
+Esta instrucción transportará al jugador 100 espacios en el aire. Esto significará que serás transportado a mitad del cielo y caerás donde habías empezado.
 
 ¡Intenta teletransportarte a cualquier otro lugar!
 
@@ -111,7 +111,7 @@ Los argumentos que se pasan a  `set block` son `x`, `y`, `z` y `id`. Los `(x, y,
 Otros bloques que puedes probar:
 
 ```
-airee:   0
+aire:   0
 Césped: 2
 Suciedad:  3
 ```
@@ -229,7 +229,7 @@ Ahora camina hacia adelante un poco y gírate para ver las flores que has dejado
 
 Dado que hemos usado un bucle `while True` esto se ejecutará indefinidamente. Para pararlo, pulsa `Ctrl + C` en la ventana de Python.
 
-Prueba a volar en el airee y observa las flores que dejas en el cielo:
+Prueba a volar en el aire y observa las flores que dejas en el cielo:
 
 ![](images/mcpi-flors-sky.png)
 
@@ -241,7 +241,7 @@ este_bloque = mc.getBlock(x, y, z)  # ID del bloque
 print(este_bloque)
 ```
 
-Esto nos dice la ubicación del bloque *en* el que estamos situados (esta será `0` - un bloque de airee). Queremos saber el tipo de bloque *sobre* el que estamos situados. Para ello restamos 1 del valor `y` y usamos `getBlock()` para determinar el tipo de bloque sobre el que estamos:
+Esto nos dice la ubicación del bloque *en* el que estamos situados (esta será `0` - un bloque de aire). Queremos saber el tipo de bloque *sobre* el que estamos situados. Para ello restamos 1 del valor `y` y usamos `getBlock()` para determinar el tipo de bloque sobre el que estamos:
 
 ```python
 x, y, z = mc.player.getPos()  # posición del jugador (x, y, z)
