@@ -1,24 +1,24 @@
-## Create the map
+## Crea el mapa
 
-If you have already completed the [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"} project, you will notice that the first few steps of this project are very similar.  **Make sure you start a fresh HTML file for this project rather than reusing your old code.** Otherwise you will get confused during the later stages.
+Si ya has completado el proyecto[Mapa de supervivencia del apocalipsis Zombi](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}, Notarás que los primeros pasos de este proyecto son muy similares. ** Asegurate de iniciar un nuevo archivo HTML para este proyecto en lugar de reutilizar tu código anterior. ** De lo contrario, te confundirás durante las etapas posteriores.
 
-+ Create and save a file called `index.html`. You will need to use a text editor on your computer to do this rather than an online HTML editor.
++ Crea y guarda un archivo llamado `index.html`. Necesitarás usar un editor de texto en tu computadora para hacer esto en lugar de un editor de HTML en línea.
 
 [[[generic-html-create-and-save]]]
 
-+ In the file, add tags to create a basic HTML page.
++ En el archivo, agrega las etiquetas para crear una página HTML básica.
 
 [[[generic-html-basic-page]]]
 
-+ If you don't already have one, obtain a Google Maps Javascript API key. Make sure you add the code for using the key to your `index.html` file.
++ Si aún no tienes una, obten una clave API de Google Maps JavaScript. Asegúrate de agregar el código para usar la clave de tu archivo `index.html`.
 
 [[[generic-api-google-maps-key]]]
 
-+ In the text editor, find the `<head>` tag in your code. On a blank line below this tag, add the following code to set up how large your map will be and what colour will be displayed if it does not load properly.
++ En el editor de texto, encuentra la etiqueta `<head>` en tu código. En una línea en blanco debajo de esta etiqueta, agrega el siguiente código para configurar el tamaño del y qué color se mostrará si no se carga correctamente.
 
 ```html
 <style>
-#zombie_map {
+#mapa_zombi {
     height: 100%;
     width: 100%;
     left: 0;
@@ -29,25 +29,25 @@ If you have already completed the [Zombie apocalypse survival map](https://proje
 </style>
 ```
 
-+ Locate the `<body>` tag in your code. On a blank line below this tag, add the following code to create a `<div>` (an invisible box) where your map will eventually appear.
++ Busca la etiqueta `<body>` en tu código. En una línea en blanco debajo de esta etiqueta, agrega el siguiente código para crear un `<div>` (un cuadro invisible) donde tu mapa aparecerá con el tiempo.
 
 ```html
-My zombie map
-<div id="zombie_map"></div>
+Mi map zombi
+<div id="mapa_zombi"></div>
 ```
 
-+ Locate a town on [Google Maps](http://maps.google.com){:target="_blank"}, then right-click on the map and select **What's here?**. A box will pop up at the bottom of the page showing the latitude and longitude.
++ Busca una ciudad en [Google Maps](http://maps.google.com){:target="_blank"}, luego haz clic derecho en el mapa y selecciona ** ¿Qué hay aquí? **. Aparecerá un cuadro en la parte inferior de la página que muestra la latitud y la longitud.
 
-![Finding latitude and longitude](images/whats-here.png)
+![Encontrando la latitud y la longitud](images/whats-here.png)
 
-+ Immediately below the `<div>` code you just added, add the following code to create the map. Replace the `###` bits with the latitude and longitude values you just looked up for your town.
++ Inmediatamente debajo del código `<div>` que acabas de agregar, agrega el siguiente código para crear el mapa. Reemplaza los `###` con los valores de latitud y longitud que acabas de buscar para su ciudad.
 
 ```html
 <script>
-    var zombie_map;
-    function initMap() {
+    var mapa_zombi;
+    function inicializaMapa() {
 
-            zombie_map = new google.maps.Map(document.getElementById('zombie_map'), {
+            mapa_zombi = new google.maps.Map(document.getElementById('mapa_zombi'), {
             zoom: 10,
             center: {lat: ###, lng: ###}
         });
@@ -55,6 +55,6 @@ My zombie map
 </script>
 ```
 
-+ Save your code and refresh your internet browser. You should see a Google map with the town you chose at the centre of the map.
++ Guarda tu código y actualiza tu navegador de Internet. Deberías ver un mapa de Google con la ciudad que elegiste en el centro del mapa.
 
-![Centered map](images/centered-map.png)
+![Mapa centrado](images/centered-map.png)
