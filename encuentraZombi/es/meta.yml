@@ -1,0 +1,23 @@
+title: Encuentra el Zombi
+hero_image: images/banner.png
+description: Usa el GPS en tu teléfono para jugar un juego de zombis al aire libre. ¡Recoge los suministros pero evita a los zombis!
+theme: yellow # possible values: blue, green, navy, orange, red, turquoise, violet, yellow
+duration: 3 # possible values: 1, 2 or 3
+listed: true
+ingredient: false
+copyedit: true
+curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
+interests: "games"
+technologies: "html/css"
+steps:
+  - title: Introduccion
+  - title: Lo que necesitas
+  - title: Crea el mapa
+  - title: Recupera los datos del marcador
+  - title: Crea los marcadores
+  - title: Muestra tu posición actual
+  - title: Prueba el GPS
+  - title: Ataque de los smileys
+  - title: Encuentra los artículos
+  - title: Seguridad mientras participas en el juego
+  - title: "Reto: mejora el juego"
