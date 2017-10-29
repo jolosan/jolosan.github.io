@@ -1,40 +1,39 @@
-## Display your current position
+## Muestra tu posición actual
 
-Let's display the player's current position on the map.
+Vamos a mostrar la posición actual del jugador en el mapa.
 
-+ Inside the `initMap()` function, after you create the map, add some code to use HTML5 geolocation to find the player's current position:
++ Dentro de la función `inicializaMapa ()`, después de crear el mapa, agrega un código para usar la geolocalización de HTML5 para encontrar la posición actual del jugador:
 
 ```javascript
 if(navigator.geolocation) {
-    navigator.geolocation.watchPosition(set_my_position);
+    navigator.geolocation.watchPosition(actualiza_mi_posicion);
 }
 else {
-    alert("Geolocation doesn't work in your browser");
+    alert("La geolocalización no funciona en tu navegador");
 }
 ```
 
-This code checks whether the player's location can be found using the web browser. If it cannot be found, a pop-up box will appear with a message. If it can, we set up code to `watchPosition`. This code will constantly monitor the position of the device, and will call the function `set_my_position` whenever the position of the device changes.
+Este código verifica si la ubicación del jugador se puede encontrar usando el navegador web. Si no se puede encontrar, aparecerá un cuadro emergente con un mensaje. Si se puede, configuramos el código para `watchPosition`. Este código supervisará constantemente la posición del dispositivo y llamará a la función `actualiza_mi_posicion` cada vez que cambie la posición del dispositivo.
 
-+ To be able to display the player's position on the map, we need to write the `set_my_position` function. After the closing bracket of the `initMap()` function, create a new function called `set_my_position`.
++ Para poder mostrar la posición del jugador en el mapa, necesitamos escribir la función `actualiza_mi_posicion`. Después del corchete de cierre de la función `inicializaMapa()`, crea una nueva función llamada `actualiza_mi_posicion`.
 
 [[[generic-javascript-create-a-function]]]
 
-+ This function needs the current latitude and longitude by the `watchPosition` comand we set up. Add an **argument** called `position` in the function's brackets so that this data will be automatically passed to it.
++ Esta función necesita la latitud y longitud actual mediante el comando `watchPosition` que configuramos. Agrega un **argumento** llamado `posicion` en los corchetes de la función para que estos datos se le pasen automáticamente.
 
-`function set_my_position(position){`
+`function actualiza_mi_posicion(posicion){`
 
-+ The latitude can be found within the function as `position.coords.latitude`, and the longitude as `position.coords.longitude`. Following the same process as you did in the previous step, create a LatLng object called `pos` inside the `set_my_position` function. The object should contain the latitude and longitude values.
++ La latitud se puede encontrar dentro de la función como `posicion.coords.latitude`, y la longitud como `posicion.coords.longitude`. Siguiendo el mismo proceso que hiciste en el paso anterior, crea un objeto LatLng llamado `pos` dentro de la función `actualiza_mi_posicion`. El objeto debe contener los valores de latitud y longitud.
 
 ```JavaScript
 var pos = new google.maps.LatLng(###, ###);
 ```
 
-+ Still inside the function, create a marker which is situated at the LatLng object's position. You can do this the same way you created markers in the previous step. However, you should choose a different icon for this marker. we chose to represent the player as a smiley face, but you can choose any emoji you like. Don't forget to copy and paste the emoji image file you want to use into the same folder as your `index.html` code.
++ Aún dentro de la función, crea un marcador que esté situado en la posición del objeto LatLng. Puedes hacer esto de la misma manera que creaste los marcadores en el paso anterior. Sin embargo, debes elegir un icono diferente para este marcador. Elegimos representar al jugador como una carita sonriente, pero puedes elegir cualquier emoji que te guste. No olvides copiar y pegar el archivo de imagen emoji que quieras usar en la misma carpeta que tu código `index.html`.
+![Jugador emoji](images/player.png)
 
-![Player emoji](images/player.png)
++ Guarda tu código y actualize el navegador de Internet. Si aparece un mensaje que te pregunta si el navegador puede usar tus datos de ubicación, presione **Permitir**. Deberías ver que tus emojis del jugador aparecen dondequiera que estés.
 
-+ Save your code and refresh the internet browser. If a message pops up asking whether the browser can use your location data, press **Allow**. You should see your player emoji appear wherever you currently are.
+![Donde estás en el mapa](images/location-map.png)
 
-![Where you are on the map](images/location-map.png)
-
-+ You might want to adjust the `zoom` value in your map at this stage if it is a little too far out to see the locations of the icons clearly. Using a larger value will zoom in on the map.
++ Es posible que desees ajustar el valor de 'zoom' en tu mapa en esta etapa si está demasiado lejos para ver claramente la ubicación de los iconos. El uso de un valor mayor hará zoom en el mapa.

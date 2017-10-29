@@ -81,7 +81,7 @@ var marcador = new google.maps.Marker({
 
 --- /consejos ---
 
-+Inmediatamente después del final del código `marcador`, pero aún dentro del bucle, agrega la siguiente línea para guardar una referencia a este marcador en nuestra lista de `todos_los_marcadores`. Necesitaremos esta lista en un paso posterior.
++ Inmediatamente después del final del código `marcador`, pero aún dentro del bucle, agrega la siguiente línea para guardar una referencia a este marcador en nuestra lista de `todos_los_marcadores`. Necesitaremos esta lista en un paso posterior.
 
 ```JavaScript
 todos_los_marcadores.push(marker);

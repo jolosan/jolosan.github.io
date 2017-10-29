@@ -1,10 +1,10 @@
-## Find the items
+## Encuentra los objetos
 
-Now we need to make the game work! As the player moves around, we will check whether theey have found an item. To find an item, they have to go to a real-life location that is considered close enough to the virtual item's location.
+¡Ahora tenemos que hacer que el juego funcione! A medida que el jugador se mueve, comprobaremos si han encontrado un objeto. Para encontrar un objeto, tienes que ir a una ubicación de la vida real que se considere lo suficientemente cerca de la ubicación del elemento virtual.
 
-+ Locate the line `var zombie_map;` and, below it, add a new variable called `tolerance`. This variable will determine how close the player will have to be to the item marker's location (in metres) to find it. You can choose how close this is - the smaller the number of metres, the closer the player will have to get to the exact location to find the item. We chose a tolerance of 10.
++ Busca la línea `var mapa_zombi;` y, debajo de ella, agrega una nueva variable llamada `tolerancia`. Esta variable determinará qué tan cerca deberá estar el jugador de la ubicación del marcador del elemento (en metros) para encontrarlo. Puedes elegir qué tan cerca está esto: cuanto menor sea el número de metros, más cerca tendrá que llegar el jugador a la ubicación exacta para encontrar el objeto. Elegimos una tolerancia de 10.
 
-To be able to calculate the distance between two points on a map, we need to use some of Google's technical wizardry from their geometry library. Locate the code near the bottom of the page which tells the map your API key:
+Para poder calcular la distancia entre dos puntos en un mapa, debemos usar parte de la magia técnica de Google desde su biblioteca de geometría. Ubica el código cerca de la parte inferior de la página que le dice al mapa tu clave API:
 
 ```html
 <script async defer
@@ -12,109 +12,110 @@ src="https://maps.googleapis.com/maps/api/js?key=A1b2c3d4e5f6g7h8i9j10k11&callba
 </script>
 ```
 
-+ In the line of code above, immediately after `initMap`, but before the ending `"`, add `&libraries=geometry`. Be careful to not add any spaces.
++ En la línea del código anterior, inmediatamente después de `initMap`, pero antes de la terminación `"`, agrega `& libraries = geometry`. Ten cuidado de no agregar espacios.
 
-+ Now locate your `set_my_position()` function, and position your cursor immediately below the line `old_position = marker;`.
++ Ahora busca su función `inicializa_mi_posicion ()`, y colocae el cursor inmediatamente debajo de la línea `posicion_antigua = marcador;`.
 
-+ Create a for loop which will loop through the `all_markers` array.
++ Crea un bucle for que recorrerá la matriz `todos_los_marcadores`.
 
 [[[generic-javascript-for-loop-array]]]
 
-+ Inside your loop, use the following code to calculate the distance between the current position (`pos`) and the marker we are currently examining:
++ Dentro de tu bucle, usa el siguiente código para calcular la distancia entre la posición actual (`pos`) y el marcador que estamos examinando:
 
 ```javascript
-var distance = google.maps.geometry.spherical.computeDistanceBetween(pos, all_markers[i].getPosition());
+var distancia = google.maps.geometry.spherical.computeDistanceBetween(pos, todos_los_marcadores[i].getPosition());
 ```
-The image below shows an example of one of the calculations. How far is it between the player and the hospital marker?
 
-![What we are calculating](images/what-we-are-calculating.png)
+La imagen siguiente muestra un ejemplo de uno de los cálculos. ¿Qué distancia hay entre el jugador y el marcador del hospital?
 
-+ Add an `if` statement immediately below to check whether the distance between the player and the marker we are currently examining is less than the tolerance. It should look like this:
+![Lo que estamos calculando](images/what-we-are-calculating.png)
+
++ Añade una instrucción `if` inmediatamente debajo para verificar si la distancia entre el jugador y el marcador que estamos examinando actualmente es menor que la tolerancia. Debe tener un aspecto como este:
 
 ```javascript
-if( distance < tolerance ){
-    alert("Found it!")
+if( distancia < tolerancia ){
+    alert("¡Lo encontré!")
 }
 ```
 
-At the moment we are not sure what it is the player has found.
+Por el momento, no estamos seguros de qué es lo que el jugador ha encontrado.
 
-+ Remove the line saying "Found it!", and instead get the name of the icon the player is close to.
-
-```javascript
-var what_is_it = all_markers[i].getIcon();
-```
-
-+ Remove the `.png` part from the name of the icon. For example, if the icon's name is `hospital.png`, we just want to say "hospital".
++ Elimina la línea que dice "¡Lo encontré!", Y en su lugar obten el nombre del ícono del que el jugador está cerca.
 
 ```javascript
-what_is_it = what_is_it.replace(".png", "");
-
+var que_es = todos_los_marcadores[i].getIcon();
 ```
-+ Create an alert to tell the player what they have found. In this case, the alert will say `Found the hospital`:
+
++ Elimina la parte `.png` del nombre del ícono. Por ejemplo, si el nombre del icono es `hospital.png`, solo queremos decir "hospital".
 
 ```javascript
-alert("Found the " + what_is_it );
+que_es = que_es.replace(".png", "");
+
+```
++ Crea una alerta para decirle al jugador lo que ha encontrado. En este caso, la alerta dirá 'Encontrado el hospital':
+
+```javascript
+alert("Encontrador el " + que_es);
 ```
 
-+ Remove the `all_markers[i]` marker from the map, so that the game does not keep telling the player they found the same thing.
++ Quita el marcador `todos_los_marcadores [i]` del mapa, para que el juego no siga diciéndole al jugador que encontraron lo mismo.
 
 --- hints ---
 --- hint ---
-Remember that we removed a marker from the map before, when we stopped the attack of the smileys.
+Recuerda que eliminamos un marcador del mapa antes, cuando detuvimos el ataque de los emoticonos.
 --- /hint ---
 
 --- hint ---
-To remove a marker from the map, set the map of the marker to `null`, which means no map in this case.
+Para eliminar un marcador del mapa, establece el mapa del marcador en `null`, lo que significa que no hay mapa en este caso.
 --- /hint ---
 
 --- hint ---
-You will need to use the `.setMap()` method on the marker.
+Deberás usar el método `.setMap ()` en el marcador.
 --- /hint ---
 
 --- /hints ---
 
-+ Finally, let's add a score. Once again, locate the line `var zombie_map;`, and add another line of code below it to create a variable called `score`.
++ Finalmente, añadiremos puntos. Una vez más, encuentra la línea `var mapa_zombi;` y agrega otra línea de código debajo para crear una variable llamada `puntuacion`.
 
-If the player found a zombie, in my game they don't get any points. Perhaps if you are feeling particularly mean you could give your player minus points in your game! If they found a hospital or a weapon store they get 10 points.
+Si el jugador encontró un zombi, en mi juego no obtienen ningún punto. ¡Tal vez si te sientes especialmente malvado, podrías darle a tu jugador menos puntos en tu juego! Si encontraron un hospital o una tienda de armas obtienen 10 puntos.
 
-+ Here is some pseudo code for the code we want to add. Translate it into real code and add it to your program.
++ Aquí hay un pseudo-código para el código que queremos agregar. Traducelo en código real y agrégalo a tu programa.
 
 ```html
-IF what they found isn't a zombie
-    score + 10 points
-    ALERT Your score is + score
+Si lo que encuentran no es un zombi
+    puntuacion + 10 puntos
+    ALERTA Tu puntuación es + puntuacion
 ```
-Add your code here:
+Añade tu código aquí:
 
-![Add a score](images/add-score.png)
+![Añade una puntuación](images/add-score.png)
 
 
 --- hints ---
 
 --- hint ---
-We already worked out what they found and stored it in the variable `what_is_it`. Use this to create a condition which says that the contents of this variable is not equal to (`!=`) zombie.
+Ya resolvimos lo que encontraron y lo almacenaron en la variable `que_es`. Usa esto para crear una condición que diga que el contenido de esta variable no es igual a (`!=`) Zombi.
 --- /hint ----
 
 --- hint ---
-You can add on points to a variable like this:
+Puedes agregar puntos a una variable así:
 
 ```javascript
-score += 10
+puntuacion += 10
 ```
-This means "`score` is whatever it was before plus 10".
+Esto significa que "incrementamos `puntuacion` en 10".
 --- /hint ----
 
 --- hint ---
-Solution:
+Solucion:
 ```javascript
-if( what_is_it != "zombie"){
-    score += 10;
-    alert("Your score is " + score);
+if( que es != "zombi"){
+    puntuacion += 10;
+    alert("Tu puntuación es " + puntuacion);
 }
 ```
 --- /hint ----
 
 --- /hints ---
 
-+ Now it's time to test out your game! Have a read through the safety tips in the next step before you do any testing.
++¡Ahora es el momento de probar tu juego! Lee detenidamente los consejos de seguridad en el próximo paso antes de realizar cualquier prueba.

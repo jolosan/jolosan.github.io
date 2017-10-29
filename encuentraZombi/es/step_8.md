@@ -1,25 +1,25 @@
-## Attack of the smileys
+## Ataque de los emoticonos
 
-When you tested your map on your phone, you probably thought you were being attacked by smileys rather than zombies! This is because the page creates a brand new marker every time the player moves, but doesn't remove the markers of their previous positions. Eventually this gets really confusing, because you can't tell where you are from where you've been!
+¡Cuando probaste tu mapa en tu teléfono, probablemente pensabas que te estaban atacando con emoticones en lugar de zombis! Esto se debe a que la página crea un marcador nuevo cada vez que el jugador se mueve, pero no elimina los marcadores de sus posiciones anteriores. ¡Eventualmente esto se vuelve realmente confuso, porque no puedes decir dónde estás desde donde has estado!
 
-![Attack of the smileys](images/attack-smileys.png)
+![Ataque de los emoticonos](images/attack-smileys.png)
 
-Continue editing the code on your computer. You can re-upload the code to GitHub if you want to test it outside.
+Continúa editando el código en tu ordenador. Puedes volver a cargar el código en GitHub si desea probarlo afuera.
 
-+ Locate the line `var zombie_map;`, and below it add a new variable called `old_position`.
++ Ubica la línea `var mapa_zombi;`, y debajo agrega una nueva variable llamada `posicion_antigua`.
 
-+ Inside the `initMap()` function, create a marker called `old_position` at the same location you centered your map on when you created it. (It actually doesn't matter what location this marker is initialised at, as its location value will be overwritten almost immediately, but it does need to be initialised. We just used the map's central location because it was handy!)
++ Dentro de la función `inicializaMapa()`, crea un marcador llamado `posicion_antigua` en la misma ubicación en la que centraste tu mapa cuando lo creaste. (En realidad, no importa en qué ubicación se inicie este marcador, ya que su valor de ubicación se sobrescribirá casi de inmediato, pero es necesario inicializarlo. Simplemente usamos la ubicación central del mapa porque era práctico).
 
-+ Locate your function `set_my_position()`. Add a line of code so that the **first** thing the function does is to remove the old position marker from the map. `null` is a special key word that in this case means "no map".
-
-```JavaScript
-old_position.setMap(null);
-```
-
-+ Add another line of code to the function `set_my_position()`, but this time it should be the **last** thing the function does. This saves the new position marker you just created as the `old_position` so that next time when we create a new marker we know where the previous one was.
++ Ubica tu función `actualiza_mi_posicion ()`. Agrega una línea de código para que lo **primero** que haga la función sea eliminar el marcador de posición anterior del mapa. `null` es una palabra clave especial que en este caso significa "sin mapa".
 
 ```JavaScript
-old_position = marker;
+posicion_antigua.setMap(null);
 ```
 
-+ Save your code and upload it again to your web hosting service. Test the code out by walking around. You should see your player smiley move around, but this time there will be no trail of smileys, only one marker to show your current position. Phew!
++ Agrega otra línea de código a la función `actualiza_mi_posicion()`, pero esta vez debería ser la **última** cosa que hace la función. Esto guarda el nuevo marcador de posición que acabas de crear como `posicion_antigua` para que la próxima vez que creemos un marcador nuevo sepamos dónde estaba el anterior.
+
+```JavaScript
+posicion_antigua = marcador;
+```
+
++ Guarda tu código y súbelo de nuevo a tu servicio de alojamiento web. Prueba el código caminando. Deberías ver cómo se mueve tu jugador, pero esta vez no habrá rastros de emoticones, solo un marcador para mostrar tu posición actual. ¡Uf!

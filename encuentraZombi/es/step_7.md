@@ -1,42 +1,42 @@
-## Test the GPS
+## Prueba el GPS
 
-You probably want to test whether your player icon moves around as you move around, and to do this you'll need to go outside. This could be pretty inconvenient while holding a computer, so let's upload the web page to the internet so that you can access it on your phone!
+Probablemente desees comprobar si el icono del jugador se mueve a medida que te mueves, y para hacerlo tendrás que salir. Esto podría ser bastante inconveniente mientras sostienes un ordenador, así que carguemos la página web a Internet para que puedas acceder a ella desde tu teléfono.
 
-### Important safety notes
-Don't forget that when you upload things to the internet, anyone can see them. If you've centered the map on the latitude and longitude of your house, anyone who accesses the web page can see exactly where you live. It is safer to set up your zombie map in a communal area such as a park or a town centre so that you are not giving away your personal data.
+### Notas de seguridad importantes
+No olvides que cuando subes cosas a Internet, cualquiera puede verlas. Si has centrado el mapa en la latitud y la longitud de tu casa, cualquier persona que acceda a la página web puede ver exactamente dónde vives. Es más seguro configurar tu mapa de zombies en un área común, como un parque o un centro de la ciudad, para que no des tus datos personales.
 
-For the GPS to work, you will need to enable the location services on your phone. Be aware that this means that your phone will track your exact position. It is never a good idea to post your exact location in public on the internet, so to be safe, disable the location services again after you have played the zombie game to make sure no other apps can use your location data. Your location will only be used by the zombie game in the web page you have created—you know exactly what this code does, because you wrote it!
+Para que el GPS funcione, deberás habilitar los servicios de ubicación en tu teléfono. Ten en cuenta que esto significa que tu teléfono rastreará tu posición exacta. Nunca es una buena idea publicar tu ubicación exacta en público en Internet, por lo que para estar seguro, deshabilita los servicios de ubicación nuevamente después de haber jugado el juego zombi para asegurarte de que ninguna otra aplicación pueda usar tu información de ubicación. Tu ubicación solo será utilizada por el juego zombie en la página web que hayas creado. ¡Sabes exactamente qué hace este código porque lo escribiste!
 
-### Upload your code
-You can upload your zombie game onto any service that offers web hosting. You may already have some hosting available to you, in which case feel free to use that. We chose to use [GitHub Pages](https://pages.github.com/){:target="_blank"} because it is a trustworthy service and easy to use. To get started with it, follow these steps:
+### Sube tu código
+Puedes subir tu juego zombie a cualquier servicio que ofrezca alojamiento web. Es posible que ya tengas algún hosting disponible para ti, en cuyo caso puedes usarlo. Elegimos usar[GitHub Pages](https://pages.github.com/){:target="_blank"} porque es un servicio confiable y fácil de usar. Para comenzar, sigue estos pasos:
 
-+ Sign up for a [GitHub account](https://github.com/join){:target="_blank"}
++ Regístrate para una [cuenta GitHub](https://github.com/join){:target="_blank"}
 
-+ Visit the [instructions page](https://pages.github.com/){:target="_blank"}, and click on **Project site** and **Start from scratch**
++ Visita la [página de instrucciones](https://pages.github.com/){:target="_blank"}, y haz clic en **Project site** and **Start from scratch**
 
-![Github pages](images/github-pages.png)
+![páginas Github](images/github-pages.png)
 
-+ Follow the instructions to create an index file as described, but instead of typing `<h1>Hello</h1>`, paste in the code from your `index.html` file before committing it
++ Sigue las instrucciones para crear un archivo de índice como se describe, pero en lugar de escribir `<h1> Hola </ h1>`, pega el código de tu archivo `index.html` antes de enviarlo
 
-+ You will also need to click on the **Upload files** button and upload the emoji files you are using
++ También deberás hacer clic en el botón **Subir archivos** y cargar los archivos emoji que estás utilizando
 
-+ Finally, follow Step 4 on the instructions page to set up your master branch as a GitHub Pages site, and then view your page by typing the address into a browser.
++ Finalmente, sigue el Paso 4 en la página de instrucciones para configurar tu rama principal como un sitio de Páginas GitHub, y luego visualiza tu página escribiendo la dirección en un navegador.
 
-## Restrict your API key
-Now that you have put your code online, your Google Maps API key is visible to everyone. Someone could take it and use it without your permission. You can stop this from happening by restricting where it can be used, so that it can only be used on your website.
+## Restringe tu clave API
+Ahora que has puesto su código en línea, tu clave API de Google Maps está visible para todos. Alguien podría copiarla y usarla sin tu permiso. Puedes evitar que esto suceda al restringir dónde se puede usar, de modo que solo se pueda usar en tu sitio web.
 
-+ Head back over to the [Google APIs console](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_blank"} and click on **Select a project** at the top left of the page.
++ Regresa a la [consola Google APIs](https://console.developers.google.com/flows/enableapi?apiid=picker&credential=client_key){:target="_blank"} y haz clic en **Select a project** en la parte superior izquierda de la página.
 
-![Select a project](images/select-a-project.png)
+![Selecciona un proyecto](images/select-a-project.png)
 
-+ Select the project you made when you set up your API key. This might still be called **My project** if you didn't change its name.
++ Selecciona el proyecto que creaste cuando configuraste tu clave API. Esto todavía puede llamarse **Mi proyecto** si no cambiaste el nombre.
 
-+ Click on **Credentials** on the left, then click on your API key.
++ Haz clic en **Credenciales** a la izquierda, luego haz clic en tu clave API.
 
-![Select a project](images/credentials.png)
+![Selecciona un proyecto](images/credentials.png)
 
-+ Under **Key restriction**, select **HTTP referrers** and in the box, add the base URL of your website, with a `*` at each end. For example, my code was hosted at `http://lawsie.github.io/`, so I put `*lawsie.github.io/*`. Click **Save**.
++ En **Restricción de la clave**, selecciona **referencias HTTP** y en el cuadro, agrega la URL base de tu sitio web, con un `*` en cada extremo. Por ejemplo, mi código fue alojado en `http://lawsie.github.io/`, así que puse `*lawsie.github.io/*`. Clic en **Guardar**.
 
-![Key restriction](images/key-restriction.png)
+! [Restricción de la clave] (images/key-restriction.png)
 
-+ Your key should now only work on your website, and not anywhere else. Note that if you now try to look at the map on your computer, it will not work because the request is not coming from your website. You might want to create an extra API key that is unrestricted, and ONLY use that key on your private computer for testing.
++ Tu clave ahora solo debería funcionar en tu sitio web, y no en ningún otro lado. Ten en cuenta que si intentas mirar el mapa en tu ordenador, no funcionará porque la solicitud no proviene de tu sitio web. Es posible que desees crear una clave API adicional que no esté restringida, y SÓLO usa esa clave en tu ordenador privado para realizar pruebas.
