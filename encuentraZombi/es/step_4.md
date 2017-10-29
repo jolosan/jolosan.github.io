@@ -1,8 +1,8 @@
-## Retrieve the marker data
+## Recuperar los datos del marcador
 
-+ You can decide where your points of interest will be by creating a [Zombie apocalypse survival map](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}. Here is an example map we created for a zombie game in the local park. The data for this map was copied from the **console**.
++ Puedes decidir dónde estarán tus puntos de interés creando un [Mapa de supervivencia apocalíptica Zombie](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}. Aquí hay un mapa de ejemplo que creamos para un juego zombie en el parque local. Los datos para este mapa se copiaron de la **consola**.
 
-![Map with data](images/map-precreated.png)
+![Mapa con datos](images/map-precreated.png)
 
 ```html
 51.90769026213801 -2.068905830383301 zombie.png
@@ -13,34 +13,32 @@
 51.90954352807475 -2.0659875869750977 weapons.png
 ```
 
-+ You will also need to copy the emoji files you used when you created the map, and paste them into the same directory as the `index.html` file for your game. We used the following emojis, but you may have chosen different ones on your map.
-![Hospital](images/hospital.png) ![Weapons](images/weapons.png) ![Zombie](images/zombie.png)
++También necesitarás copiar los archivos emoji que usaste cuando creaste el mapa, y pegarlos en el mismo directorio que el archivo `index.html` para tu juego. Usamos los siguientes emojis, pero es posible que hayas elegido diferentes en tu mapa.
+![Hospital](images/hospital.png) ![Armas](images/weapons.png) ![Zombi](images/zombie.png)
 
-+ Locate the line of code `var zombie_map;`. Below it, on a blank line, create a new variable called `data`, and set it equal to the data you copied from the console. Pasting in your data might make your editor complain and highlight the lines of code in a strange way, so put a backtick (\`) at the start and the end of the data you pasted. This will tell JavaScript that what you pasted is a string split over multiple lines.
-
++ Busca la línea de código `var mapa_zombi;`. Debajo, en una línea en blanco, crea una nueva variable llamada `datos`, y configúrala igual a los datos que copiaste de la consola. Pegar tus datos puede hacer que tu editor se queje y resalte las líneas de código de una manera extraña, así que pon una barra (\ `) al principio y al final de los datos que pegaste. Esto le dirá a JavaScript que lo que pegaste es una cadena dividida en varias líneas.
 [[[generic-javascript-create-variable]]]
 
-+ We want to handle each marker separately, so let's add some code on the following line to split up the data into separate lines. Each individual line is data for one marker, so we will split the data wherever the invisible newline character `\n` is detected.
-
++ Queremos manejar cada marcador por separado, así que agreguemos algún código en la siguiente línea para dividir los datos en líneas separadas. Cada línea individual es información para un marcador, por lo que dividiremos los datos donde se detecte el carácter de nueva línea invisible `\ n`.
 ```JavaScript
-var markers = data.split("\n");
+var marcadores = data.split("\n");
 ```
 
 [[[generic-javascript-split-string]]]
 
-We end up with an **array** of marker data which we will plot onto the map in the next step.
+Terminamos con una **matriz** de datos de marcadores que trazaremos en el mapa en el siguiente paso.
 
 --- collapse ---
 ---
-title: End result
+title: Resultado final
 ---
 ```JavaScript
-var data = `51.90769026213801 -2.068905830383301 zombie.png
+var datos = `51.90769026213801 -2.068905830383301 zombie.png
 51.91174087287536 -2.0681333541870117 hospital.png
 51.91054955470073 -2.0736265182495117 weapons.png
 51.909305255309874 -2.0733261108398438 weapons.png
 51.91070839895001 -2.077016830444336 weapons.png
 51.90954352807475 -2.0659875869750977 weapons.png`;
-var markers = data.split("\n");
+var marcadores = data.split("\n");
 ```
 --- /collapse ---

@@ -1,6 +1,6 @@
 ## Introducción
 
-Usa el GPS en tu teléfono para hacer un juego de apocalipsis zombe al aire libre al cual puedes jugar con tus amigos. Recoge los suministros para encender, ¡pero evita a los zombis!
+Usa el GPS en tu teléfono para hacer un juego de apocalipsis zombi al aire libre al cual puedes jugar con tus amigos. Recoge los suministros para encender, ¡pero evita a los zombis!
 
 
 Este recurso espera que ya hayas mapeado la ubicación de tus golosinas y zombis usando el recurso [Mapa apocalíptico Zombi] https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}.

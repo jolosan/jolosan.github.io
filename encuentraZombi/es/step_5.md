@@ -1,92 +1,92 @@
-## Create the markers
+## Crea los marcadores
 
-+ Below the line `var zombie_map;`, add another line to create a variable called `all_markers`. Set it equal to `[]`, which is a blank array. This will eventually store a reference to each of the markers we are about to create.
++ Debajo de la línea `var mapa_zombi;`, agrega otra línea para crear una variable llamada `todos_los_marcadores`. Establécelo igual a `[]`, que es una matriz en blanco. Esto eventualmente almacenará una referencia a cada uno de los marcadores que vamos a crear.
 
-+ Position your cursor inside the `initMap()` function, just below the code for creating the zombie map.
++ Coloca el cursor dentro de la función `inicializaMapa ()`, justo debajo del código para crear el mapa zombi.
 
-![Add marker code here](images/add-marker-code.png)
+![Añade el código del marcador aquí](images/add-marker-code.png)
 
-+ Create a for loop that will run once for every marker in the `markers` array we created in the previous step.
++ Crea un bucle for que se ejecutará una vez por cada marcador en la matriz `marcadores` que creamos en el paso anterior. 
 
 [[[generic-javascript-for-loop-array]]]
 
-Inside the for loop, the line of marker data we are currently looking at is `markers[i]` - the loop will add `1` to the variable `i` each time it runs, so we will be looking at each line of data, one by one.
+Dentro del bucle for, la línea de datos de marcador que estamos viendo actualmente es `marcadores [i]` - el bucle agregará `1` a la variable` i` cada vez que se ejecuta, por lo que vamos a ver cada línea de datos, uno por uno.
 
-The first line of data looks like this:
+La primera línea de datos se ve así:
 
 ```html
 51.90769026213801 -2.068905830383301 zombie.png
 ```
 
-We want to end up with this data as an array, so we will need to split it up just like we did in the previous step.
+Queremos terminar con esta información como una matriz, por lo que necesitaremos dividirla tal como lo hicimos en el paso anterior.
 
-+ Add all the other lines of code in this step inside your for loop. First, `trim()` any unwanted spaces from the beginning and end of the data, like so:
++ Agrega todas las otras líneas de código en este paso dentro del bucle for. En primer lugar, elimina con `trim ()` espacios no deseados desde el principio y el final de los datos, de esta manera:
 
 ```JavaScript
-var marker_data = markers[i].trim();
+var datos_marcadores = marcadores[i].trim();
 ```
 
-+ Now split the string up just like we did before, but this time split wherever there is a space:
++ Ahora divide la cadena como lo hicimos antes, pero esta vez dividida donde haya espacio:
 
 ```JavaScript
-marker_data = marker_data.split(" ");
+datos_marcadores = datos_marcadores.split(" ");
 ```
 
-Doing so will give you an array called `marker_data`, which contains three values. In order, these are: the latitude, the longitude, and the marker image file.
+Al hacerlo, obtendrás una matriz llamada `datos_marcadores`, que contiene tres valores. En orden, estos son: la latitud, la longitud y el archivo de imagen de marcador.
 
-+ Create variables to name each of these values. We've done the first for you:
++ Crear variables para nombrar cada uno de estos valores. Hemos hecho lo primero por ti:
 
 ```JavaScript
-var latitude = marker_data[0];
-var longitude = ?;
+var latitud = datos_marcadores[0];
+var longitud = ?;
 var emoji = ?;
 ```
 
-+ To be able to add the marker at the correct position, you need to create a `LatLng` object.
++ Para poder agregar el marcador en la posición correcta, debes crear un objeto `LatLng`.
 
 ```JavaScript
-var marker_position = new google.maps.LatLng(###, ###);
+var posicion_marcador = new google.maps.LatLng(###, ###);
 ```
 
-Add this line of code immediately below the previous line, replacing `###` with the latitude and longitude variables.
+Agrega esta línea de código inmediatamente debajo de la línea anterior, reemplazando `###` con las variables de latitud y longitud.
 
-+ Still inside the loop, write some code to create a marker at the `marker_position`, with the `icon:` set to the emoji variable.
++ Aún dentro del bucle, escribe un código para crear un marcador en `posicion_marcador`, con el `icon:` establecido en la variable emoji.
 
 [[[generic-api-google-maps-marker]]]
 
---- hints ---
---- hint ---
-Instead of putting in a fixed latitude/longitude like in the example, use the `marker_position` variable to tell the marker where it should be placed.
---- /hint ---
+--- consejos ---
+--- consejo ---
+En lugar de poner una latitud / longitud fija como en el ejemplo, usa la variable `posicion_marcador` para indicar al marcador dónde debe colocarse.
+--- /consejo ---
 
---- hint ---
-Check that the name of the map (in the example `mymap`) is the same as the name of the map you have created.
---- /hint ---
+--- consejo ---
+Comprueba que el nombre del mapa (en el ejemplo `mimapa`) sea el mismo que el nombre del mapa que has creado.
+--- /consejo ---
 
---- hint ---
-You can add an icon by adding another line within the marker to specify `icon: "nameofpicture.png"`. Don't forget to put a comma at the end of the `map` line to indicate that there is another marker property you would like to set.
---- /hint ---
+--- consejo ---
+Puedes agregar un icono agregando otra línea dentro del marcador para especificar `icon:" nombreDeLaImagen.png "`. No olvides poner una coma al final de la línea `mapa` para indicar que hay otra propiedad de marcador que te gustaría establecer.
+--- /consejo ---
 
---- hint ---
-If you specify a fixed file name like `nameofpicture.png`, then the marker icon will always be the same. We created a variable earlier which contains the picture name: put the variable `emoji` as the specified icon to use the right emoji from the data.
+--- consejo ---
+Si especificas un nombre de archivo fijo como `nombreDeLaImagen.png`, entonces el icono del marcador siempre será el mismo. Creamos una variable anterior que contiene el nombre de la imagen: coloca la variable `emoji` como el icono especificado para usar el emoji correcto de los datos.
 
 ```JavaScript
-var marker = new google.maps.Marker({
-  position: marker_position,
-  map: zombie_map,
-  icon: emoji
+var marcador = new google.maps.Marker({
+  posicion: marker_position,
+  mapa: mapa_zombi,
+  icono: emoji
 });
 ```
---- /hint ---
+--- /consejo ---
 
---- /hints ---
+--- /consejos ---
 
-+ Immediately after the end of the `marker` code, but still within the loop, add the following line to save a reference to this marker in our list of `all_markers`. We will need this list in a later step.
++Inmediatamente después del final del código `marcador`, pero aún dentro del bucle, agrega la siguiente línea para guardar una referencia a este marcador en nuestra lista de `todos_los_marcadores`. Necesitaremos esta lista en un paso posterior.
 
 ```JavaScript
-all_markers.push(marker);
+todos_los_marcadores.push(marker);
 ```
 
-+ Save your code and refresh the page. Test that all of your markers show up on the map. If they do not show up properly, perhaps you could look in the JavaScript **console** to see if there are any error messages for you to resolve?
++ Guarda tu código y actualiza la página. Prueba que todos tus marcadores aparezcan en el mapa. Si no se muestran correctamente, tal vez podrías consultar la **consola** de JavaScript para ver si hay algún mensaje de error que puedas resolver.
 
 [[[generic-javascript-opening-console]]]
