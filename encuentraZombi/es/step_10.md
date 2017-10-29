@@ -1,15 +1,15 @@
-## Safety when playing the game
+## Seguridad al jugar el juego
 
-When you play a GPS-based game, it is important that you remain safe. Follow our tips to make sure you create a fun and safe game to play with your friends.
+Cuando juegas un juego basado en GPS, es importante que te mantengas a salvo. Sigue nuestros consejos para asegurarte de crear un juego divertido y seguro para jugar con tus amigos.
 
-+ Set up your game map in an open area such as a park, so that you can have as much fun as possible exploring.
++ Configura tu mapa del juego en un área abierta, como un parque, para que puedas divertirte lo más posible explorando.
 
-+ Don't add markers in places which are difficult or dangerous to reach, such as in the middle of roads or near the edges of cliffs. Make your goodies tricky to find, but not deadly.
++ No agregues marcadores en lugares que son difíciles o peligrosos de alcanzar, como en el medio de las carreteras o cerca de los bordes de los acantilados. Haz que tus golosinas sean difíciles de encontrar, pero no mortales.
 
-+ If you find you have accidentally placed a marker inside somewhere which is private property, don't trespass, leave it alone. Just change your code for the next time you play!
++ Si descubres que has colocado accidentalmente un marcador dentro de un lugar que es propiedad privada, no lo traspases, déjalo estar. ¡Solo cambia tu código para la próxima vez que juegues!
 
-+ Get permission from a parent or guardian to play the game and make sure they are having fun playing with you or know where you are.
++ Obten permiso de un padre o tutor para jugar y asegúrate de que se diviertan jugando contigo o que sepan dónde te encuentras.
 
-+ Remember to turn off location services on your phone after playing so that you don't accidentally share your location data online with other apps.
++ Recuerda apagar los servicios de ubicación en tu teléfono después de jugar para no compartir accidentalmente tus datos de ubicación en línea con otras aplicaciones.
 
-+ Always play during the day, in well-lit areas. Zombies are rather keen on the dark...
++ Juega siempre durante el día, en áreas bien iluminadas. Los zombis son más entusiastas en la oscuridad ...
