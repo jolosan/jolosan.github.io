@@ -52,7 +52,7 @@ False
 True
 ```
 
-Python proporciona las siguientes [operaciones lógicas](https://jolosan.github.io/minecraft/py-operacionesLogicas.html)
+Python proporciona las siguientes [operaciones lógicas](https://jolosan.github.io/minecraft/py-operacionesAritmeticasLogicas.html)
 
 ### 1.1.3. Flotantes
 
@@ -63,7 +63,7 @@ Python ofrece tres tipos de valores en coma flotante: float, complex y decimal.
 
 Las operaciones aritméticas que mezclan los tipos int y float producen float, las que usan float y complex producen complex.
 
-En la [siguiente](https://docs.python.org/2/library/math.html) web se puede consultar la cantidad de funciones que ofrece la librería *math* en Python.
+En la [siguiente](https://docs.python.org/3/library/math.html) web se puede consultar la cantidad de funciones que ofrece la librería *math* en Python.
 
 Los enteros pueden convertirse a coma flotante usando la función **float()**.
 

@@ -17,6 +17,8 @@ Descargamos el fichero desde el [siguiente enlace](https://mega.nz/#!cps0Ub6S!Oh
 
 Descomprimimos el archivo y las dos carpetas que extrae (Minecraft y .minecraft), debemos ubicarlas en la carpeta personal. 
 > Nota: para poder ver la carpeta oculta (.minecraft) deberemos activar la opción de visualizar los archivos ocultos desde el administrador de archivos. 
+
+
 ![](images/Minecraft2.png)
 
 El programa debemos lanzarlo desde la carpeta Minecraft: 
