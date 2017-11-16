@@ -215,3 +215,5 @@ mc.postToChat("El jugador se ha movido x: " + str(distanciaX) + ", y: "
 ```
 
 ![](images/cambioPosicion.png)
+
+[Vuelve al índice](https://jolosan.github.io/minecraft/aprende.html)

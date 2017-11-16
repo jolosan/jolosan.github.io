@@ -183,3 +183,5 @@ pos = mc.player.getTilePos()
 x, y, z = pos.x, pos.y, pos.z
 construyeEstructura(x, y, z, estructura)
 ```
+
+[Vuelve al índice](https://jolosan.github.io/minecraft/aprende.html)

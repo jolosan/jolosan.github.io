@@ -154,3 +154,5 @@ else:
     mc.setBlocks(duchaX, duchaY, duchaZ,
                  duchaX + anchura, duchaY + altura, duchaZ + longitud, 0)
 ```
+
+[Vuelve al índice](https://jolosan.github.io/minecraft/aprende.html)
