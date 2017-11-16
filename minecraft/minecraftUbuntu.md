@@ -4,6 +4,34 @@ Este documento está basado en [raspberryjammod](https://github.com/arpruss/rasp
 
 Se realizará la instalación **single-player**
 
+Existen dos opciones, la primera es la más rápida, está todo preparado en un archivo comprimido y únicamente hay que descargar el .zip, descomprimir y reubicar los archivos en la carpeta personal. La segunda opción es la opción de hacer todo el proceso paso a paso:
+
+
+# Primera opción
+
+## Paso 1:
+Descargamos el fichero desde el [siguiente enlace]: (https://mega.nz/#!cps0Ub6S!OhKjy9wEy1bs1IGmeKsTtJl6YqhLWJNemYt9OIfKLug)
+![Descarga desde Mega](images/Minecraft1.png)
+
+## Paso 2:
+
+Descomprimimos el archivo y las dos carpetas que extrae (Minecraft y .minecraft), debemos ubicarlas en la carpeta personal. 
+> Nota: para poder ver la carpeta oculta (.minecraft) deberemos activar la opción de visualizar los archivos ocultos desde el administrador de archivos. 
+![](images/Minecraft2.png)
+
+El programa debemos lanzarlo desde la carpeta Minecraft: 
+![](images/Minecraft3.png)
+
+Las siguientes tres imágenes muestran la secuencia de carga del programa: 
+![](images/Minecraft4.png)
+![](images/Minecraft5.png)
+![](images/Minecraft6.png)
+
+Ahora ya podemos seguir a partir del *paso 4* de la segunda opción.
+
+
+# Segunda opción
+
 ## Paso 1:
 Vamos a [https://minecraft.net/download](https://minecraft.net/download) , descargamos la versión para linux y la ejecutamos una vez pulsando doble click. 
 ![](images/MinecraftUbuntu1.png)
@@ -79,8 +107,8 @@ A partir de ahora podemos ejecutar nuestros programas escritos en python para mi
 ## Paso 5:
 ¿Y ahora qué?
 
-Puedes ir al siguiente enlace para ver los [primeros pasos] (https://jolosan.github.io/minecraft/practicaInicial.html) en el mundo de Minecraft.
+Puedes ir al siguiente enlace para ver los [primeros pasos](https://jolosan.github.io/minecraft/practicaInicial.html) en el mundo de Minecraft.
 
-También puedes aprender python programando Minecraft [siguiendo este curso] (https://jolosan.github.io/minecraft/aprende.html)
+También puedes *aprender python* programando Minecraft [siguiendo este curso](https://jolosan.github.io/minecraft/aprende.html)
 
 ¡Adelante! 
