@@ -10,7 +10,7 @@ Existen dos opciones, la [primera](#primeraOpcion) es la más rápida, está tod
 # Primera opción <a id="primeraOpcion"></a>
 
 ## Paso 1:
-Descargamos el fichero desde el [siguiente enlace]: (https://mega.nz/#!cps0Ub6S!OhKjy9wEy1bs1IGmeKsTtJl6YqhLWJNemYt9OIfKLug)
+Descargamos el fichero desde el [siguiente enlace](https://mega.nz/#!cps0Ub6S!OhKjy9wEy1bs1IGmeKsTtJl6YqhLWJNemYt9OIfKLug)
 ![Descarga desde Mega](images/Minecraft1.png)
 
 ## Paso 2:
