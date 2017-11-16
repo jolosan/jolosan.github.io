@@ -13,3 +13,5 @@ Cuando juegas un juego basado en GPS, es importante que te mantengas a salvo. Si
 + Recuerda apagar los servicios de ubicación en tu teléfono después de jugar para no compartir accidentalmente tus datos de ubicación en línea con otras aplicaciones.
 
 + Juega siempre durante el día, en áreas bien iluminadas. Los zombis son más entusiastas en la oscuridad ...
+
+[Paso 11](https://jolosan.github.io/encuentraZombi/es/step_11.html)

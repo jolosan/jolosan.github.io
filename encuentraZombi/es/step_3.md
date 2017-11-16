@@ -58,3 +58,5 @@ Mi mapa zombi
 + Guarda tu código y actualiza tu navegador de Internet. Deberías ver un mapa de Google con la ciudad que elegiste en el centro del mapa.
 
 ![Mapa centrado](images/centered-map.png)
+
+[Paso 4](https://jolosan.github.io/encuentraZombi/es/step_4.html)

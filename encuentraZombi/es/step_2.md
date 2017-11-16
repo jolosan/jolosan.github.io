@@ -15,3 +15,5 @@
 
 + Imágenes Emoji: puedes hacer los tuyos o usar los de [Wikimedia commons](https://commons.wikimedia.org/wiki/Emoji){:target="_blank"}
 + Una cuenta de Google 
+
+[Paso 3](https://jolosan.github.io/encuentraZombi/es/step_3.html)

@@ -119,3 +119,5 @@ if( que es != "zombi"){
 --- /hints ---
 
 +¡Ahora es el momento de probar tu juego! Lee detenidamente los consejos de seguridad en el próximo paso antes de realizar cualquier prueba.
+
+[Paso 10](https://jolosan.github.io/encuentraZombi/es/step_10.html)

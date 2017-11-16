@@ -42,3 +42,5 @@ var datos = `51.90769026213801 -2.068905830383301 zombie.png
 var marcadores = data.split("\n");
 ```
 --- /collapse ---
+
+[Paso 5](https://jolosan.github.io/encuentraZombi/es/step_5.html)

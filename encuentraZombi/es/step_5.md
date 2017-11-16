@@ -90,3 +90,5 @@ todos_los_marcadores.push(marker);
 + Guarda tu código y actualiza la página. Prueba que todos tus marcadores aparezcan en el mapa. Si no se muestran correctamente, tal vez podrías consultar la **consola** de JavaScript para ver si hay algún mensaje de error que puedas resolver.
 
 [[[generic-javascript-opening-console]]]
+
+[Paso 6](https://jolosan.github.io/encuentraZombi/es/step_6.html)

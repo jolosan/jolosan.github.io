@@ -8,3 +8,6 @@ Aquí hay algunas ideas que podrías explorar para mejorar tu juego de zombis:
 + Agrega un sistema de puntuación más sofisticado.
 + Solo revela uno de los marcadores a la vez, mostrando el siguiente cada vez que se llegue al primero, para un estilo de juego más "búsqueda del tesoro".
 + Reemplaza todas las imágenes de marcador con iconos "?", ¡entonces no sabrás hasta que llegues a un marcador si encuentras una jugosa tienda de armas o una cueva de zombies!
+
+
+[Indice](https://jolosan.github.io/encuentraZombi)

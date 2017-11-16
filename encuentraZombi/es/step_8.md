@@ -23,3 +23,5 @@ posicion_antigua = marcador;
 ```
 
 + Guarda tu código y súbelo de nuevo a tu servicio de alojamiento web. Prueba el código caminando. Deberías ver cómo se mueve tu jugador, pero esta vez no habrá rastros de emoticones, solo un marcador para mostrar tu posición actual. ¡Uf!
+
+[Paso 9](https://jolosan.github.io/encuentraZombi/es/step_9.html)

@@ -20,3 +20,5 @@ Este proyecto cubre elementos de los siguientes aspectos del [plan de estudios d
 + [Design basic 2D and 3D assets](https://curriculum.raspberrypi.org/design/creator/){:target="_blank"}
 + [Apply abstraction and decomposition to solve more complex problems](https://curriculum.raspberrypi.org/programming/developer/){:target="_blank"}
 + [Engage and share with the digital making community](https://curriculum.raspberrypi.org/community-and-sharing/creator/){:target="_blank"}
+
+[Paso 2](https://jolosan.github.io/encuentraZombi/es/step_2.html)

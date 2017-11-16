@@ -37,3 +37,5 @@ var pos = new google.maps.LatLng(###, ###);
 ![Donde estás en el mapa](images/location-map.png)
 
 + Es posible que desees ajustar el valor de 'zoom' en tu mapa en esta etapa si está demasiado lejos para ver claramente la ubicación de los iconos. El uso de un valor mayor hará zoom en el mapa.
+
+[Paso 7](https://jolosan.github.io/encuentraZombi/es/step_7.html)

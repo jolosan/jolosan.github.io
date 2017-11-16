@@ -40,3 +40,5 @@ Ahora que has puesto su código en línea, tu clave API de Google Maps está vis
 ! [Restricción de la clave] (images/key-restriction.png)
 
 + Tu clave ahora solo debería funcionar en tu sitio web, y no en ningún otro lado. Ten en cuenta que si intentas mirar el mapa en tu ordenador, no funcionará porque la solicitud no proviene de tu sitio web. Es posible que desees crear una clave API adicional que no esté restringida, y SÓLO usa esa clave en tu ordenador privado para realizar pruebas.
+
+[Paso 8](https://jolosan.github.io/encuentraZombi/es/step_8.html)

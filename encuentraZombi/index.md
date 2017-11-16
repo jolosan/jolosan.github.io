@@ -1,6 +1,6 @@
 # Encuentra el zombi
 
-[Basado en el trabajo de] https://projects.raspberrypi.org/en/projects/wheres-zombie
+
 
 Proyecto basado en HTML y Javascript para Halloween.
 
@@ -27,3 +27,5 @@ Debes seguir los siguientes pasos:
 [Paso 10](https://jolosan.github.io/encuentraZombi/es/step_10.html)
 
 [Paso 11](https://jolosan.github.io/encuentraZombi/es/step_11.html)
+
+Basado en el trabajo de [Proyectos raspberry pi](https://projects.raspberrypi.org/en/projects/wheres-zombie)
