@@ -4,10 +4,10 @@ Este documento está basado en [raspberryjammod](https://github.com/arpruss/rasp
 
 Se realizará la instalación **single-player**
 
-Existen dos opciones, la primera es la más rápida, está todo preparado en un archivo comprimido y únicamente hay que descargar el .zip, descomprimir y reubicar los archivos en la carpeta personal. La segunda opción es la opción de hacer todo el proceso paso a paso:
+Existen dos opciones, la [primera](#primeraOpcion) es la más rápida, está todo preparado en un archivo comprimido y únicamente hay que descargar el .zip, descomprimir y reubicar los archivos en la carpeta personal. La [segunda opción](#segundaOpcion) es la opción de hacer todo el proceso paso a paso:
 
 
-# Primera opción
+# Primera opción <a id="primeraOpcion"></a>
 
 ## Paso 1:
 Descargamos el fichero desde el [siguiente enlace]: (https://mega.nz/#!cps0Ub6S!OhKjy9wEy1bs1IGmeKsTtJl6YqhLWJNemYt9OIfKLug)
@@ -27,10 +27,10 @@ Las siguientes tres imágenes muestran la secuencia de carga del programa:
 ![](images/Minecraft5.png)
 ![](images/Minecraft6.png)
 
-Ahora ya podemos seguir a partir del *paso 4* de la segunda opción.
+Ahora ya podemos seguir a partir del *[paso 4](#paso4)* de la segunda opción.
 
 
-# Segunda opción
+# Segunda opción <a id="segundaOpcion"></a>
 
 ## Paso 1:
 Vamos a [https://minecraft.net/download](https://minecraft.net/download) , descargamos la versión para linux y la ejecutamos una vez pulsando doble click. 
@@ -80,7 +80,7 @@ Volvemos a abrir minecraft, creamos un mundo nuevo en modo creativo y jugamos en
 
 ![](images/minecraft_mod_Raspberry_Jam.png)
 
-## Paso 4:
+## Paso 4: <a id="paso4"></a>
 Instalamos **idle3**
 
 Para ello debemos activar los repositorios de ubuntu: 
