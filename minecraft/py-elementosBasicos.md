@@ -52,7 +52,7 @@ False
 True
 ```
 
-Python proporciona las siguientes [operaciones lógicas](https://github.com/jolosan/minecraftpi/blob/master/py-operacionesLogicas.md)
+Python proporciona las siguientes [operaciones lógicas](https://jolosan.github.io/minecraft/py-operacionesLogicas.html)
 
 ### 1.1.3. Flotantes
 
