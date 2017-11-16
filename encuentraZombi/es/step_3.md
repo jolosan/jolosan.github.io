@@ -1,6 +1,6 @@
 ## Crea el mapa
 
-Si ya has completado el proyecto[Mapa de supervivencia del apocalipsis Zombi](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}, Notarás que los primeros pasos de este proyecto son muy similares. ** Asegurate de iniciar un nuevo archivo HTML para este proyecto en lugar de reutilizar tu código anterior. ** De lo contrario, te confundirás durante las etapas posteriores.
+Si ya has completado el proyecto [Mapa de supervivencia del apocalipsis Zombi](https://projects.raspberrypi.org/en/projects/zombie-apocalypse-map){:target="_blank"}, Notarás que los primeros pasos de este proyecto son muy similares. **Asegurate de iniciar un nuevo archivo HTML para este proyecto en lugar de reutilizar tu código anterior**. De lo contrario, te confundirás durante las etapas posteriores.
 
 + Crea y guarda un archivo llamado `index.html`. Necesitarás usar un editor de texto en tu computadora para hacer esto en lugar de un editor de HTML en línea.
 
@@ -32,11 +32,11 @@ Si ya has completado el proyecto[Mapa de supervivencia del apocalipsis Zombi](ht
 + Busca la etiqueta `<body>` en tu código. En una línea en blanco debajo de esta etiqueta, agrega el siguiente código para crear un `<div>` (un cuadro invisible) donde tu mapa aparecerá con el tiempo.
 
 ```html
-Mi map zombi
+Mi mapa zombi
 <div id="mapa_zombi"></div>
 ```
 
-+ Busca una ciudad en [Google Maps](http://maps.google.com){:target="_blank"}, luego haz clic derecho en el mapa y selecciona ** ¿Qué hay aquí? **. Aparecerá un cuadro en la parte inferior de la página que muestra la latitud y la longitud.
++ Busca una ciudad en [Google Maps](http://maps.google.com){:target="_blank"}, luego haz clic derecho en el mapa y selecciona **¿Qué hay aquí?**. Aparecerá un cuadro en la parte inferior de la página que muestra la latitud y la longitud.
 
 ![Encontrando la latitud y la longitud](images/whats-here.png)
 
