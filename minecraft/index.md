@@ -15,7 +15,7 @@ Este recurso no requiere hardware adicional además de la Raspberry Pi con Raspb
 
 Minecraft está instalado por defecto en Raspbian desde septiembre de 2014.
 
-Si quieres instalar el software necesario en Ubuntu, mira la página [instalación del software](software.md).
+Si quieres instalar el software necesario en Ubuntu o Lliurex, mira la página [instalación del software](minecraftUbuntu.md).
 
 ## La práctica inicial
 
