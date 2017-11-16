@@ -4,7 +4,9 @@
 Python proporciona un conjunto completo de operadores aritméticos.
 
 En la siguiente imagen se ve un esquema de todos los operadores: 
+
 ![](python/operadoresAritmeticos.png)
+
 
 El operador de división  produce un valor de coma flotante, no un entero; muchos otros lenguajes de programación producirían un entero, truncando la parte decimal.
 
@@ -221,3 +223,6 @@ z = pos.z
 dentroDeCasa = casaX < x < casaX + anchura and casaY < y < casaY + altura and casaZ < z < casaZ + longitud
 mc.postToChat("El jugador está en casa: " + str(dentroDeCasa))
 ```
+
+
+[Vuelve al índice](https://jolosan.github.io/minecraft/aprende.html)

@@ -441,3 +441,5 @@ distanciaZ = z2 - z1
 mc.postToChat("El jugador se ha movido x: " + str(distanciaX) + ", y: "
     + str(distanciaY) + ", y z: " + str(distanciaZ))
 ```
+
+[Vuelve al índice](https://jolosan.github.io/minecraft/aprende.html)
