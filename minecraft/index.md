@@ -9,13 +9,13 @@ Minecraft es un juego popular de construir mundos. Hay una versión gratuita de 
 ## Requisitos
 ### Hardware
 
-Este recurso no requiere hardware adicional además de la Raspberry Pi con Raspbian instalado en la tarjeta SD.
+Este recurso no requiere hardware adicional además de la Raspberry Pi con Raspbian instalado en la tarjeta SD o bien instalar el software necesario en Ubuntu (ver la siguiente sección).
 
 ### Software
 
 Minecraft está instalado por defecto en Raspbian desde septiembre de 2014.
 
-Si no lo tienes instalado, o necesitas probar si funciona, mira la página [instalación del software](software.md).
+Si quieres instalar el software necesario en Ubuntu, mira la página [instalación del software](software.md).
 
 ## La práctica inicial
 
@@ -33,4 +33,4 @@ A menos que se especifique otra cosa, todo lo que hay en éste repositorio está
 
 ***Minecraft Pi*** by the [Raspberry Pi Foundation](http://www.raspberrypi.org) está licenciado bajo [Creative Commons Attribution 4.0 International Licence](http://creativecommons.org/licenses/by-sa/4.0/).
 
-Basado en el trabajo de https://github.com/raspberrypilearning/getting-started-with-minecraft-pi
+[Basado en el trabajo de] https://github.com/raspberrypilearning/getting-started-with-minecraft-pi
