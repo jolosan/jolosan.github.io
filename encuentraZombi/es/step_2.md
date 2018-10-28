@@ -8,7 +8,7 @@
 ### Software
 
 + Navegador de Internet browser (ej.: Google Chrome)
-+ Editor de texto (ej.: Atom)
++ Editor de texto (ej.: Atom, Visual Studio Code, etc)
 + Si deseas jugar tu juego afuera, necesitarás un lugar para alojar tu página web en Internet. Una forma de hacerlo es alojar tu página de forma gratuita en GitHub.
 
 ### Recursos adicionales
