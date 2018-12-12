@@ -83,8 +83,8 @@ Prueba a ejecutarlo y trata de entenderlo.
 ```python
 import time
 import random
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 cuenta = 0
 while cuenta < 5:
@@ -103,8 +103,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 import time
 
@@ -121,8 +121,8 @@ El jugador bucea tanto tiempo como puede. El programa contará los segundos que 
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 import time
 
 record = 0
@@ -157,8 +157,8 @@ Este programa crea una pista de baile que cambia de color cada 5 segundos si el 
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 import time
 
 pos = mc.player.getTilePos()
@@ -191,8 +191,8 @@ Veras como salir de un bucle con *break*.
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 nombreUsuario = input("Introduce tu mensaje: ")
 
@@ -210,11 +210,12 @@ Deberás de encontrar y ponerte encima de un bloque de tipo diamante que ha sido
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
+
 import math
 import time
 import random
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 destX = random.randint(-127, 127)
 destZ = random.randint(-127, 127)
@@ -253,8 +254,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 pos = mc.player.getTilePos()
 x, y, z = pos.x, pos.y, pos.z
@@ -271,8 +272,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 
 def creaPilar(x, y, z, altura):
@@ -310,8 +311,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 
 bloque = 24  # piedra de arena
@@ -332,8 +333,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 listaUnidimensionalArcoiris = [0, 1, 2, 3, 4, 5]
 pos = mc.player.getTilePos()
@@ -352,8 +353,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 pos = mc.player.getTilePos()
 x, y, z = pos.x, pos.y, pos.z
@@ -381,8 +382,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 pos = mc.player.getTilePos()
 x = pos.x
 y = pos.y
