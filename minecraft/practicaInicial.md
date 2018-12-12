@@ -144,7 +144,7 @@ Los id (identificadores) de bloque son bastante fáciles de adivinar, únicament
 
 ```
 WOOD_PLANKS
-AQUA_STATIONARY
+WATER_STATIONARY
 GOLD_ORE
 GOLD_BLOCK
 DIAMOND_BLOCK
@@ -213,7 +213,8 @@ El código siguiente soltará una flor detrás nuestra a cualquier lugar que cam
 from mcpi import minecraft
 from time import sleep
 
-mc = Minecraft.create()
+
+mc = minecraft.Minecraft.create()
 
 flor = 38
 
@@ -332,7 +333,8 @@ Un bloque que es muy divertido para jugar es el de lava fluyendo.
 ```python
 from mcpi import minecraft
 
-mc = Minecraft.create()
+
+mc = minecraft.Minecraft.create()
 
 x, y, z = mc.player.getPos()
 
@@ -350,7 +352,8 @@ Lo fascinante de la lava es que cuando se enfría se convierte en roca. Muévete
 from mcpi import minecraft
 from time import sleep
 
-mc = Minecraft.create()
+
+mc = minecraft.Minecraft.create()
 
 x, y, z = mc.player.getPos()
 
