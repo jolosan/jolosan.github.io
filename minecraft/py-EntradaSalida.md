@@ -142,6 +142,7 @@ En el siguiente ejemplo se muestra como usar python para enviar un mensaje al mu
 ```python
 from mcpi import minecraft
 mc = minecraft.Minecraft.create()
+
 mc.postToChat("Hola, Mundo Minecraft")
 ```
 
