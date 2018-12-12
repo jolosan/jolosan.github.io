@@ -131,7 +131,7 @@ Las  cadenas soportan los operadores de comparación <,<=, ==, !=, > y >= . Esto
 La función **len()** devuelve la longitud de una cadena:
 
 ```python
-	len('un ejemplo')     10
+    len('un ejemplo')     10
     len(' otro ejemplo ') 15
     len('123'+'4'*2)      5
     len('')               0
@@ -315,8 +315,9 @@ Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
 #Connectate a Minecraft
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
+
 
 #Inicializa las variables x, y, z que representarán las coordenadas
 x = 10
@@ -335,8 +336,9 @@ Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
 #Connectate a Minecraft
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
+
 
 #Inicializa las variables x, y, z que representarán las coordenadas
 x = 10.0
@@ -366,8 +368,8 @@ Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
 #Connectate a Minecraft
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 mc.postToChat("Hola mundo de Minecraft")
 ```
 
@@ -387,8 +389,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 tipoDeBloque = int(input("Introduce un tipo de bloque: ")) # Los tipos de bloque están en 
 															# http://www.stuffaboutcode.com/p/minecraft-api-reference.html 
@@ -417,8 +419,8 @@ Prueba a ejecutarlo, tendrás que añadir código en la distanciaY y la distanci
 
 ```python
 import time
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 pos1 = mc.player.getTilePos()
 x1 = pos1.x
