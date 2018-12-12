@@ -114,9 +114,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
-
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 def ordenaPar(val1, val2):
     if val1 > val2:
@@ -164,7 +163,7 @@ def construyeEstructura(x, y, z, estructura):
         x = xInicial
 
 
-# obtén lla posición de la primera esquina
+# obtén la posición de la primera esquina
 input("Muévete a la primera esquina y pulsa Intro en esta ventana")
 pos = mc.player.getTilePos()
 x1, y1, z1 = pos.x, pos.y, pos.z
