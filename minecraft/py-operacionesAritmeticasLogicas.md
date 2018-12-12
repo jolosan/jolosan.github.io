@@ -173,7 +173,7 @@ tipoDebloque = mc.getBlock(x, y, z)
 tipoDebloque2 = mc.getBlock(x, y + 1, z)
 
 bajoElAgua = tipoDebloque == 9 and tipoDebloque2 == 9
-mc.postToChat("El jugador está bajo el agua: " + str(underwater))
+mc.postToChat("El jugador está bajo el agua: " + str(bajoElAgua))
 ```
 
 #### 2.2.5.4. ¿Estoy dentro de casa?
