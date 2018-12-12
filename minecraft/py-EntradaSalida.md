@@ -160,8 +160,8 @@ mc.postToChat(mensaje)
 ### 3.3.3. Crea un bloque cuyo tipo indicarás como entrada
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 tipoDeBloque = int(input("Introduce un tipo de bloque: "))
 pos = mc.player.getTilePos()
@@ -189,9 +189,10 @@ except:
 En el siguiente ejemplo el programa calcula la distancia que recorre en jugador en 10 segundos y lo muestra en la pantalla del mundo.
 
 ```python
-import time
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from time import sleep
+from mcpi import minecraft
+
+mc = minecraft.Minecraft.create()
 
 pos1 = mc.player.getTilePos()
 x1 = pos1.x
