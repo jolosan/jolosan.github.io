@@ -137,14 +137,14 @@ from mcpi import block
 Ahora puedes poner un bloque de la siguiente manera: 
 
 ```python
-mc.setBlock(x+3, y, z, block.piedra.id)
+mc.setBlock(x+3, y, z, block.STONE.id)
 ```
 
 Los id (identificadores) de bloque son bastante fáciles de adivinar, únicamente usa las mayúsculas, pero aquí hay algunos ejemplos para que te acostumbres a la forma en que se nombran.
 
 ```
 WOOD_PLANKS
-agua_STATIONARY
+AQUA_STATIONARY
 GOLD_ORE
 GOLD_BLOCK
 DIAMOND_BLOCK
@@ -210,7 +210,7 @@ Ahora que ya sabes como soltar bloques, vamos a usar nuestra ubicación en movim
 El código siguiente soltará una flor detrás nuestra a cualquier lugar que caminemos:
 
 ```python
-from mcpi.minecraft import Minecraft
+from mcpi import minecraft
 from time import sleep
 
 mc = Minecraft.create()
@@ -330,7 +330,7 @@ Será realmente lento renderizar los gráficos porque están ocurriendo muchas c
 Un bloque que es muy divertido para jugar es el de lava fluyendo.
 
 ```python
-from mcpi.minecraft import Minecraft
+from mcpi import minecraft
 
 mc = Minecraft.create()
 
@@ -347,7 +347,7 @@ Lo fascinante de la lava es que cuando se enfría se convierte en roca. Muévete
 
 
 ```python
-from mcpi.minecraft import Minecraft
+from mcpi import minecraft
 from time import sleep
 
 mc = Minecraft.create()
