@@ -119,8 +119,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 pos = mc.player.getPos()
 x = pos.x
@@ -139,8 +139,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 pos = mc.player.getTilePos()
 
@@ -161,8 +161,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 pos = mc.player.getPos()
 x = pos.x
@@ -181,8 +181,9 @@ mc.postToChat("El jugador está bajo el agua: " + str(underwater))
 Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nombre *construyeCasa.py*
 Prueba a ejecutarlo y trata de entenderlo.
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
+
 pos = mc.player.getTilePos()
 x = pos.x
 y = pos.y
@@ -205,8 +206,8 @@ Ahora copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con 
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 casaX = 10
 casaY = 11
