@@ -49,8 +49,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 respuesta = input("¿Quieres crear un crater? S/N ")
 
 if respuesta == "S":
@@ -65,8 +65,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 respuesta = input("¿Quieres hacer los bloques inmutables S/N ")
 
@@ -84,8 +84,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 x = 10
 y = 11
 z = 12
@@ -107,8 +107,8 @@ Copia el siguiente código en un archivo nuevo desde IDLE y guárdalo con el nom
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 puntos = int(input("Introduce tus puntos: "))
 if points > 6:
@@ -131,8 +131,8 @@ Crearemos una zona de ducha y cuando el jugador camine sobre ella, el agua se ac
 Prueba a ejecutarlo y trata de entenderlo.
 
 ```python
-from mcpi.minecraft import Minecraft
-mc = Minecraft.create()
+from mcpi import minecraft
+mc = minecraft.Minecraft.create()
 
 duchaX = -14
 duchaY = 74
