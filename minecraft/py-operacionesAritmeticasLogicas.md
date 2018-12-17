@@ -149,9 +149,9 @@ y = pos.y
 z = pos.z
 
 bloqueMasAltoY = mc.getHeight(x, z)
-encimaDelSuelo = y >= bloqueMasAltoY
+encimaDelSuelo = y <= bloqueMasAltoY
 
-mc.postToChat("El jugador está encima del suelo: " + str(ensimaDelSuelo))
+mc.postToChat("El jugador está encima del suelo: " + str(encimaDelSuelo))
 ```
 Este programa obtiene la posición actual del jugador, después la coordenada y del bloque más alto en la posición del jugador y después asigna a la variable encimaDelSuelo el valor lógico de evaluar *y >= bloqueMasAltoY*.
 
