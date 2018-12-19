@@ -111,13 +111,13 @@ from mcpi import minecraft
 mc = minecraft.Minecraft.create()
 
 puntos = int(input("Introduce tus puntos: "))
-if points > 6:
+if puntos > 6:
     mc.player.setPos(32, 18, -38)
-elif points > 4:
+elif puntos > 4:
     mc.player.setPos(60, 20, 32)
-elif points > 2:
+elif puntos > 2:
     mc.player.setPos(112, 10, 112)
-elif points <= 2:
+elif puntos <= 2:
     mc.player.setPos(0, 12, 20)
 else:
     mc.postToChat("No sé que hacer con esa información.")
