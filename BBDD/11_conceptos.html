@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>1.1. Conceptos | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-71"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li class="current-page-parent"><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="current-page-parent daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul>
+      <li id="active"><a href="11_conceptos.html" class="active no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_actividades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">1.1. Conceptos</h1></header>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id13">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Caso de estudio</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta13_10" class="block iDevice_content">
+
+<div id="ta14_10" class="block" style="display: block">
+<p>
+Pretendemos diseñar un sistema de información por ordenador que nos ayude en las siguientes tareas:
+</p>
+<ul>
+	<li>Programar la docencia (asignaturas) que se imparten en el IES (programación docente).</li>
+	<li>Gestionar las matrículas de  los alumnos y registrar sus calificaciones. </li>
+	<li>Organizar los recursos humanos (profesores) y de infraestructura (aulas) para impartir esa docencia (elaboración de horarios). </li>
+</ul>
+</div>
+
+</section>
+<section id="taquesQuestion0b13" class="block iDevice_content">
+Distribuidos por parejas, pensad en los tipos de elementos necesarios para cumplir los requisitos del enunciado.
+
+</section>
+<form name="feedback-form-quesFeedback0b13" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b13text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b13" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b13" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+
+<div id="sq0b14" class="feedback" style="display: block">
+<div id="taquesFeedback0b14" class="block" style="display: block">
+<ul>
+	<li>Los datos relativos a los alumnos, las asignaturas, los
+	grupos de asignaturas, los profesores, los departamentos, las aulas,
+	etc.</li>
+	<li>Una serie de operaciones que se pueden realizar sobre
+	dichos datos: crear una estructura de almacenamiento para cada uno de
+	los datos e introducir, modificar, eliminar y consultar valores para
+	cada estructura, etc.</li>
+</ul>
+</div>
+</div>
+</section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id14">
+<div class="iDevice emphasis0">
+<div id="ta14_1" class="block iDevice_content">
+<p>La siguiente figura ilustra cómo repercute el uso del concepto de Base de Datos en la forma de resolver el problema de la gestion docente en un IES.</p>
+<p><img src="gestionIES.png" title="Gestión Docente" style="display: block; margin-left: auto; margin-right: auto;" width="581" height="476" /></p>
+<p align="center">Figura 1. Gestión Docente de un IES usando Bases de Datos </p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id15">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Base de Datos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_153_2" class="block iDevice_content">
+<p>Una <b><span style="color: #333399;">Base de Datos</span></b> es un conjunto de datos que pertenecen al mismo contexto almacenados sistemáticamente para su uso posterior.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id16">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Sistema Gestor de Bases de Datos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta16_154_2" class="block iDevice_content">
+<div id="ta17_28_2" class="block" style="display: block;">
+<p>Los <span style="color: #3366ff;" color="#3366ff"><span style="color: #333399;" color="#333399"><b>Sistemas Gestores de Bases de Datos</b></span> </span><b><span style="color: #333399;" color="#333399">(SGBD)</span></b> son aplicaciones que permiten almacenar y posteriormente acceder a los datos de forma rápida y estructurada.</p>
+<p>En nuestro caso, el SGBD que utilizaremos en LibreOffice Base, el cual podemos <a href="https://es.libreoffice.org/descarga/libreoffice/" target="_blank" rel="noopener">descargar desde aquí</a>.</p>
+<p>Las operaciones fundamentales que debe proveer un SGBD son:</p>
+<ol>
+<li>Crear, modificar, eliminar y obtener la estructura de una base de datos.</li>
+<li>Introducir datos, modificarlos, eliminarlos y recuperarlos bajo diferentes criterios de búsqueda.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id17">
+<div class="iDevice emphasis0">
+<div id="ta17_1" class="block iDevice_content">
+<p>A nivel empresarial, o en grandes organizaciones, podemos ver los siguientes elementos del concepto de Base de Datos:</p>
+<p><span style="color: #3366ff;">Los<b> datos</b>:</span></p>
+<p>Representan el rastro que va registrando la actividad de la empresa en el SGBD. Los datos tienen un carácter compartido y deben gestionarse de forma que cada usuario acceda sólo a aquellos que le competan.</p>
+<p><span style="color: #3366ff;">El <b>software</b>:</span></p>
+<p>Está formado por el conjunto de programas que permiten a los usuarios manejar la información de la Base de Datos. Podemos distinguir dos categorías:</p>
+<ul>
+<li>el <b>SGBD</b>.</li>
+<li>Los <b>programas de aplicación</b>: son programas para cubrir las necesidades de información que especifican los usuarios de la organización u empresa.</li>
+</ul>
+<p><span style="color: #3366ff;">El <b>hardware</b>:</span></p>
+<p>Es el soporte informático sobre el que funciona el SGBD. Por ejemplo pueden haber diferentes servidores, red informática, puestos de trabajo, etc.</p>
+<p><span style="color: #3366ff;">Los <b>usuarios</b>:</span></p>
+<p>En función del uso que hagan del SGBD tenemos tres categorías:</p>
+<ul>
+<li>Usuario final</li>
+<li>Programador de aplicaciones</li>
+<li>Aministrador de la B.D.</li>
+</ul>
+<p>La siguiente figura ilustra los diferentes componentes en el contexto del problema que se ha planteado:</p>
+<p><img src="ComponentesGestionIES.png" title="Componentes del concepto de Base de Datos" style="display: block; margin-left: auto; margin-right: auto;" width="596" height="595" /></p>
+<p align="center">Figura 1.2. Componentes del concepto de Base de Datos.</p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="12_actividades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

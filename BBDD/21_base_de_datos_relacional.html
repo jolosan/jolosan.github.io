@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.1. Base de Datos Relacional | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-19"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="current-page-parent daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul>
+      <li id="active"><a href="21_base_de_datos_relacional.html" class="active no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_modelo_er.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.1. Base de Datos Relacional</h1></header>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id25">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Base de Datos Relacional</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta25_24_2" class="block iDevice_content">
+
+<p>
+Una <b><font color="#333399">base de datos relacional</font></b> es una base de datos que cumple con el <b><font color="#333399">modelo relacional</font></b>, el cual es el modelo más utilizado en la actualidad para modelar problemas reales y administrar datos dinámicamente.
+</p>
+<p>
+El <b><font color="#333399">modelo relacional </font></b>es un modelo de datos basado en la teoría de conjuntos. Su idea fundamental es el uso de <b><font color="#333399">relaciones</font></b>. Estas relaciones podrían considerarse en forma lógica como conjuntos de datos llamados <u>tuplas</u>.
+</p>
+<p>
+En este modelo todos los datos son almacenados en <b><font color="#333399">relaciones</font></b>, y como
+cada relación es un conjunto de datos, el orden en el que estos se
+almacenen no tiene mayor relevancia
+</p>
+<p>
+&nbsp;
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper readingIdevice em_iDevice" id="id26">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Características de las B.D. Relacionales</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta26_25_4" class="block iDevice_content">
+<ul>
+<li> Una base de datos relacional se compone de varias <span style="color: #3366ff;">tablas</span> o <span style="color: #3366ff;">relaciones</span>.</li>
+<li> No pueden existir dos tablas con el mismo nombre.</li>
+<li> Cada <span style="color: #3366ff;">tabla</span> es a su vez un <span style="color: #3366ff;">conjunto de registros</span> o filas.</li>
+<li> Cada <span style="color: #3366ff;">registro</span> representa un objeto del mundo real.</li>
+<li> Cada una de estos registros consta de varios <span style="color: #3366ff;">campos</span> o <span style="color: #3366ff;">columnas</span>.</li>
+<li> No pueden existir dos campos con el mismo nombre en la una misma tabla.</li>
+<li> Los valores almacenados en una columna deben ser del <span style="color: #3366ff;">mismo tipo de dato</span>.</li>
+<li> Todas las filas de una misma tabla poseen el mismo número de campos.</li>
+<li> La información puede ser recuperada o almacenada por medio de <span style="color: #3366ff;">consultas</span>.</li>
+</ul>
+</section>
+<section id="ta26_25_5" class="block iDevice_content">
+<p>Como has podido observar, las tablas son el elemento fundamental en una base de datos relacional. ¿Qué elementos podemos distinguir dentro de una tabla?</p>
+</section>
+<form name="feedback-form-26_25_6" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback26_25_6text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-26_25_6" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-26_25_6" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<ul>
+	<li>registros o filas.</li>
+	<li>campos o columnas.</li>
+</ul>
+</section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id27">
+<div class="iDevice emphasis0">
+<div id="ta27_1" class="block iDevice_content">
+<p>Las <span style="color: #3366ff;">fases del diseño</span> de una Base de Datos son las siguientes:</p>
+<p align="center"><img src="666173657344697365c3b16f.png" title="Fases del diseño de una Base de Datos" width="340" height="808" /></p>
+<p align="center">Figura 2.1. Fases del diseño de una Base de Datos</p>
+<p align="left"><b><span style="color: #333399;">Recolección y análisis de requerimientos:</span></b><br />Los diseñadores entrevistan a los futuros usuarios de la base de datos para recoger y documentar sus necesidades de información.  <br /><br /><b><span style="color: #333399;">Diseño conceptual:</span></b><br />Una vez recogidos todos los requerimientos, el siguiente paso es crear un esquema conceptual para la base de datos mediante un modelo de datos conceptual de alto nivel.<br /><br /><b><span style="color: #333399;">Esquema conceptual:</span></b><br />El esquema conceptual contiene una descripción detallada de los requerimientos de información de los usuarios, y contiene descripciones de los tipos de datos, relaciones entre ellos y restricciones. Nosotros utilizaremos para el diseño de esquemas conceptuales el modelo E-R (entidad‑relación).<br /><br /><br /><b><span style="color: #333399;">Diseño lógico de la base de datos:</span></b><br />El siguiente paso en el proceso de diseño consiste en implementar de hecho la base de datos con un S.G.B.D., transformando el modelo conceptual al modelo de datos empleados por el S.G.B.D..<br /><br /><b><span style="color: #333399;">Diseño físico de la base de datos:</span></b><br />En este paso se especifican las estructuras de almacenamiento internas y la organización de los archivos de la base de datos.</p>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="22_modelo_er.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

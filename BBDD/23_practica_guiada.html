@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>2.3. Practica guiada | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-23"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="current-page-parent daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul>
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li id="active"><a href="23_practica_guiada.html" class="active no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="222_elementos_del_modelo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="24_caso_de_estudio.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">2.3. Practica guiada</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id31">
+<div class="iDevice emphasis0">
+<div id="ta31_1" class="block iDevice_content">
+<p>Una vez estudiada la teoría del análisis y el diseño de las bases de datos relacionales vamos a realizar una práctica guiada.</p>
+<p> </p>
+<p><b><span style="color: #333399;">Partimos del siguiente problema:</span></b></p>
+<p>En una empresa trabajan una serie de empleados, de los que conocemos su DNI, nombre, dirección, fecha de nacimiento y cursos que han realizado. De los cursos conocemos la descripción, el nombre, la fecha y las horas. Cada uno de los trabajadores pertenece a un único departamento de la empresa de los que conocemos simplemente su nombre. Además sabemos que no existe ningún trabajador independiente, es decir, todos los trabajadores pertenecen a algún departamento.</p>
+<p><b> Paso 1: análisis del problema, comprensión del enunciado y extracción de las entidades y atributos.</b></p>
+<p style="padding-left: 30px;">En el siguiente párrafo se vuelve a repetir el enunciado del problema pero destacando las <b><span style="color: #99cc00;">entidades</span></b> y los <b><span style="color: #ffcc00;">atributos</span></b>:</p>
+<p style="padding-left: 30px;">En una empresa trabajan una serie de <b><span style="color: #99cc00;">empleados</span></b>, de los que conocemos su <b><span style="color: #ffcc00;">DNI</span></b>, <b><span style="color: #ffcc00;">nombre</span></b>, <b><span style="color: #ffcc00;">dirección</span></b>, <b><span style="color: #ffcc00;">fecha de nacimiento</span></b> y<b><span style="color: #ffcc00;"> cursos</span></b> que han realizado. De los <b><span style="color: #99cc00;">cursos</span></b> conocemos la <b><span style="color: #ffcc00;">descripción</span></b>, el <b><span style="color: #ffcc00;">nombre</span></b>, la <b><span style="color: #ffcc00;">fecha</span></b> y las <b><span style="color: #ffcc00;">horas</span></b>. Cada uno de los trabajadores pertenece a un único <b><span style="color: #99cc00;">departamento</span></b> de la empresa de los que conocemos simplemente su <b><span style="color: #ffcc00;">nombre</span></b>.</p>
+<p><b> Paso 2: Selección de relaciones</b></p>
+<p style="padding-left: 30px;">Las relaciones que aparecen en el enunciado del problema son:</p>
+<ul>
+<li><b><span style="color: #00ccff;">Pertenece</span></b>: esta relacion une las entidades <b><span style="color: #99cc00;">Trabajador</span></b> y <b><span style="color: #99cc00;">Departamento</span></b><span style="color: #99cc00;"><span style="color: #000000;">. Su significado es que un trabajador pertenece a un departamento.</span></span> Estudiando las cardinalidades tenemos que un trabajador pertenece a un único departamento y un departamento tiene varios trabajadores; por lo tanto la cardinalidad de esta relación es <b>1:N</b>.</li>
+<li><b><span style="color: #00ccff;">Realiza</span></b>: une las entidades Trabajador y Curso. Un trabajador puede realizar varios cursos y un curso puede ser realizado por varios trabajadores, luego la cardinalidad es <b>M:N</b>.</li>
+</ul>
+<p><b> Paso 3: Creación del diagrama Entidad - Relación</b></p>
+<p><img src="ProblemaEmpresaE-R.png" title="Diagrama E-R problema guiado" style="display: block; margin-left: auto; margin-right: auto;" width="697" height="182" /></p>
+<p align="center">Figura 2.3. Diagrama E-R problema guiado</p>
+<p align="left"><b> Paso 4: Creación del modelo relacional</b></p>
+<p style="padding-left: 30px;" align="left">Este es el modelo que posteriormente será implementado en el SGBD.</p>
+<ul>
+<li>Tenemos las siguientes tablas:</li>
+</ul>
+<blockquote>
+<blockquote>
+<p align="left"><b>Curso</b>(<u>ID_Curso</u>, Nombre, Descripción, Fecha, Horas)</p>
+<p align="left"><b>Trabajador</b>(<u>DNI</u>, Nombre, Dirección, FechaNacimiento)</p>
+<p align="left"><b>Departamento</b>(<u>Id_Dep</u>,Nombre)</p>
+</blockquote>
+</blockquote>
+<p align="left"> </p>
+<ul>
+<li>Tenemos las siguientes relaciones:</li>
+</ul>
+<p align="left"><b>M:N</b> Aparece una nueva tabla cuyos atributos son los campos clave de las relaciones que une y la clave está formada por la unión de ambos, luego los dos aparecen subrayados.</p>
+<blockquote>
+<blockquote>
+<p align="left"><b>Realiza</b>(ID_Curso, DNI)</p>
+</blockquote>
+</blockquote>
+<p align="left"><b>1:N</b> No aparece una nueva tabla; en su lugar, la tabla asociada a la entidad que relaciona varios individuos a uno solo, aparece un nuevo atributo con la <span style="color: #333399;"><b>clave principal</b></span> de la otra entidad.</p>
+<blockquote>
+<blockquote>
+<p align="left"><b>Trabajador</b>(<u>DNI</u>, Nombre, Dirección, FechaNacimiento, Id_Dep) </p>
+</blockquote>
+</blockquote>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="222_elementos_del_modelo.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="24_caso_de_estudio.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
