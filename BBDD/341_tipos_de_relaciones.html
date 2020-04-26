@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.4.1. Tipos de Relaciones | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-98"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_3_tablas.html" class="current-page-parent daddy">Tema 3. Tablas</a>
+   <ul>
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
+      <ul class="other-section">
+         <li><a href="321_modo_diseo.html" class="no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="34_relaciones.html" class="current-page-parent daddy">3.4. Relaciones</a>
+      <ul>
+         <li id="active"><a href="341_tipos_de_relaciones.html" class="active no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li><a href="342_establecer_relaciones.html" class="no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="34_relaciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="342_establecer_relaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.4.1. Tipos de Relaciones</h1></header>
+<article class="iDevice_wrapper readingIdevice em_iDevice" id="id211">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tipos de relaciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta211_24_4" class="block iDevice_content">
+En el apartado 2.2. estuvimos estudiando la cardinalidad de las relaciones.
+
+
+</section>
+<section id="ta211_24_5" class="block iDevice_content">
+<p>¿Cuántos tipos de relaciones existen?</p>
+</section>
+<form name="feedback-form-211_24_6" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback211_24_6text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-211_24_6" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-211_24_6" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<ul>
+<li>Uno a uno</li>
+<li>Uno a Varios</li>
+<li>Varios a uno</li>
+<li>Varios a varios</li>
+</ul></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id212">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Uno a uno </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta212_25_2" class="block iDevice_content">
+<p>
+Cada registro de la tabla A se relaciona con
+un único registro de la tabla B y cada registro de la tabla B sólo se
+relaciona con un elemento de la tabla A. Este tipo de relaciones son
+poco comunes.
+</p>
+<p>
+Podemos ejemplificar este tipo de relación si tuviéramos una tabla, llamada <i>Privada</i>, en la que se almacena información privada de cada alumno, como su DNI. En este caso, a cada registro de la tabla <i>Alumnos</i> le corresponde un registro de la tabla <i>Privada</i>, con el DNI del alumno del registro, y a cada registro de la tabla <i>Privada</i> le corresponde un único registro de la tabla <i>Alumnos</i>.
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id213">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Uno a varios </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta213_26_2" class="block iDevice_content">
+<p>En las relaciones de <i>uno a varios</i> cada registro de una tabla A, a la que llamaremos tabla primaria, puede estar enlazado con más de un registro de otra tabla B, a la que llamaremos tabla secundaria. En cambio, cada registro de la tabla B sólo puede estar enlazado a un registro de la tabla A.</p>
+<p>Tomando como referencia la base de datos de la empresa, cada trabajador de la tabla <b><i>Trabajadores</i></b> estará relacionado con un único registro de la tabla <i><b>Departamento</b></i>. Y a la inversa, a cada registro de la tabla <b><i>Departamento</i></b> le pueden corresponder varios trabajadores de la tabla <b><i>Trabajadores</i></b>. Para que te resulte más sencillo el razonamiento lógico sería el siguiente: cada trabajador sólo puede pertenecer a un departamento (lado <i>uno</i> de la relación) mientras que a un mismo departamento pueden pertenecer varios trabajadores (lado <i>muchos</i> de la relación).</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id214">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Varios a varios</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta214_27_2" class="block iDevice_content">
+<p>En las relaciones <i>Muchos a muchos</i> a cada registro de la tabla A se le pueden asociar varios registros de la tabla B y cada registro de la tabla B puede estar relacionado con más de un registro de la tabla A. Este tipo de relaciones dan lugar a una tabla nueva que contiene las claves principales de las dos tablas relacionadas, como se puede observar en la siguiente figura:</p>
+<p><img src="relacionesEmpresa.png" style="display: block; margin-left: auto; margin-right: auto;" width="625" height="159" /></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="34_relaciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="342_establecer_relaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

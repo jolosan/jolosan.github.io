@@ -5,26 +5,24 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Bases de Datos </title>
+<title>3.3.5. Autofiltro | Bases de Datos </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Joaquin López Sánchez-Montañés" />
 <link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
 <meta name="generator" content="eXeLearning  - exelearning.net" />
-<meta name="description" content="Curso de Bases de Datos utilizando LibreOffice Base. 
-" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-95"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Bases de Datos</div></header>
 <nav id="siteNav">
 <ul>
-   <li id="active"><a href="index.html" class="active daddy main-node">Bases de Datos</a></li>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
    <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
    <ul class="other-section">
       <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
@@ -45,8 +43,8 @@
       <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
    </ul>
    </li>
-   <li><a href="tema_3_tablas.html" class="daddy">Tema 3. Tablas</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="tema_3_tablas.html" class="current-page-parent daddy">Tema 3. Tablas</a>
+   <ul>
       <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
       <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
       <ul class="other-section">
@@ -54,13 +52,13 @@
          <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
       </ul>
       </li>
-      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
-      <ul class="other-section">
+      <li class="current-page-parent"><a href="33_edicin_de_datos_en_tablas.html" class="current-page-parent daddy">3.3. Edición de datos en tablas</a>
+      <ul>
          <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
          <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
          <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
          <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
-         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+         <li id="active"><a href="335_autofiltro.html" class="active no-ch">3.3.5. Autofiltro</a></li>
       </ul>
       </li>
       <li><a href="34_relaciones.html" class="daddy">3.4. Relaciones</a>
@@ -76,20 +74,68 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="334_ordenar_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="34_relaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Bases de Datos</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id0">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.3.5. Autofiltro</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id203">
 <div class="iDevice emphasis0">
-<div id="ta0_1" class="block iDevice_content">
-<p></p>
-<p> </p>
-<div align="justify">Copyright (c) [2020] Joaquin López Sánchez-Montañés.    <img src="gnu.png" alt="logo gnu" title="logo gnu" width="94" height="99" align="right" /></div>
-<div align="justify">Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled "GNU Free Documentation License"</div>
-<p></p>
+<div id="ta203_1" class="block iDevice_content">
+En determinadas ocasiones, nos puede interesar mostrar sólo ciertos
+registros de la tabla pero sin complicarnos demasiado la vida con la
+consulta. La forma más sencilla de hacerlo es utilizar la herramienta <b>Autofiltro</b>.
+Con ella conseguiremos mostrar en la ventana de datos sólo aquellos
+registros que coincidan en el valor de un campo con el seleccionado.
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id204">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Práctica Guiada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta204_25_2" class="block iDevice_content">
+
+<ol>
+	<li>Utiliza la base de datos <span class="Estilo5">Amigos</span> y abre la tabla listadoAmigos en el modo vista de datos. Recuerda que es suficiente con hacer doble clic sobre el nombre de la tabla.</li>
+	<li>Selecciona algún registro donde el valor para el campo <i>Ciudad</i> sea Valencia.</li>
+	<li>A continuación haz clic en el botón <b>Autofiltro </b><img src="botonAutoFiltro.png" width="39" align="middle" height="37" />.</li>
+	<li>En la ventana de datos de la tabla sólo aparecerán aquellos registros correspondientes a amigos de la ciudad de Castellón<i></i> como muestra la figura siguiente.</li>
+</ol>
+<div style="text-align: center">
+<img src="autofiltro.png" width="625" height="85" />
+</div>
+<p>
+<br />
+Para recuperar el aspecto original de la tabla y mostrar de nuevo todos 
+sus registros, haz clic en el icono Eliminar filtro/orden <img src="http://formacion.cnice.mec.es/materiales/93/cd/unidad_2/imagenes/boton0210.png" width="56" align="absmiddle" height="51" />.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper FreeTextIdevice" id="id205">
+<div class="iDevice emphasis0">
+<div id="ta205_1" class="block iDevice_content">
+
+<p>
+Existen modos de filtrados más potentes, concretamente la herramienta <b>Filtro estándar</b> permite muchas más posibilidades como se puede observar en la siguiente figura. 
+</p>
+<div style="text-align: center">
+<img src="filtroEstandar.png" width="625" height="184" />
+</div>
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+
 </div>
 </div>
 </article>
@@ -100,7 +146,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="334_ordenar_datos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="34_relaciones.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.

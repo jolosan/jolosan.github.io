@@ -5,26 +5,24 @@
 <link rel="stylesheet" type="text/css" href="content.css" />
 <link rel="stylesheet" type="text/css" href="nav.css" />
 <meta http-equiv="content-type" content="text/html;  charset=utf-8" />
-<title>Bases de Datos </title>
+<title>3.3.4. Ordenar datos | Bases de Datos </title>
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="author" content="Joaquin López Sánchez-Montañés" />
 <link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
 <meta name="generator" content="eXeLearning  - exelearning.net" />
-<meta name="description" content="Curso de Bases de Datos utilizando LibreOffice Base. 
-" />
 <!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
 <script type="text/javascript" src="exe_jquery.js"></script>
 <script type="text/javascript" src="common_i18n.js"></script>
 <script type="text/javascript" src="common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-<body class="exe-web-site" id="exe-node-0"><script type="text/javascript">document.body.className+=" js"</script>
+<body class="exe-web-site" id="exe-node-94"><script type="text/javascript">document.body.className+=" js"</script>
 <div id="content">
 <p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
 <header id="header" ><div id="headerContent">Bases de Datos</div></header>
 <nav id="siteNav">
 <ul>
-   <li id="active"><a href="index.html" class="active daddy main-node">Bases de Datos</a></li>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
    <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
    <ul class="other-section">
       <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
@@ -45,8 +43,8 @@
       <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
    </ul>
    </li>
-   <li><a href="tema_3_tablas.html" class="daddy">Tema 3. Tablas</a>
-   <ul class="other-section">
+   <li class="current-page-parent"><a href="tema_3_tablas.html" class="current-page-parent daddy">Tema 3. Tablas</a>
+   <ul>
       <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
       <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
       <ul class="other-section">
@@ -54,12 +52,12 @@
          <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
       </ul>
       </li>
-      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
-      <ul class="other-section">
+      <li class="current-page-parent"><a href="33_edicin_de_datos_en_tablas.html" class="current-page-parent daddy">3.3. Edición de datos en tablas</a>
+      <ul>
          <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
          <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
          <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
-         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li id="active"><a href="334_ordenar_datos.html" class="active no-ch">3.3.4. Ordenar datos</a></li>
          <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
       </ul>
       </li>
@@ -76,20 +74,51 @@
 </nav>
 <div id='topPagination'>
 <nav class="pagination noprt">
-<a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="333_buscar_informacin_en_la_tabla.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="335_autofiltro.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <div id="main-wrapper">
 <section id="main">
-<header id="nodeDecoration"><h1 id="nodeTitle">Bases de Datos</h1></header>
-<article class="iDevice_wrapper FreeTextIdevice" id="id0">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.3.4. Ordenar datos</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id202">
 <div class="iDevice emphasis0">
-<div id="ta0_1" class="block iDevice_content">
-<p></p>
-<p> </p>
-<div align="justify">Copyright (c) [2020] Joaquin López Sánchez-Montañés.    <img src="gnu.png" alt="logo gnu" title="logo gnu" width="94" height="99" align="right" /></div>
-<div align="justify">Permission is granted to copy, distribute and/or modify this document under the terms of the GNU Free Documentation License, Version 1.2 or any later version published by the Free Software Foundation; with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts. A copy of the license is included in the section entitled "GNU Free Documentation License"</div>
-<p></p>
+<div id="ta202_1" class="block iDevice_content">
+
+<p>
+Por defecto, cada vez que abrimos una tabla ésta mostrará los
+registros en el orden en que se han introducido. Sin embargo, podemos
+hacer que los registros se ordenen de forma creciente o descendiente en
+función de cualquiera de los campos de la tabla. 
+</p>
+<ul>
+	<li>Con la tabla <b>listadoAmigos</b> de la base de datos <b>Amigos</b> haz clic sobre el nombre del campo por el que quieres que se ordenen 
+	los registros, por ejemplo apellido. Después de marcarlo, aparecerá seleccionada 
+	la columna correspondiente. </li>
+	<li>A continuación haz clic sobre el botón de ordenación 
+	automática en orden ascendente <img src="ordenarAscendente.png" width="34" height="39" /> 
+	o en el botón de ordenación automática en orden descendente <img src="ordenarA.png" width="35" height="36" /> 
+	según necesites.</li>
+	<li>Automáticamente aparecerá la tabla con los registros ordenados 
+	como muestra la figura siguiente.</li>
+</ul>
+<div style="text-align: center">
+<img src="ordenarApellido.png" width="620" height="76" />
+</div>
+<div style="text-align: center" align="left">
+ 
+</div>
+<div style="text-align: center" align="left">
+Pero aún podemos hacer una ordenación más sofisticada basada en la ordenación sucesiva de hasta tres campos, como se puede observar en la siguiente figura.
+</div>
+<div style="text-align: center" align="left">
+ 
+</div>
+<div style="text-align: center" align="left">
+<img src="ordenarTresCampos.png" width="620" height="198" />
+</div>
+<div style="text-align: center" align="left">
+</div>
+
 </div>
 </div>
 </article>
@@ -100,7 +129,7 @@
 </div>
 <div id='bottomPagination'>
 <nav class="pagination noprt">
-<a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+<a href="333_buscar_informacin_en_la_tabla.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="335_autofiltro.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
 </nav>
 </div>
 <footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.

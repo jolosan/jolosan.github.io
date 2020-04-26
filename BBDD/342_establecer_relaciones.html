@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.4.2. Establecer Relaciones | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-99"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_3_tablas.html" class="current-page-parent daddy">Tema 3. Tablas</a>
+   <ul>
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
+      <ul class="other-section">
+         <li><a href="321_modo_diseo.html" class="no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="34_relaciones.html" class="current-page-parent daddy">3.4. Relaciones</a>
+      <ul>
+         <li><a href="341_tipos_de_relaciones.html" class="no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li id="active"><a href="342_establecer_relaciones.html" class="active no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="341_tipos_de_relaciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="35_actividades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.4.2. Establecer Relaciones</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id215">
+<div class="iDevice emphasis0">
+<div id="ta215_1" class="block iDevice_content">
+<p>Como requisito indispensable para establecer una relación entre dos tablas es necesario que ambas tablas tengan un <strong>campo en común</strong> que además debe cumplir una serie de requisitos:</p>
+<p>El campo debe ser del <b>mismo tipo de datos</b> en ambas tablas. Habitualmente se suelen utilizar tipos enteros (INTEGER) para este propósito, aunque nos valdría igualmente cualquier otro tipo siempre y cuando sea el mismo en las dos tablas.</p>
+<p>Además:</p>
+<ul>
+<li>La propiedad <b>Tamaño del campo</b> debe ser igual en ambas tablas.</li>
+<li>Si el campo en la tabla primaria está definido como de <b>Valor automático</b> en la tabla secundaria debe estar definido como <b>INTEGER</b>.</li>
+<li>El campo común debe ser <b><i>Clave principal</i> </b>en la tabla primaria.</li>
+</ul>
+<p></p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id216">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Práctica guiada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta216_23_2" class="block iDevice_content">
+<p>En esta práctica vamos a ver como crear las relaciones entre las tablas de la base de datos empresa vista en el apartado 4.1.</p>
+<p> </p>
+<p>1. Primero necesitamos crear una base de datos llamada <b>Empresa</b> con las cuatro tablas necesarias y el tipo de datos necesario para cada campo. Además deberás definir las claves principales en los campos necesarios (mira las siguientes figuras).</p>
+<p> </p>
+<center>
+<table border="0">
+<tbody>
+<tr>
+<td style="text-align: center;" align="center"><span style="color: #333399;"><b>Tabla Trabajadores <br /></b></span></td>
+<td align="center"><b><span style="color: #333399;">Tabla Departamentos</span> <br /></b></td>
+</tr>
+<tr>
+<td> <img src="tablaTrabajadores.png" width="288" height="108" /></td>
+<td> <img src="tablaDepartamentos.png" width="288" height="57" /></td>
+</tr>
+<tr>
+<td align="center"><span style="color: #333399;"><b> Tabla Cursos<br /></b></span></td>
+<td align="center"><span style="color: #333399;"><b> Tabla Realiza<br /></b></span></td>
+</tr>
+<tr>
+<td> <img src="tablasCursos.png" width="307" height="112" /></td>
+<td>
+<p><img src="tablaRealiza.png" width="290" height="63" /></p>
+<p> </p>
+</td>
+</tr>
+</tbody>
+</table>
+</center>
+<p>2. Desde la ventana principal de OpenOffice Base ejecuta el comando <b>Herramientas &gt; Relaciones</b> para mostrar la ventana <b>Diseño de relación</b> que puedes ver en la figura siguiente.</p>
+<p><img src="relaciones1.png" style="display: block; margin-left: auto; margin-right: auto;" width="625" height="421" /></p>
+<p>3.  Ahora debemos añadir las cuatro tablas. Haz clic en el botón <b>Cerrar</b> del cuadro de diálogo <b>Agregar tablas</b>.</p>
+<p><img src="relaciones2.png" style="display: block; margin-left: auto; margin-right: auto;" width="625" height="324" /></p>
+<p>4.  A continuación vamos a establecer la relación entre el campo <b>ID_Curso</b> de la tabla <b>Cursos</b> y el campo <b><i>Id_Curso</i></b> de la tabla <b>Realiza</b>. Para ello haz clic en el campo <i>Id_Curso</i> de la tabla <i>Cursos</i> y sin soltar arrastra hasta caer sobre el campo <i>ID_Curso </i>de la tabla Realiza. En el cuadro de diálogo relaciones deja la configuración por defecto. Aparecerá una línea que unirá ambos campos, indicando que se ha establecido la relación, como se aprecia en la siguiente figura.</p>
+<p><img src="relaciones3.png" style="display: block; margin-left: auto; margin-right: auto;" width="625" height="389" /></p>
+<p>5. Termina de crear el resto de relaciones hasta obtener la siguiente figura.</p>
+<p><img src="relacionesEmpresa.png" style="display: block; margin-left: auto; margin-right: auto;" width="625" height="159" /></p>
+<p> </p>
+<p> </p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id217">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Configurar las relaciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta217_24_2" class="block iDevice_content">
+<p>
+Una vez establecida la relación podemos modificar sus características.
+Para ello será suficiente con hacer doble clic sobre la línea que
+representa la relación o bien hacer clic con el botón derecho sobre la
+misma y elegir el comando <b>Editar</b>. En ambos casos,
+OpenOffice Base muestra el cuadro de diálogo que aparece en la figura siguiente con la configuración por defecto de la relación.
+</p>
+<p>
+&nbsp;
+</p>
+<div style="text-align: center">
+<img src="relaciones4.png" width="350" height="316" />
+</div>
+ 
+<p>
+&nbsp;
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+La relación establecida entre las dos tablas implica que cualquier
+modificación realizada sobre la información que contiene la tabla
+primaria afectará a los datos de la tabla secundaria. Si por ejemplo
+eliminamos el un curso de la tabla <i>Cursos</i> esto afectará a todos los registros de la tabla Trabajadores que hayan realizado ese curso. Determinar cómo reaccionará la base de
+datos ante estas modificaciones y otras similares es lo que permite
+configurar el cuadro de diálogo <b>Relaciones</b>. 
+</p>
+<p>
+La
+parte inferior de la ventana está dividida en dos partes
+correspondientes a la acción que llevará a cabo la base de datos cuando
+actualicemos y cuando eliminemos un registro de la tabla primaria
+respectivamente (ver recuadro rojo en la figura anterior). Si seleccionamos la opción <b>Ninguna acción</b>
+los cambios en la tabla primaria <b>no afectarán</b> a la tabla secundaria.
+Esta decisión, probablemente, nos conduzca a inconsistencias en la base
+de datos y por lo tanto <b>no es recomendable</b>.
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+En cambio, si elegimos <b>Actualizar y Eliminar cascada</b>
+la tabla secundaria verá sus registros eliminados o actualizados en
+función de la acción que se lleve a cabo en la tabla primaria.
+Seguramente ésta sea la elección más segura y conservadora de las
+posibles y es la que debemos utilizar en la mayoría de los casos.
+</p>
+<p>
+La posibilidad de <b>Poner null</b>
+provocará que, automáticamente, el campo relacionado en la tabla
+secundaria pase a null (vacío) cuando se modifique la tabla primaria.
+</p>
+<p>
+Por último, la opción <b>Predeterminar</b>
+hace que el campo relacionado de la tabla secundaria sea sustituido por
+el valor predeterminado definido en la creación de la tabla.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="341_tipos_de_relaciones.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="35_actividades.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

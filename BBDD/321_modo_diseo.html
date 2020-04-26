@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>3.2.1. Modo diseño | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-88"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_3_tablas.html" class="current-page-parent daddy">Tema 3. Tablas</a>
+   <ul>
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li class="current-page-parent"><a href="32_creacin_de_tablas.html" class="current-page-parent daddy">3.2. Creación de Tablas</a>
+      <ul>
+         <li id="active"><a href="321_modo_diseo.html" class="active no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li><a href="34_relaciones.html" class="daddy">3.4. Relaciones</a>
+      <ul class="other-section">
+         <li><a href="341_tipos_de_relaciones.html" class="no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li><a href="342_establecer_relaciones.html" class="no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="32_creacin_de_tablas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="322_utilizando_el_asistente.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">3.2.1. Modo diseño</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id184">
+<div class="iDevice emphasis0">
+<div id="ta184_1" class="block iDevice_content">
+<p>En la ventana Diseño de tabla que podemos observar en la figura siguiente, encontramos la típica barra de menús de OpenOffice.org y debajo una barra de herramientas reducida cuyas funciones se activarán en cuanto empecemos a introducir información.</p>
+<p><img src="7461626c6144697365c3b16f31.png" title="Modo Diseño" style="display: block; margin-left: auto; margin-right: auto;" width="675" height="458" /></p>
+<p align="center">Figura 3.2.: Modo Diseño de Tablas</p>
+<p>Una vez introducidos los campos de nuestro ejemplo, la figura anterior se transformaría en la siguiente:</p>
+<p align="center"><img src="7461626c61566973746144697365c3b16f.png" title="Campos Introducidos" width="400" height="213" /></p>
+<p align="center">Figura 3.3. Campos Introducidos</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id185">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Campos de una Tabla</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta185_25_2" class="block iDevice_content">
+<p>
+Como ya hemos comentado, la estructura interna de la tabla está
+formada por campos. Estos campos determinan el carácter de la
+información que almacenan y se identifican mediante un “nombre de
+campo”. En principio puede ser válida cualquier denominación. Sin
+embargo, es conveniente cumplir algunas normas:
+</p>
+<ul>
+	<li>El nombre del campo debe describir, en la medida de lo posible, la información que almacena. </li>
+	<li>Intenta que no sea tan corto que no permita adivinar su contenido, ni tan largo que resulte incómodo trabajar con él.</li>
+	<li>Es
+	aconsejable no utilizar símbolos o caracteres especiales (guiones,
+	espacios en blanco,…) que puedan generar problemas con ciertas
+	operaciones o al trasladar la base de datos a otros sistemas.</li>
+	<li>Elige
+	con cuidado el tipo de datos para optimizar al máximo la base de datos.
+	A continuación comentamos las características de los tipos de datos
+	disponibles en Base.</li>
+	<li>No dudes en utilizar la columna <b>Descripción</b> para indicar el propósito de cada uno de los campos.</li>
+	<li>El nombre de los campos no puede empezar por espacios ni contener signos de puntuación ni corchetes.</li>
+	<li>No pueden existir dos campos con el mismo nombre en la misma tabla.</li>
+</ul>
+<br />
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id186">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tipos de Datos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta186_26_2" class="block iDevice_content">
+
+<p>
+El <i>Tipo de datos</i> determina el carácter de la información
+que contiene el campo. No es lo mismo almacenar valores numéricos con
+los que posteriormente podremos realizar operaciones matemáticas, que
+guardar textos como los nombres de los alumnos. 
+</p>
+<p>
+Después de introducir el nombre del campo, al desplegar el cuadro de lista asociado a la columna <b>Tipo de campo</b> aparecerá una larga lista de posibilidades como puedes ver en la figura siguiente: 
+</p>
+<p align="center">
+<img src="tiposCampo.png" title="Tipos de Campo" width="318" height="243" />
+</p>
+<p align="center">
+Figura 3.4. Tipos de Campo 
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+Entre los tipos de datos, los más importantes son:
+</p>
+<ul>
+	<li><b><i>Tiny Integer</i></b>: Utilizado habitualmente para números enteros pequeños comprendidos entre -128 y 128.</li>
+	<li><b><i>BigInt</i></b>: Corresponde a un número entero de hasta 19 cifras.</li>
+	<li><b><i>Nota</i></b>: Tipo carácter, destinado a almacenar textos de gran longitud como pueden ser comentarios, etc.</li>
+	<li><b><i>Texto fijo</i></b>: Muy útil para almacenar datos de tipo carácter con una longitud fija, que especificamos en la propiedad <b>Longitud</b>.</li>
+	<li><b><i>Número</i></b>:
+	Es el tipo numérico más flexible. Permite determinar su tamaño y su
+	precisión en cuanto al número de valores decimales que puede
+	representar.</li>
+	<li><b><i>Decimal</i></b>: Número en punto flotante equivalente al anterior.</li>
+	<li><b><i>Integer</i></b>: Es el tipo de datos normalmente utilizado para almacenar enteros. Admite valores comprendidos entre -2147483648 y 2147483648.</li>
+	<li><b><i>Small Integer</i></b>:
+	Este tipo de datos de números enteros sólo se suele utilizar si se
+	necesita economizar espacio de almacenamiento, ya que su rango va desde
+	-32768 hasta +32767.</li>
+	<li><b><i>Double</i></b>: Tipo de datos numéricos con decimales en el que se aplica el redondeo.</li>
+	<li><b><i>Texto</i></b><i> [VARCHAR]</i>: Tipo de campo destinado a cadenas de caracteres cuya longitud no es fija. En la propiedad <b>Longitud</b> se determina su longitud máxima.</li>
+	<li><b><i>Sí/No</i></b>: Este tipo de datos, conocido como “booleano”, se utiliza para representar datos Verdadero/Falso o Sí/No o 1/0.</li>
+	<li><b><i>Fecha, Hora y Fecha/Hora</i></b>:
+	Estos tipos de datos se utilizan para almacenar información referida a
+	horas, fechas o su combinación. El formato de presentación lo podemos
+	seleccionar en la propiedad <b>Formato</b>.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id187">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Propiedades de los tipos de datos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta187_27_2" class="block iDevice_content">
+
+<p>
+Cada vez que elegimos un tipo de dato, la parte inferior de la ventana
+de diseño muestra una serie de opciones que permiten ajustar el
+comportamiento del campo a las necesidades de cada situación. Sin ir
+más lejos, en la figura siguiente puedes ver las propiedades del tipo <b>Texto</b>. En este caso, cabe destacar la segunda de las opciones denominada <b>Longitud</b>, con la que podrás establecer el tamaño máximo de la cadena de caracteres que contendrá el campo.
+</p>
+<div style="text-align: center">
+<img src="PropiedadesCampso.png" title="Propiedades del tipo de datos Texto" width="628" height="132" />
+</div>
+<p align="center">
+Figura 3.5. Propiedades del tipo de datos Texto
+</p>
+<p>
+Existen propiedades compartidas por más de un tipo de dato y otras
+específicas sólo disponibles en algunos de ellos. A continuación
+comentamos las más importantes:
+</p>
+<ul>
+	<li><b>Valor automático</b>:
+	Al activar esta opción será OpenOffice Base el encargado de añadir
+	nuevos valores al campo. Los valores son secuenciales y distintos por
+	lo que esta propiedad resulta especialmente útil para asociarla a
+	campos clave de la base de datos. Sólo aparece en los campos de tipo <i>Integer</i>. </li>
+	<li><b>Expresión incremento automático</b>: Esta propiedad aparece automáticamente tras definir la opción anterior como <b><i>Sí</i></b>.
+	Su función es la de establecer el valor de incremento del campo, y por
+	lo general, la expresión predeterminada cumplirá perfectamente nuestras
+	pretensiones.</li>
+	<li><b>Tamaño</b>: Especifica el número de
+	caracteres para los campos de tipo texto o la longitud máxima en los
+	tipos numéricos. Las posiciones decimales también cuentan y se restarán
+	del tamaño total.</li>
+	<li><b>Decimales</b>: Determinar el número de valores decimales que deseamos almacenar en el campo.</li>
+	<li><b>Ejemplo de formato</b>: En
+	este apartado podremos definir de forma precisa el modelo de representación para
+	los datos en el campo. </li>
+	<li><b>Valor predeterminado</b>: Aquí podemos escribir el valor por defecto que tomará el campo después de añadir un nuevo registro. </li>
+	<li><b>Entrada requerida</b>: Si decides elegir la opción <i>Si</i>
+	para esta propiedad estaremos obligando al usuario a introducir un dato
+	en este campo, si no lo haces el registro no se podrá guardar en la
+	tabla. </li>
+</ul>
+<p align="left">
+<br />
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice" id="id188">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Creación de una nueva Base de Datos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta188_10" class="block iDevice_content">
+Vamos a ver los pasos necesarios para crear una nueva base de datos.
+
+</section>
+<section id="taquesQuestion0b188" class="block iDevice_content">
+<p>En primer lugar, desde la ventana de Base, seleccionaremos <b>Archivo</b> --&gt; <b>Nuevo</b> --&gt; <b>Base</b> <b>de Datos</b></p>
+<p>Nos aparecerá la siguiente ventana:</p>
+<p align="center"><img src="Screenshot_20200426_092104.png" alt="" width="706" height="617" /></p>
+<p align="left">Pulsamos el boton <b>Siguente</b> y aparece la siguiente ventana:</p>
+<p align="center"><img src="Screenshot_20200426_092121.png" alt="" width="706" height="619" /></p>
+<p align="left">Pulsamos el botón <b>Finalizar</b> y nos solicitará una ubicación y un nombre para almacenar la nueva base de dato. Introcude el nombre de <b>Amigos</b> para esta nueva base de datos.</p>
+<p style="text-align: center;" align="left"><img src="Screenshot_20200426_092208.png" alt="" width="1002" height="452" /></p>
+<p> </p>
+<p> </p>
+</section>
+<form name="feedback-form-quesFeedback0b188" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b188text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b188" value="Mostrar retroalimentación" class="feedbackbutton feedback-toggler" /></p>
+</div>
+<section id="feedback-quesFeedback0b188" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p>Comprueba que se ha creado el fichero de la nueva base de datos en la carpeta que has seleccionado y que su extensión es <b>.odb</b>.</p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id189">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad 3.1.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta189_28_2" class="block iDevice_content">
+
+<p>
+Entra en la base de datos que has creado anteriormente (<b>Amigos</b>) y crea una tabla llamada <b>listadoAmigos</b> en modo diseño similar a la vista en la <b>figura 3.3.</b>
+</p>
+<p>
+Fíjate en el tipo de  datos de cada campo y cambia la longitud por defecto de los campos de texto para optimizar el espacio que ocupará el fichero de la base de datos cuando hayamos introducido información.
+</p>
+<p>
+Añade una descripción a cada campo. 
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id190">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Campos claves </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta190_29_2" class="block iDevice_content">
+<p>
+En cualquier base de datos los registros
+incluidos en sus diferentes tablas deben estar perfectamente
+identificados y de esto se encargan las claves o llaves. Trasladando
+este concepto a la vida real, cada ciudadano tiene un número de DNI,
+puede haber dos personas con igual nombre e incluso apellidos iguales,
+pero ambos se diferenciarán por su número de DNI, que es único en
+“teoría”.
+</p>
+<p>
+Cada tabla debe contener al menos un campo que
+permita identificar unívocamente cada registro. Este campo puede ser
+real, como el propio DNI de una persona. O puede ser un valor que nos
+inventemos para conseguir el mismo fin, como un número que asignemos
+automáticamente a cada registro, asegurándonos (realmente lo hará Base)
+de que no se repita. Otra opción es utilizar una combinación de campos
+para identificar los registros de la tabla. En nuestro ejemplo del listado de amigos hemos de definir la combinación de <i>Nombre</i> y <i>Apellidos</i> de
+nuestra tabla para este fin. 
+</p>
+<p>
+&nbsp;
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id191">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad 3.2.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta191_30_2" class="block iDevice_content">
+
+<p>
+En esta actividad deberás una clave a nuestra primera tabla <b>listadoAmigos</b>.
+</p>
+<p>
+<i>Si necesitamos utilizar más de un campo para componer la llave de una
+tabla, será suficiente con seleccionar en primer lugar los campos que
+deseamos utilizar para después hacer clic con el botón derecho y elegir
+el comando <b>Llave primaria</b>.</i>
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id192">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Índices</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta192_21_2" class="block iDevice_content">
+
+<meta http-equiv="CONTENT-TYPE" content="text/html; charset=utf-8" />
+<title></title>
+<meta name="GENERATOR" content="OpenOffice.org 2.4  (Linux)" />
+<style type="text/css">
+<!--
+@page { size: 21cm 29.7cm; margin: 2cm }
+P { margin-top: 0.05cm; margin-bottom: 0.05cm; font-family: "DejaVuSans", "Albany AMT", "Albany", "Arial", "Nimbus Sans L", "Bitstream Vera Sans", "Helvetica", "Lucida", "Geneva", "Helmet", "Andale Sans UI", "Arial Unicode MS", "Lucida Sans Unicode", "Tahoma", sans-serif; font-size: 10pt }
+-->
+</style>
+<p>
+Un índice permite el acceso a la base de datos rápidamente,
+cuando la consulta de los datos sea através de los campos definidos
+en el índice. Cuando se diseña la tabla, podemos definir los índices mediante el botón <b>Diseño de</b> <b>Indice</b>.
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+Desde la ventana que aparece, podemos definir índices para uno o varios campos de la tabla. En la siguiente figura se puede ver que por defecto se crean unos índices de forma automática para los campos clave de una tabla.
+</p>
+<p align="center">
+<img src="Indices.png" title="Diseño de índices" width="586" height="329" />
+</p>
+<p align="center">
+Figura 3.6. Diseño de índices 
+</p>
+<p>
+&nbsp;
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="32_creacin_de_tablas.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="322_utilizando_el_asistente.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
