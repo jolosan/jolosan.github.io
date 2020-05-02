@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4.2.2. Búsqueda dentro de una consulta | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-135"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_3_tablas.html" class="daddy">Tema 3. Tablas</a>
+   <ul class="other-section">
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
+      <ul class="other-section">
+         <li><a href="321_modo_diseo.html" class="no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li><a href="34_relaciones.html" class="daddy">3.4. Relaciones</a>
+      <ul class="other-section">
+         <li><a href="341_tipos_de_relaciones.html" class="no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li><a href="342_establecer_relaciones.html" class="no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_4_consultas.html" class="current-page-parent daddy">Tema 4. Consultas</a>
+   <ul>
+      <li><a href="41_creacin_de_consultas.html" class="no-ch">4.1. Creación de Consultas</a></li>
+      <li class="current-page-parent"><a href="42_modo_diseo.html" class="current-page-parent daddy">4.2. Modo diseño</a>
+      <ul>
+         <li><a href="421_elementos_de_la_rejilla_de_diseo.html" class="daddy">4.2.1. Elementos de la rejilla de diseño</a>
+         <ul class="other-section">
+            <li><a href="prctica_guiada.html" class="no-ch">Práctica Guiada</a></li>
+         </ul>
+         </li>
+         <li id="active"><a href="422_bsqueda_dentro_de_una_consulta.html" class="active no-ch">4.2.2. Búsqueda dentro de una consulta</a></li>
+         <li><a href="423_filtrado_de_registros.html" class="no-ch">4.2.3. Filtrado de registros</a></li>
+         <li><a href="424_significado_de_null.html" class="no-ch">4.2.4. Significado de NULL</a></li>
+         <li><a href="425_consultas_sobre_varias_tablas.html" class="no-ch">4.2.5. Consultas sobre varias tablas</a></li>
+         <li><a href="426_consultas_de_agrupacin_y_totales.html" class="no-ch">4.2.6. Consultas de agrupación y totales</a></li>
+      </ul>
+      </li>
+      <li><a href="43_modo_sql.html" class="no-ch">4.3. Modo SQL</a></li>
+      <li><a href="44_vistas.html" class="no-ch">4.4. Vistas</a></li>
+      <li><a href="45_actividades.html" class="no-ch">4.5. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="prctica_guiada.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="423_filtrado_de_registros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4.2.2. Búsqueda dentro de una consulta</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id222">
+<div class="iDevice emphasis0">
+<div id="ta222_1" class="block iDevice_content">
+<p>
+Después de ejecutar la consulta y tener acceso a los registros
+resultantes, podemos llevar a cabo diferentes operaciones con ellos. 
+</p>
+<p>
+Algunas
+operaciones de edición no están permitidas. Esta circunstancia la
+encontraremos sobre todo cuando realicemos consultas sobre varias tablas.
+</p>
+
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id223">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Buscar información en el resultado de la consulta</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta223_25_2" class="block iDevice_content">
+
+<p>
+Dentro del resultado de una consulta, también podemos buscar y localizar
+cualquier información. Para comprobarlo selecciona el botón <b>Buscar registro de datos</b> (el de la lupa) para mostrar el cuadro de diálogo que aparece en la siguiente figura.
+</p>
+<p>
+&nbsp;
+</p>
+<div style="text-align: center">
+<img src="consultaBusqueda.png" width="625" height="414" />
+</div>
+<p>
+&nbsp;
+</p>
+<p>
+En la primera sección tenemos tres posibilidades aunque la que usaremos
+con más frecuencia será sin lugar a dudas la primera, donde debemos
+introducir la palabra o término que deseamos buscar. Otras posibilidades
+serán localizar registros que contengan valores NULL.
+</p>
+<p>
+A continuación, en la
+siguiente sección del cuadro de diálogo, debemos indicar si
+la búsqueda deseamos localizarla en un campo concreto de la consulta o en
+cualquiera de ellos.
+</p>
+<p>
+Por último, dentro del apartado <b>Configuración</b> encontraremos diferentes opciones para concretar el ámbito de la búsqueda.
+</p>
+<ul>
+	<li><b>Posición</b>: Aquí podemos elegir la
+	situación exacta del campo donde se buscará el término que queremos
+	localizar: al principio o al final del campo, en cualquier parte del
+	mismo o en todo el campo. Esta última opción implica que la totalidad
+	del contenido del campo tiene que coincidir con el término de búsqueda.</li>
+	<li><b>Usar formato de campo</b>:
+	Una opción a tener muy en cuenta si necesitamos localizar valores
+	de fecha y hora en el resultado de la consulta. El motivo es que no
+	siempre coinciden los formatos de representación con la forma en que la
+	base de datos almacena esta información.</li>
+	<li><b>Buscar hacia atrás</b>: Comienza la búsqueda desde el último hasta el primer registro de la consulta, es decir, justo al revés. </li>
+	<li><b>Coincidencia exacta</b>:
+	A la hora de buscar, activa esta casilla de verificación si necesitamos
+	distinguir entre mayúsculas o minúsculas. Si no es así, no hará esta
+	distinción en el momento de la búsqueda.</li>
+	<li><b>Desde el principio</b>: Inicia el proceso de búsqueda desde el primer registro.</li>
+	<li><b>Búsqueda por semejanza</b>: Se trata de localizar términos semejantes al patrón de
+	búsqueda. Al activar esta casilla hay que hacer clic en el pequeño botón situado a
+	la derecha para mostrar otro cuadro de diálogo que tiene las siguientes opciones:
+	<ul>
+		<li><b>Cambiar caracteres</b>: Indica el número de
+		caracteres que puede cambiar el programa para identificar palabras
+		similares. Por ejemplo, si decidimos utilizar el valor 1 para esta
+		opción, “teja” y “toja” se considerarán palabras similares.</li>
+		<li><b>Añadir caracteres</b>:
+		En este caso, el programa podrá utilizar el número de caracteres extras
+		que indique aquí para encontrar términos semejantes. Por ejemplo, si el
+		término de búsqueda es “Panel”, la palabra “Paneles” se considerará
+		similar para la herramienta de búsqueda si decide añadir 2 caracteres.</li>
+		<li><b>Eliminar caracteres</b>:
+		Igual que ocurre con la opción anterior, pero esta vez eliminando
+		caracteres. Siguiendo con el mismo ejemplo, si buscas “Panel”, la
+		palabra “Pan” se considerará similar.</li>
+		<li><b>Combinar</b>:
+		Permite utilizar al mismo tiempo todas las opciones anteriores para
+		localizar términos semejantes según los valores introducidos en: <b>Cambiar caracteres</b>, <b>Añadir caracteres</b> y <b>Eliminar caracteres</b>.</li>
+	</ul>
+	</li>
+</ul>
+<br />
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id224">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Expresiones comodín</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta224_26_2" class="block iDevice_content">
+
+<p>
+Las expresiones comodín son un conjunto de reglas que permiten ampliar
+las posibilidades de la herramienta de búsqueda. Más concretamente,
+puedes usar determinados caracteres como “comodines” para localizar
+términos similares. Por ejemplo, si escribimos “Cas*” en la herramienta
+de búsqueda (ver figura), el programa considera válidas todas aquellas
+palabras que comiencen por “Cas”, es decir, “Casa”, “Caserón”,
+“Casucha”, etcétera.
+</p>
+<p align="center">
+<img src="busquedasComodin.png" width="625" height="372" />
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+Los caracteres comodín son dos: el asterisco “*” y la interrogación “?”
+</p>
+<ul>
+	<li>El
+	asterisco sustituye a cualquier número de caracteres. Por lo tanto si
+	escribes “Per*”, el programa mostrará resultados como: Perro, Perico,
+	Perrito, etcétera.</li>
+	<li>La interrogación, en cambio,
+	sustituye a un único carácter. En este caso si escribes “To?a”, el
+	programa mostrará resultados como: Toga, Toca o Toda.</li>
+</ul>
+<p style="background-color: #ffff99" class="aviso">
+Recuerda
+que es imprescindible marcar la casilla Expresión comodín para utilizar
+tanto el “*” como la “?” en el término de búsqueda. En caso contrario,
+el programa interpretará estos caracteres tal como son.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="prctica_guiada.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="423_filtrado_de_registros.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
