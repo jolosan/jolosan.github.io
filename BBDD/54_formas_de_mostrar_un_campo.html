@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.4. Formas de mostrar un Campo | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-148"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_3_tablas.html" class="daddy">Tema 3. Tablas</a>
+   <ul class="other-section">
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
+      <ul class="other-section">
+         <li><a href="321_modo_diseo.html" class="no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li><a href="34_relaciones.html" class="daddy">3.4. Relaciones</a>
+      <ul class="other-section">
+         <li><a href="341_tipos_de_relaciones.html" class="no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li><a href="342_establecer_relaciones.html" class="no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_4_consultas.html" class="daddy">Tema 4. Consultas</a>
+   <ul class="other-section">
+      <li><a href="41_creacin_de_consultas.html" class="no-ch">4.1. Creación de Consultas</a></li>
+      <li><a href="42_modo_diseo.html" class="daddy">4.2. Modo diseño</a>
+      <ul class="other-section">
+         <li><a href="421_elementos_de_la_rejilla_de_diseo.html" class="daddy">4.2.1. Elementos de la rejilla de diseño</a>
+         <ul class="other-section">
+            <li><a href="prctica_guiada.html" class="no-ch">Práctica Guiada</a></li>
+         </ul>
+         </li>
+         <li><a href="422_bsqueda_dentro_de_una_consulta.html" class="no-ch">4.2.2. Búsqueda dentro de una consulta</a></li>
+         <li><a href="423_filtrado_de_registros.html" class="no-ch">4.2.3. Filtrado de registros</a></li>
+         <li><a href="424_significado_de_null.html" class="no-ch">4.2.4. Significado de NULL</a></li>
+         <li><a href="425_consultas_sobre_varias_tablas.html" class="no-ch">4.2.5. Consultas sobre varias tablas</a></li>
+         <li><a href="426_consultas_de_agrupacin_y_totales.html" class="no-ch">4.2.6. Consultas de agrupación y totales</a></li>
+      </ul>
+      </li>
+      <li><a href="43_modo_sql.html" class="no-ch">4.3. Modo SQL</a></li>
+      <li><a href="44_vistas.html" class="no-ch">4.4. Vistas</a></li>
+      <li><a href="45_actividades.html" class="no-ch">4.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_5_formularios.html" class="current-page-parent daddy">Tema 5. Formularios</a>
+   <ul>
+      <li><a href="51_asistente_para_crear_formularios.html" class="no-ch">5.1. Asistente para crear Formularios</a></li>
+      <li><a href="52_trabajar_con_formularios.html" class="no-ch">5.2. Trabajar con Formularios</a></li>
+      <li><a href="53_editar_un_formulario.html" class="no-ch">5.3. Editar un Formulario</a></li>
+      <li id="active"><a href="54_formas_de_mostrar_un_campo.html" class="active no-ch">5.4. Formas de mostrar un Campo</a></li>
+      <li><a href="55_acontecimientos.html" class="no-ch">5.5. Acontecimientos</a></li>
+      <li><a href="56_crear_formularios_en_modo_diseo.html" class="no-ch">5.6. Crear Formularios en modo Diseño</a></li>
+      <li><a href="57_subformularios.html" class="no-ch">5.7. Subformularios</a></li>
+      <li><a href="58_actividades.html" class="no-ch">5.8. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="53_editar_un_formulario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="55_acontecimientos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.4. Formas de mostrar un Campo</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id260">
+<div class="iDevice emphasis0">
+<div id="ta260_1" class="block iDevice_content">
+En nuestro formulario de ejemplo hemos visto que los campos aparecen
+con una etiqueta y el rectángulo donde se muestran o introducimos los
+datos del campo, son los campos de texto. Pero no es esta la única
+forma de mostrar los datos en un formulario ya que dependiendo del tipo
+de datos que representan podemos utilizar otros tipos.
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id261">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Campos de texto </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta261_33_2" class="block iDevice_content">
+<p>
+Para introducir un campo de texto también podemos seleccionar el botón <b>Campo de texto</b>
+en la barra de herramientas <i>Campos de control de formulario</i> y trazar un
+rectángulo en el formulario, entonces aparecerá un campo de texto vacío al que
+posteriormente podremos asignar un campo de la tabla y las propiedades
+correspondientes.
+</p>
+<p>
+Es preciso aclarar que cuando se añaden
+los campos desde el Asistente o desde la ventana para añadir nuevos
+campos estos aparecen como campos de texto con su correspondiente
+etiqueta, pero cuando añadimos un campo de texto directamente al
+formulario sólo aparece el espacio del campo. Para seleccionar por
+separado la etiqueta o el campo es necesario hacer clic sobre
+cualquiera de ellos mientras mantenemos pulsada la tecla <b>Control</b>.
+</p>
+<p>
+Si hacemos doble clic sobre el nuevo campo de texto creado podremos ver que el cuadro de diálogo <b>Propiedades</b>,
+de la figura siguiente, que nos muestra muchas más opciones para configurar el nuevo
+campo que acabamos de añadir. Si seleccionamos un campo cualquiera sin
+su etiqueta y después hacemos doble clic sobre él veremos estas mismas
+propiedades.
+</p>
+<p align="center">
+<img src="PropiedadesCampoTexto.png" width="350" height="418" /> 
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+Dentro de la pestaña <b>General</b> aparecen muchas opciones que veremos a continuación:
+</p>
+<ul>
+	<li><b>Longitud máx. del texto</b>:
+	Define el número máximo de caracteres que el usuario podrá introducir
+	en ese campo. Si no se define esta propiedad aparece con un cero
+	indicando así que la longitud se adopta de la definida en la tabla.</li>
+	<li><b>Activado</b>:
+	Cuando esta propiedad está en “Sí” el usuario del formulario puede
+	utilizar dicho campo para introducir datos, si esta propiedad está en
+	“No” aparecerá en color gris y no se podrá utilizar.</li>
+	<li><b>Sólo lectura</b>: Se asigna “Sí” cuando deseamos prohibir que el usuario pueda insertar datos nuevos en la base de datos.</li>
+	<li><b>Tabstop</b>: Esta propiedad determina si un campo se puede seleccionar con la tecla <b>Tabulación</b>. Si la marcamos como “No” nunca accederemos a este campo pulsando la tecla <b>Tabulación</b>.</li>
+	<li><b>Orden de tabuladores</b>:
+	En esta propiedad establecemos el orden de tabulación de este campo. Al
+	crear un formulario, a cada campo se le asigna automáticamente un
+	índice de tabulación pero nosotros podemos modificar el orden
+	utilizando esta propiedad.</li>
+	<li><b>Texto predeterminado</b>:
+	En esta propiedad podemos escribir el texto que queremos que aparezca
+	ya escrito por defecto para facilitar nuestra tarea. </li>
+	<li><b>Tipo de texto</b>:
+	Nos permite decidir si el contenido del campo aparecerá en una línea,
+	en múltiples línea o en múltiples líneas con formato. Si elegimos
+	múltiples líneas nos permitirá crear nuevas líneas cada vez que
+	pulsemos la tecla <b>Intro</b>.</li>
+	<li><b>Líneas de texto acaban con</b>:
+	En esta propiedad, que sólo estará activa si seleccionamos múltiples
+	líneas, podemos elegir el tipo de final de línea que utilizaremos al
+	escribir el texto y dependiendo del sistema operativo que vayamos a
+	utilizar.</li>
+	<li><b>Barras de desplazamiento</b>: Agrega al cuadro de texto el tipo de barras de desplazamiento que indiquemos.</li>
+	<li><b>Ocultar selección</b>:
+	Nos permite especificar si una selección de texto en un control
+	permanece seleccionada cuando el control deja de estar activo. Si
+	colocamos esta propiedad en &quot;No&quot;, el texto seleccionado permanece
+	seleccionado cuando el control que contiene el texto deja de estar
+	activo.</li>
+</ul>
+<p>
+Dentro de la pestaña <b>Datos</b> del cuadro de <b>Propiedades</b>
+contamos con menos opciones pero es necesario que las configuremos para
+que el nuevo campo de texto contenga los datos que realmente queremos
+que tenga. En la figura siguiente podemos ver el contenido de esta pestaña.
+</p>
+<div align="center">
+<img src="PropiedadesCampoTexto2.png" width="250" height="115" /> <br />
+</div>
+<div align="left">
+ 
+</div>
+<div align="left">
+ 
+<ul>
+	<li><b>Campo de datos</b>: En este cuadro de lista
+	podemos seleccionar el campo de la base de datos que queremos que
+	aparezca en el campo de texto que estamos definiendo.</li>
+	<li><b>Serie de caracteres vacía es NULL</b>:
+	Nos permite especificar cómo debe actuar ante la entrada de una cadena
+	vacía. Así, si está colocada en “Sí” e introducimos uno o varios
+	espacios lo interpretará como un valor NULL y lo almacenará en la base
+	de datos. Si colocamos la propiedad en “No” la cadena de espacios será
+	tratada como un valor vacío.</li>
+	<li><b>Propuesta de filtro</b>:
+	Si colocamos esta propiedad en “Sí” indicamos que al realizar búsquedas
+	en modo filtro se puede seleccionar toda la información contenida en
+	los campos activados y el contenido del campo se puede seleccionar
+	mediante la función Completar palabras. Conviene dejar esta propiedad
+	en “No” porque precisa de mucha memoria y tiempo de acceso, sobre todo
+	si usamos bases de datos de mucho tamaño.</li>
+</ul>
+<br />
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id262">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Campo de Texto con Formato</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta262_34_2" class="block iDevice_content">
+<p>
+Se trata de un campo de texto especial que permite aplicar
+automáticamente un formato al contenido del mismo. Si el campo está
+conectado a un campo de texto de una base de datos, las entradas de
+dicho campo se tratarán como texto. Si el campo formateado está
+conectado con un campo de la base de datos que puede mostrarse en
+formato numérico, las entradas se tratarán como números. Internamente,
+la fecha y la hora se gestionan también como números.
+</p>
+<p>
+Las propiedades de este tipo de campo ofrecen algunas diferencias que vemos a continuación:
+</p>
+<ul>
+	<li><b>Campo giratorio</b>: Si se trata de campos numéricos, de moneda, de fecha y hora se pueden insertar como campos giratorios en el formulario.</li>
+	<li><b>Repetir</b>: Nos permite indicar si la acción se repite al hacer clic en el control y mantener pulsado el botón del ratón.</li>
+	<li><b>Retraso</b>: Se activa si elegimos “Sí” en Repetir y sirve para especificar el retraso, en milisegundos, entre los eventos que se repiten.</li>
+	<li><b>Formato</b>:
+	Nos permite seleccionar el formato en el que se presentarán los datos.
+	Para asignar un formato debemos hacer clic sobre el botón con puntos
+	suspensivos que aparece a su derecha y aparecerá el cuadro de diálogo <b>Formato numérico</b>.</li>
+</ul>
+<p>
+Una vez hayamos seleccionado el tipo de dato que queremos mostrar, en el cuadro de lista <b>Formato</b> podemos seleccionar uno de los formatos predeterminados que nos ofrece.
+</p>
+<p>
+Si se trata de representar números en la sección <b>Opciones</b>
+podremos indicar el número de decimales, el número de ceros a la
+izquierda y si queremos que los números negativos aparezcan de color
+rojo o si las cantidades deben llevar el separador de miles.
+</p>
+<p>
+En el cuadro de texto <b>Código del formato</b> podemos establecer nuestros propios diseños de formato para mostrar los datos con lo que estaríamos utilizando una categoría <b>Definida por el usuario</b>.
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id263">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Casilla de Verificación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta263_35_2" class="block iDevice_content">
+<p>
+Determinados datos de una base de datos conviene mostrarlos en forma de
+casillas porque resulta más fácil visualizarlos. Las casillas de
+verificación permiten que se marquen más de una a la vez. 
+</p>
+<ul>
+	<li><b>Imagen</b>: En esta propiedad nos permite colocar una imagen, más o menos grande en el texto de las casillas.</li>
+	<li><b>Alineación de gráficos</b>:
+	Nos permite indicar en qué posición se colocará el gráfico que se
+	inserta. </li>
+	<li><b>Estado triple</b>:
+	Nos permite especificar si una casilla de verificación puede
+	representar también valores Zero de una base de dato vinculada, además
+	de los valores True y False. Esta opción sólo estará disponible si la
+	base de datos acepta estos tres estados.</li>
+</ul>
+<p>
+
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id264">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Botón</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta264_36_2" class="block iDevice_content">
+<p>
+Los botones podemos situarlos en el formulario para realizar
+diferentes tipos de acciones, así podemos colocar un botón para ir al
+siguiente registro, o al anterior, o para borrar el contenido del
+formulario, etc.
+</p>
+<p>
+Los botones también tienen sus propiedades específicas:
+</p>
+<ul>
+	<li>Si colocamos la propiedad en “Sí” podemos alternar entre el estado “Seleccionado” y “No Seleccionado”.</li>
+</ul>
+<ul>
+	<li><b>Activar al hacer clic</b>: si seleccionamos “Sí” indicamos que el botón debe activarse al hacer clic sobre él.</li>
+	<li><b>Acción</b>: nos muestra una lista de posibles acciones para asignar al botón que acabamos de crear.</li>
+</ul>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id265">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Botón de Opción</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta265_37_2" class="block iDevice_content">
+<p>
+El botón de opción es un botón circular que podemos activar para
+indicar una condición concreta. Este tipo de botones suelen ir
+agrupados en un grupo que se crea a través de la herramienta <b>Cuadro de grupo</b> y dentro del grupo sólo se permite marcar uno de ellos.
+</p>
+<p>
+Así podríamos utilizar este tipo de botones para crear un grupo “Sexo” en el que existirán dos botones “Hombre” y “Mujer”.
+</p>
+<p>
+Para crear un cuadro de grupo es necesario hacer clic en el botón <b>Más campos de control</b>
+de la barra de herramientas Campos de control de formulario y veremos
+aparecer una nueva barra de herramientas llamada Más campos de control.
+Dentro de esta nueva barra seleccionamos el botón <b>Cuadro de grupo</b> y trazamos un rectángulo en nuestro formulario con lo que aparecerá el cuadro de diálogo <b>Asistente: elemento de grupo</b>.
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+Si queremos cambiar las propiedades de uno de los botones interiores
+del cuadro hacemos clic sobre cualquiera de ellos manteniendo pulsada
+la tecla <b>Control</b> y el cuadro <b>Propiedades</b> mostrará las propiedades de ese botón en concreto. Entre estas propiedades sólo encontramos como nueva la propiedad <b>Estado predeterminado</b> en el que podemos indicar <b>Seleccionado</b> si queremos que ese botón aparezca activado por defecto o <b>No seleccionado</b> en caso contrario.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id266">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Listado</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta266_38_2" class="block iDevice_content">
+<p>
+Los cuadros de lista que podemos crear dentro de un formulario nos
+permiten utilizar los datos de una tabla como lista de objetos para
+elegir. Así podemos crear un listado con los cursos que tenga nuestro
+centro de tal forma que en vez de escribir el curso de un alumno
+tengamos que seleccionarlo y de ese modo evitamos el que se comentan
+errores poniendo unas veces “3A”, otras “3ºA”, o tras “3º A”, etc.
+</p>
+<p>
+Para crear un listado debemos seleccionar la herramienta <b>Listado</b> y trazar un recuadro en el formulario. Al terminar de trazarlo aparecerá el <b>Asistente: cuadro de lista</b> para guiarnos en la creación de nuestro cuadro de lista.
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id267">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Campo Combinado</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta267_39_2" class="block iDevice_content">
+<p>
+El cuadro combinado es un tipo especial de cuadro que muestra, por
+un lado un cuadro de texto y por otro un cuadro de lista. El cuadro
+combinado nos permite elegir uno de los datos de la lista o introducir
+un nuevo dato si no se encuentra en la lista.
+</p>
+<p>
+Para crear un cuadro combinado debemos seguir los mismos pasos que para la creación de un listado
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="53_editar_un_formulario.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="55_acontecimientos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

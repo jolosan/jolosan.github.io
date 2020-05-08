@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.3. Editar un Formulario | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-147"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_3_tablas.html" class="daddy">Tema 3. Tablas</a>
+   <ul class="other-section">
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
+      <ul class="other-section">
+         <li><a href="321_modo_diseo.html" class="no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li><a href="34_relaciones.html" class="daddy">3.4. Relaciones</a>
+      <ul class="other-section">
+         <li><a href="341_tipos_de_relaciones.html" class="no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li><a href="342_establecer_relaciones.html" class="no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_4_consultas.html" class="daddy">Tema 4. Consultas</a>
+   <ul class="other-section">
+      <li><a href="41_creacin_de_consultas.html" class="no-ch">4.1. Creación de Consultas</a></li>
+      <li><a href="42_modo_diseo.html" class="daddy">4.2. Modo diseño</a>
+      <ul class="other-section">
+         <li><a href="421_elementos_de_la_rejilla_de_diseo.html" class="daddy">4.2.1. Elementos de la rejilla de diseño</a>
+         <ul class="other-section">
+            <li><a href="prctica_guiada.html" class="no-ch">Práctica Guiada</a></li>
+         </ul>
+         </li>
+         <li><a href="422_bsqueda_dentro_de_una_consulta.html" class="no-ch">4.2.2. Búsqueda dentro de una consulta</a></li>
+         <li><a href="423_filtrado_de_registros.html" class="no-ch">4.2.3. Filtrado de registros</a></li>
+         <li><a href="424_significado_de_null.html" class="no-ch">4.2.4. Significado de NULL</a></li>
+         <li><a href="425_consultas_sobre_varias_tablas.html" class="no-ch">4.2.5. Consultas sobre varias tablas</a></li>
+         <li><a href="426_consultas_de_agrupacin_y_totales.html" class="no-ch">4.2.6. Consultas de agrupación y totales</a></li>
+      </ul>
+      </li>
+      <li><a href="43_modo_sql.html" class="no-ch">4.3. Modo SQL</a></li>
+      <li><a href="44_vistas.html" class="no-ch">4.4. Vistas</a></li>
+      <li><a href="45_actividades.html" class="no-ch">4.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_5_formularios.html" class="current-page-parent daddy">Tema 5. Formularios</a>
+   <ul>
+      <li><a href="51_asistente_para_crear_formularios.html" class="no-ch">5.1. Asistente para crear Formularios</a></li>
+      <li><a href="52_trabajar_con_formularios.html" class="no-ch">5.2. Trabajar con Formularios</a></li>
+      <li id="active"><a href="53_editar_un_formulario.html" class="active no-ch">5.3. Editar un Formulario</a></li>
+      <li><a href="54_formas_de_mostrar_un_campo.html" class="no-ch">5.4. Formas de mostrar un Campo</a></li>
+      <li><a href="55_acontecimientos.html" class="no-ch">5.5. Acontecimientos</a></li>
+      <li><a href="56_crear_formularios_en_modo_diseo.html" class="no-ch">5.6. Crear Formularios en modo Diseño</a></li>
+      <li><a href="57_subformularios.html" class="no-ch">5.7. Subformularios</a></li>
+      <li><a href="58_actividades.html" class="no-ch">5.8. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="52_trabajar_con_formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="54_formas_de_mostrar_un_campo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.3. Editar un Formulario</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id253">
+<div class="iDevice emphasis0">
+<div id="ta253_1" class="block iDevice_content">
+Después de realizar nuestras primeras incursiones en los formularios
+utilizando para ellos el sencillo formulario que creamos con el
+Asistente para formularios, llega ahora el momento de profundizar más
+en los mismos y comenzar a modificarlos para añadir más campos, cambiar
+el fondo, la forma, la posición de los campos, el estilo de los
+caracteres que se muestran y un sinfín de características más.
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id254">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Editar un Formulario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta254_26_2" class="block iDevice_content">
+
+<p>
+Para <b>editar </b>cualquier 
+</p>
+<p>
+<b>formulario</b> que tengamos <b>ya creado</b>:
+</p>
+<ol>
+	<li>Lo primero que debemos hacer es <b>abrir </b>dicho formulario en <b>modo diseño</b>
+	y para ello nos vamos a la ventana de la base de datos y comprobamos
+	que en el panel de tareas Base de datos está seleccionada la opción
+	Formularios.</li>
+	<li>A continuación comprobamos que en el <b>panel de tareas Formularios</b> está <b>seleccionado el formulario</b> que queremos editar.</li>
+	<li>Hacemos clic sobre el botón <b>Editar </b> de la barra de herramientas (ver siguiente figura).</li>
+</ol>
+<div align="center">
+<img src="BotonEditarFormulario.png" width="561" height="310" />
+</div>
+<br />
+<p>
+También podemos editar un formulario seleccionando su nombre en la
+lista de formularios y haciendo clic sobre él con el botón derecho, con
+ello aparecerá un menú contextual en el que deberemos elegir la opción <b>Editar</b>.
+</p>
+<p>
+A
+través del botón de edición o de la opción del menú contextual se
+abrirá la ventana del formulario seleccionado en formato edición en el
+que veremos que se muestra los correspondientes elementos de edición
+como son la regla y la cuadrícula y ya aparece activa la barra de
+herramientas Diseño de formulario como muestra la figura siguiente:
+</p>
+<p>
+&nbsp;
+</p>
+<div style="text-align: center">
+<img src="64697365c3b16f466f726d756c6172696f31.png" width="625" height="425" />
+</div>
+<br />
+<p>
+&nbsp;
+</p>
+<p>
+Ahora, nos encontramos con una ventana de OpenOffice Writer, pero al estar
+en edición contamos con toda la potencia de sus herramientas y sus
+menús lo que nos permitirá realizar cualquier tipo de tareas de las que
+llevamos a cabo en un procesador de textos.
+</p>
+<p>
+Dentro de
+nuestro formulario podremos cambiar la posición de los campos y sus
+etiquetas, modificar las dimensiones de cualquier campo, modificar los
+atributos tanto del texto de las etiquetas como del campo, etc.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id255">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Crear etiquetas en el formulario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta255_27_2" class="block iDevice_content">
+
+<p>
+Las etiquetas que introducimos en un formulario son simplemente
+texto que no tiene nada que ver con el contenido de los registros. Las
+etiquetas podemos utilizarlas para colocar títulos, subtítulos, nombres
+de campos, nombres de secciones o incluso texto explicativo para
+realizar todas las aclaraciones que sean necesarias.
+</p>
+<p>
+Para
+esta y otras tareas utilizaremos la <b>barra de herramientas Diseño</b> de
+formularios que vemos con sus correspondientes indicaciones en la
+figura siguiente.
+</p>
+<p align="center">
+<img src="424844697365c3b16f.png" width="567" height="113" />
+</p>
+<p align="left">
+Como estamos tratando de insertar una etiqueta dentro de nuestro
+formulario debemos utilizar la barra de herramientas <b>Campos de control
+de formulario</b> que aparece en la barra lateral izquierda. Los botones de dicha barra se  muestran en la figura siguiente con sus correspondientes indicaciones.
+</p>
+<p align="left">
+&nbsp;
+</p>
+<div style="text-align: center">
+<img src="BHControles.png" width="488" height="126" />
+</div>
+<p>
+&nbsp;
+</p>
+<p>
+Para <b>crear una etiqueta </b>debemos hacer lo siguiente:
+</p>
+<ol>
+	<li>Hacer clic sobre el botón <b>Campo de etiqueta</b> y comprobamos que dicho botón aparece con un recuadro alrededor.</li>
+	<li>Llevamos el cursor al formulario, justo al lugar donde queremos colocar la etiqueta.</li>
+	<li>Hacemos
+	clic y sin soltar el botón del ratón describimos un rectángulo del tamaño
+	que queremos que tenga la etiqueta. Al soltar el botón del ratón
+	aparecerá un recuadro de texto y dentro de él encontraremos el texto
+	indicativo “Campo de Etiqueta” que después podremos cambiar por otro.</li>
+	<li>Con estos sencillos pasos, ya tendríamos insertada una nueva etiqueta.</li>
+</ol>
+<p>
+Ahora
+tenemos que modificar la etiqueta para que tenga el texto que nosotros
+deseamos mostrar así como los atributos de texto que más nos interesen
+para realzar dicha etiqueta dentro del formulario. Para ello, hacemos doble
+clic sobre el campo de etiqueta y comprobamos como aparece el cuadro de
+diálogo <b>Propiedades</b>, que muestra la figura siguiente.
+</p>
+<p align="center">
+<img src="PropiedadesCampoEtiqueta.png" width="625" height="311" /> 
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+Dentro de este cuadro de diálogo, en la primera pestaña <b>General</b>, encontramos una serie de parámetros que debemos modificar para que la etiqueta se muestre como nosotros queremos:
+</p>
+<ul>
+	<li><b>Nombre</b>: es el nombre con el que se identifica el campo dentro del formulario.</li>
+	<li><b>Título</b>: este es el texto que se mostrará en el formulario. Aquí vamos a cambiar el texto que aparece por “DATOS PERSONALES”.</li>
+	<li><b>Activado</b>:
+	por omisión aparece seleccionado como “Sí” indicando que se mostrará
+	normal con todas las características que hemos elegido para nuestra
+	etiqueta. Si seleccionamos “No” aparecerá la etiqueta atenuada.</li>
+	<li><b>Imprimir</b>:
+	esta opción inicialmente aparece en “Sí” indicando que se imprimirá la
+	etiqueta si imprimimos el formulario. Si creamos etiquetas sólo para
+	ser visualizadas debemos colocar esta propiedad en “No”.</li>
+	<li><b>Fuente</b>:
+	esta propiedad nos permite seleccionar las características de las
+	fuentes de la etiqueta, así podremos elegir el tipo de fuente, el
+	tamaño, el color, etc. Para cambiar estos atributos debemos hacer clic
+	en el botón con puntos suspensivos que aparece a la derecha y se nos
+	abrirá el cuadro de diálogo <b>Caracteres</b> desde el que podremos realizar estos cambios. Estos atributos de texto los veremos con más detalle en un apartado posterior.</li>
+	<li><b>Alineación</b> y <b>Alineación vert</b>: permite establecer la alineación del texto de la etiqueta con respecto al cuadro de texto dentro del que se encuentra. </li>
+	<li><b>Color de fondo</b>:
+	muestra una paleta de colores para que seleccionemos el color que
+	deseamos utilizar para el fondo del recuadro de texto en el que se
+	encuentra la etiqueta. Inicialmente aparece seleccionado como
+	predeterminado indicando que no tiene color de fondo. Si hacemos clic
+	sobre el botón con puntos suspensivos que tiene a la derecha nos
+	aparecerá el cuadro de diálogo <b>Color</b> desde el que podremos elegir entre un número mayor de colores.</li>
+	<li><b>Marco</b>:
+	es el formato que tendrá el borde del marco de texto en el que se
+	encuentra la etiqueta. Inicialmente aparece seleccionado como “Sin
+	marco”, pero también podemos utilizar un marco “Plano” (con una línea
+	simple alrededor del marco de texto) o “en 3D” (dando al marco de texto
+	un efecto tridimensional).</li>
+	<li><b>Color de borde</b>:
+	esta opción sólo está activa si seleccionamos un tipo de marco en la
+	opción anterior y nos permite elegir el color de la línea del borde. Si
+	hacemos clic sobre el botón de puntos suspensivos accederemos al cuadro
+	de diálogo <b>Color</b>.</li>
+	<li><b>División de palabras</b>:
+	permite que el texto se muestre en más de una línea. Si colocamos esta
+	propiedad en “Sí” podremos escribir el texto y si no cabe en una línea
+	pasará automáticamente a la siguiente. Para introducir manualmente un
+	salto de línea simplemente tenemos que pulsar la tecla <b>Entrar</b>.</li>
+	<li><b>Información adicional</b>:
+	se trata de un texto descriptivo que sirve para explicar algo sobre la
+	etiqueta o campo sobre el que estamos definiendo las propiedades.</li>
+	<li><b>Texto de ayuda</b>:
+	el texto que introduzcamos en esta propiedad será el que se muestre
+	como ayuda emergente cuando dejemos el puntero del ratón quieto sobre
+	la etiqueta.</li>
+	<li><b>URL de la ayuda</b>: en esta
+	propiedad escribiremos la dirección URL que queramos que se muestre
+	como ayuda emergente al colocar el ratón sobre la etiqueta. Esta
+	dirección URL sólo se mostrará si no hemos escrito ningún texto en la
+	propiedad <b>Texto de ayuda</b>.</li>
+</ul>
+<p>
+El cuadro de diálogo <b>Propiedades</b> cuenta también con
+una segunda pestaña en la cual podremos definir la acción que se
+producirá al realizar determinados eventos sobre la etiqueta. Estos
+eventos los analizaremos en otro apartado posterior.
+</p>
+<p>
+Después de realizar los cambios en nuestra etiqueta podemos cerrar el cuadro de diálogo <b>Propiedades</b> haciendo clic sobre el botón <b>Cerrar</b>
+que aparece en la esquina superior derecha del mismo o también podemos
+seleccionar otro elemento de nuestro formulario y proceder del mismo
+modo para cambiar sus propiedades.
+</p>
+<p>
+Otra forma de añadir títulos o etiquetas al formulario es simplemente
+escribiendo y el texto aparecerá en la esquina superior derecha del
+formulario que en este caso será considerado como una hoja del
+procesador de texto. Esto tiene sus ventajas y sus inconvenientes. Como
+ventaja cuenta con mayores posibilidades de dar formato al texto y como
+inconveniente es que resulta más difícil mover este texto ya que no se
+encuentra dentro de un marco. 
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id256">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Actividad 5.1.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta256_28_2" class="block iDevice_content">
+<p>En esta actividad, vamos a editar un formulario de la Base de datos <b>Empresa</b>.</p>
+<ul>
+<li>Edita el formulario Trabajdores y añade una etiqueta con el título DATOS TRABAJADORES”<b>.</b></li>
+<li>Utiliza un tamaño de letra grande y realiza algunos retoques (color, fuente, etc) sobre dicha etiqueta para dejar el formulario vistoso.</li>
+<li>Entra en las propiedades de la página (<b>Formato&gt;Página</b>) y cambia el tamaño de la misma a A5 horizontal, ya que se trata de un formulario muy pequeño.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id257">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Modificar el marco de texto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta257_29_2" class="block iDevice_content">
+
+<p>
+Como ya hemos comprobado, al introducir una etiqueta describimos un
+rectángulo que aparece finalmente rodeado por ocho puntos, son los
+puntos del control del marco de texto como se muestran en la figura siguiente.
+</p>
+<p>
+&nbsp;
+</p>
+<div style="text-align: center">
+<img src="modificarCuadroTexto.png" width="431" height="149" />
+</div>
+<p>
+&nbsp;
+</p>
+<p>
+Estos puntos de control aparecen sobre cualquier objeto del formulario
+(etiqueta, campo, etc.) cuando en el modo edición hacemos clic sobre
+cualquiera de estos objetos. Cuando un objeto muestra los puntos de
+control está seleccionado y podemos realizar todo tipo de cambios sobre
+él. 
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id258">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Práctica Guiada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta258_30_2" class="block iDevice_content">
+<img src="file:///tmp/moz-screenshot.jpg" />
+<ol>
+	<li>Veamos ahora una manera más sencilla de introducir datos en la tabla <i>Trabajadores</i> de la base de datos Empresa.
+	La idea es que aparezca al mismo tiempo que trabajamos con el
+	formulario, una lista con todos los elementos que contiene la tabla Departamentos en
+	ese momento y poder seleccionar uno de ellos </li>
+	<li>En primer lugar, utiliza el formulario Trabajadores que ya tienes creado. Con el botón derechoo elige la opción Editar, para ir directamente al modo Edición.</li>
+	<li>Selecciona sólo el campo <i>Departamento</i>, sin la etiqueta. Para hacer esto debes mantener pulsada la tecla Control y hacer clic únicamente sobre el campo.</li>
+	<li>Haz clic, con el botón derecho del ratón, sobre el objeto seleccionado y en el menú contextual selecciona la opción <b>Reemplazar por</b>. OpenOffice Base<b></b> mostrará la lista de opciones que puedes ver en la figura siguiente, elige <b>Campo combinado</b>.</li>
+	<li>Haz ahora doble clic sobre el campo <i>Departamento</i> (no sobre la etiqueta del campo) para abrir el cuadro de diálogo <b>Propiedades</b>.</li>
+	<li>Selecciona la pestaña <b>Datos</b> y en la propiedad <b>Tipo del</b> c<b>ontenido de lista</b> asegúrate de que se encuentra seleccionada la opción <b>Tabla</b>.</li>
+	<li>A continuación, presta atención a la opción <b>Contenido de lista</b>. En ella selecciona la tabla <i>Departamentos </i>y cierra el cuadro de diálogo de propiedades.</li>
+	<li>Cambia ahora el tamaño del recuadro del campo modificado haciéndolo más alto, que tenga unas 6 ó 7 líneas de alto. </li>
+	<li>Guardar el formulario, cierra la ventana de edición y comprueba el aspecto de nuestro nuevo formulario.</li>
+</ol>
+<div style="text-align: center">
+<img src="cuadroCombinado.png" width="598" height="472" />
+</div>
+<br />
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id259">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Añadir nuevos campos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta259_31_2" class="block iDevice_content">
+<p>
+ En muchas ocasiones, pensaremos
+que es suficiente con una serie de campos y cuando comenzamos a
+utilizar el formulario comprobamos que es necesario contar con algunos
+más.
+</p>
+<p>
+También puede ocurrir que inicialmente la tabla no
+cuente con algún campo que hemos añadido posteriormente y necesitamos
+que ese nuevo campo también aparezca en el formulario. En cualquiera de
+los casos, para añadir un nuevo campo debemos actuar de la siguiente
+forma:
+</p>
+<ol>
+	<li>Abrimos el formulario en modo diseño.</li>
+	<li>Abrimos la barra de herramientas Diseño de formularios, si no está presente. Para ello abrimos el menú <b>Ver</b>, seleccionamos la opción <b>Barras de herramientas</b> y de la lista que aparece hacemos clic sobre <b>Diseño de formularios</b>.</li>
+	<li>Dentro de la barra de herramientas Diseño de formularios hacemos clic sobre el botón <b>Añadir campo</b> y nos aparecerá el cuadro de diálogo <b>Agregar campo</b>. </li>
+	<li>Para
+	añadir cualquier campo al formulario hacemos clic sobre él, lo
+	arrastramos y lo soltamos dentro del formulario y queda añadido.
+	Posteriormente podemos cambiar su posición y sus propiedades.</li>
+</ol>
+<br />
+<p>
+También
+podemos añadir campos al formulario simplemente haciendo doble clic
+sobre el campo que queremos añadir, pero de este modo no precisamos la
+posición en la que aparecerá.
+</p>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="52_trabajar_con_formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="54_formas_de_mostrar_un_campo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

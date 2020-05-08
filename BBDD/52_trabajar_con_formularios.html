@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.2. Trabajar con Formularios | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-146"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_3_tablas.html" class="daddy">Tema 3. Tablas</a>
+   <ul class="other-section">
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
+      <ul class="other-section">
+         <li><a href="321_modo_diseo.html" class="no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li><a href="34_relaciones.html" class="daddy">3.4. Relaciones</a>
+      <ul class="other-section">
+         <li><a href="341_tipos_de_relaciones.html" class="no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li><a href="342_establecer_relaciones.html" class="no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_4_consultas.html" class="daddy">Tema 4. Consultas</a>
+   <ul class="other-section">
+      <li><a href="41_creacin_de_consultas.html" class="no-ch">4.1. Creación de Consultas</a></li>
+      <li><a href="42_modo_diseo.html" class="daddy">4.2. Modo diseño</a>
+      <ul class="other-section">
+         <li><a href="421_elementos_de_la_rejilla_de_diseo.html" class="daddy">4.2.1. Elementos de la rejilla de diseño</a>
+         <ul class="other-section">
+            <li><a href="prctica_guiada.html" class="no-ch">Práctica Guiada</a></li>
+         </ul>
+         </li>
+         <li><a href="422_bsqueda_dentro_de_una_consulta.html" class="no-ch">4.2.2. Búsqueda dentro de una consulta</a></li>
+         <li><a href="423_filtrado_de_registros.html" class="no-ch">4.2.3. Filtrado de registros</a></li>
+         <li><a href="424_significado_de_null.html" class="no-ch">4.2.4. Significado de NULL</a></li>
+         <li><a href="425_consultas_sobre_varias_tablas.html" class="no-ch">4.2.5. Consultas sobre varias tablas</a></li>
+         <li><a href="426_consultas_de_agrupacin_y_totales.html" class="no-ch">4.2.6. Consultas de agrupación y totales</a></li>
+      </ul>
+      </li>
+      <li><a href="43_modo_sql.html" class="no-ch">4.3. Modo SQL</a></li>
+      <li><a href="44_vistas.html" class="no-ch">4.4. Vistas</a></li>
+      <li><a href="45_actividades.html" class="no-ch">4.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_5_formularios.html" class="current-page-parent daddy">Tema 5. Formularios</a>
+   <ul>
+      <li><a href="51_asistente_para_crear_formularios.html" class="no-ch">5.1. Asistente para crear Formularios</a></li>
+      <li id="active"><a href="52_trabajar_con_formularios.html" class="active no-ch">5.2. Trabajar con Formularios</a></li>
+      <li><a href="53_editar_un_formulario.html" class="no-ch">5.3. Editar un Formulario</a></li>
+      <li><a href="54_formas_de_mostrar_un_campo.html" class="no-ch">5.4. Formas de mostrar un Campo</a></li>
+      <li><a href="55_acontecimientos.html" class="no-ch">5.5. Acontecimientos</a></li>
+      <li><a href="56_crear_formularios_en_modo_diseo.html" class="no-ch">5.6. Crear Formularios en modo Diseño</a></li>
+      <li><a href="57_subformularios.html" class="no-ch">5.7. Subformularios</a></li>
+      <li><a href="58_actividades.html" class="no-ch">5.8. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="51_asistente_para_crear_formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="53_editar_un_formulario.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.2. Trabajar con Formularios</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id249">
+<div class="iDevice emphasis0">
+<div id="ta249_1" class="block iDevice_content">
+
+<p>
+Para utilizar un formulario basta con colocarnos en él y utilizar
+los distintos campos que lo componen para añadir, modificar o
+visualizar los datos de nuestras tablas.
+</p>
+<p>
+Además de los
+campos que muestra el cuerpo principal del formulario es importante que
+nos fijemos en los distintos elementos que componen la ventana de
+cualquier formulario como pueden ser las barras de herramientas con
+cuyos botones podremos realizar todo tipo de tareas dentro de un
+formulario. En la figura siguiente podemos ver una ventana de un formulario
+con la indicación de los diferentes elementos que lo integran.
+</p>
+<p align="center">
+<img src="formularioAmigos1.png" width="625" height="421" /> 
+</p>
+<p>
+&nbsp;
+</p>
+<p>
+La barra de herramientas Diseños de formularios sólo está activa
+cuando estamos editando un formulario o cuando lo estamos creando en
+modo diseño. Sus diferentes botones los veremos más adelante.
+</p>
+<p>
+La
+barra de herramientas Navegación de formularios es la barra que tenemos
+activa cuando trabajamos con los datos en un formulario cualquiera y en
+ella encontramos botones para movernos por los diferentes registros,
+botones para filtrar los datos del formulario, botones para ordenar los
+registros por diferentes campos, etc.
+</p>
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id250">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">práctica Guiada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta250_22_2" class="block iDevice_content">
+<ol>
+	<li>Vamos a crear un sencillo formulario que utilizaremos
+	para comprobar los trabajadores que tenemos en nuestra base de datos y
+	añadir nuevos registros si fuera necesarios. </li>
+	<li>Abre el archivo <a href="Empresa.1.odb">Empresa.odb</a>.</li>
+	<li>Ejecuta el Asistente para formularios y en el Paso 1 selecciona la tabla <b>Trabajadores</b>.</li>
+	<li>Añade todos los campos al formulario <i></i> y haz clic en el botón <b>Siguiente</b>.</li>
+	<li>En el Paso 2 del Asistente dejamos desactivada la casilla <b>Agregar subformulario. </b>Haz clic en el botón <b>Siguiente</b>.</li>
+	<li>Elige una opción entre alguna de las <i>disposiciones</i>
+	disponibles para el formulario principal. Si decides utilizar la
+	primera de ellas, también podrás elegir en la parte superior la
+	orientación de los campos: <b>Izquierda</b> o <b>Derecha</b>.</li>
+	<li>Haz clic en el botón <b>Siguiente</b>.</li>
+	<li>En el Paso 6 deja todo tal como aparece por defecto y pulsa el botón <b>Siguiente</b>.</li>
+	<li>En
+	este Paso 7 selecciona el estilo de fondo y el tipo de borde que más te
+	guste para los campos del formulario. Puedes comprobar su aspecto de
+	inmediato, OpenOffice Base aplica el estilo seleccionado sobre
+	formulario después de hacer clic sobre alguna de las opciones
+	disponibles.</li>
+	<li>Haz clic en el botón <b>Siguiente</b>.</li>
+	<li>En el último paso, asigna al nuevo formulario el nombre “Trabajadores”.</li>
+	<li>Selecciona <b>Trabajar con el formulario</b> y haz clic en <b>Finalizar.</b></li>
+	<li>Con el formulario <i>Trabajadores</i> abierto, añade algún nuevo registro para practicar con él.</li>
+	<li>Recuerda que para añadir un registro nuevo debes hacer clic sobre el botón <b>Registro nuevo</b> <img src="registroNuevo.png" width="35" align="middle" height="35" /> situado la barra de herramientas Navegación de formulario.</li>
+</ol>
+
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id251">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">La barra de herramientas de navegación de formulario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta251_23_2" class="block iDevice_content">
+
+<p>
+Los diferentes botones de esta barra no nos sirven para navegar por los
+campos que integran un formulario, sino para navegar por los diferentes
+registros que utiliza dicho formulario. En la siguiente firgura se observan los diferentes botones de navegación.
+</p>
+<p align="left">
+&nbsp;
+</p>
+<div style="text-align: center">
+<img src="barraDeNavegacion2.png" width="561" height="133" />
+</div>
+<p>
+&nbsp;
+</p>
+<p align="left">
+A continuación se especifica qué acciones realizan algunos de estos botones:
+</p>
+<ul>
+	<li><b>Registro nuevo</b>: Si hacemos clic sobre
+	este botón nos mostrará el formulario con todos los campos vacíos y el
+	cursor intermitente en el primero de ellos para que comencemos a
+	introducir los datos de un nuevo registro.</li>
+	<li><b>Guardar registro</b>:
+	este botón podemos usarlo para guardar los datos que hayamos
+	introducido en un registro nuevo o en uno que estemos modificado. Los
+	registros también se guardan automáticamente cuando pulsamos la tecla <i>Intro</i> estando en el último campo del formulario. Debemos tener en
+	cuenta que para guardar un registro no es necesario rellenar todos los
+	campos del formulario, bastará con que rellenemos aquellos que sean
+	obligatorios.</li>
+	<li><b>Deshacer</b>: Este botón, al
+	igual que en cualquier otra aplicación, elimina los cambios que hayamos
+	realizado, bien sea modificando datos o introduciendo datos nuevos en
+	el registro actual. Esta opción es válida en la edición de datos.</li>
+	<li><b>Eliminar Registro</b>:
+	nos permite eliminar el contenido del registro que nos muestra el
+	formulario. Esta acción elimina los datos de la tabla que los contiene
+	y ya no podremos recuperarlos, por lo que conviene tener muy claro que
+	queremos borrar los datos.</li>
+	<li><b>Actualizar</b>:
+	Se trata de un botón que contiene en su interior dos acciones
+	diferentes. Actualizar (muestra el contenido actualizado de la tabla de
+	la base de datos de la que toma los datos el formulario y muestra el
+	primer registro de dicha tabla), Reconstruir (recompone la vista de la
+	tabla de la base de datos. Debemos utilizar esta acción si hemos
+	cambiado la estructura de la tabla).</li>
+	<li><b>Fuente de datos como tabla</b>:
+	Este comando nos permite cambiar la forma en que se muestra el
+	formulario en pantalla. Si hacemos clic sobre él cambiará el formulario
+	mostrando los datos en forma de tabla  (y si volvemos a hacer clic volverá a mostrarlos como formulario).
+	Esta forma de visualización de los formularios también podemos
+	utilizarla para navegar por los registros, para modificar datos de los
+	registros y para añadir nuevos registros.</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id252">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Localizar datos desde el formulario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta252_24_2" class="block iDevice_content">
+
+<p>
+Además de las posibles acciones de introducción y modificación de
+datos, el formulario también podemos utilizarlo para buscar datos en
+las tablas o consultas y mostrarlos con la estructura del formulario y
+para ello debemos saber cómo llegar hasta el registro concreto que
+queremos mostrar:
+</p>
+<ul>
+	<li>Navegando por los registros <img src="frmBuscar-1.png" width="28" align="middle" height="32" /></li>
+</ul>
+<br />
+<ul>
+	<li>Buscando datos en los campos <img src="frmNavegar.png" width="119" align="middle" height="27" /></li>
+</ul>
+<br />
+<ul>
+	<li>Ordenando los datos del formulario <img src="frmOrdenar.png" width="97" height="27" /></li>
+</ul>
+<br />
+<ul>
+	<li>Utilizando autofiltros <img src="frmAutoFiltro.png" width="130" align="middle" height="33" /></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="51_asistente_para_crear_formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="53_editar_un_formulario.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.1. Asistente para crear Formularios | Bases de Datos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Joaquin López Sánchez-Montañés" />
+<link rel="license" type="text/html" href="http://www.gnu.org/copyleft/fdl.html" />
+<meta name="generator" content="eXeLearning  - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-145"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Bases de Datos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Bases de Datos</a></li>
+   <li><a href="tema_1_conceptos_y_usos_de_las_bases_de_datos.html" class="daddy">Tema 1. Conceptos y usos de las Bases de Datos</a>
+   <ul class="other-section">
+      <li><a href="11_conceptos.html" class="no-ch">1.1. Conceptos</a></li>
+      <li><a href="12_actividades.html" class="no-ch">1.2. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_2_introduccin_al_anlisis_y_diseo_de_una_base_de_datos.html" class="daddy">Tema 2. Introducción al análisis y diseño de una base de datos</a>
+   <ul class="other-section">
+      <li><a href="21_base_de_datos_relacional.html" class="no-ch">2.1. Base de Datos Relacional</a></li>
+      <li><a href="22_modelo_er.html" class="daddy">2.2. Modelo E-R</a>
+      <ul class="other-section">
+         <li><a href="221_pasos_en_la_creacin_del_modelo_er.html" class="no-ch">2.2.1. Pasos en la creación del modelo E-R</a></li>
+         <li><a href="222_elementos_del_modelo.html" class="no-ch">2.2.2. Elementos del modelo</a></li>
+      </ul>
+      </li>
+      <li><a href="23_practica_guiada.html" class="no-ch">2.3. Practica guiada</a></li>
+      <li><a href="24_caso_de_estudio.html" class="no-ch">2.4. Caso de Estudio</a></li>
+      <li><a href="25_actividades.html" class="no-ch">2.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_3_tablas.html" class="daddy">Tema 3. Tablas</a>
+   <ul class="other-section">
+      <li><a href="31_introduccin.html" class="no-ch">3.1. Introducción</a></li>
+      <li><a href="32_creacin_de_tablas.html" class="daddy">3.2. Creación de Tablas</a>
+      <ul class="other-section">
+         <li><a href="321_modo_diseo.html" class="no-ch">3.2.1. Modo diseño</a></li>
+         <li><a href="322_utilizando_el_asistente.html" class="no-ch">3.2.2. Utilizando el asistente</a></li>
+      </ul>
+      </li>
+      <li><a href="33_edicin_de_datos_en_tablas.html" class="daddy">3.3. Edición de datos en tablas</a>
+      <ul class="other-section">
+         <li><a href="331_aadir_datos_a_la_tabla.html" class="no-ch">3.3.1. Añadir datos a la tabla</a></li>
+         <li><a href="332_eliminar_registros.html" class="no-ch">3.3.2. Eliminar registros</a></li>
+         <li><a href="333_buscar_informacin_en_la_tabla.html" class="no-ch">3.3.3. Buscar información en la tabla</a></li>
+         <li><a href="334_ordenar_datos.html" class="no-ch">3.3.4. Ordenar datos</a></li>
+         <li><a href="335_autofiltro.html" class="no-ch">3.3.5. Autofiltro</a></li>
+      </ul>
+      </li>
+      <li><a href="34_relaciones.html" class="daddy">3.4. Relaciones</a>
+      <ul class="other-section">
+         <li><a href="341_tipos_de_relaciones.html" class="no-ch">3.4.1. Tipos de Relaciones</a></li>
+         <li><a href="342_establecer_relaciones.html" class="no-ch">3.4.2. Establecer Relaciones</a></li>
+      </ul>
+      </li>
+      <li><a href="35_actividades.html" class="no-ch">3.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li><a href="tema_4_consultas.html" class="daddy">Tema 4. Consultas</a>
+   <ul class="other-section">
+      <li><a href="41_creacin_de_consultas.html" class="no-ch">4.1. Creación de Consultas</a></li>
+      <li><a href="42_modo_diseo.html" class="daddy">4.2. Modo diseño</a>
+      <ul class="other-section">
+         <li><a href="421_elementos_de_la_rejilla_de_diseo.html" class="daddy">4.2.1. Elementos de la rejilla de diseño</a>
+         <ul class="other-section">
+            <li><a href="prctica_guiada.html" class="no-ch">Práctica Guiada</a></li>
+         </ul>
+         </li>
+         <li><a href="422_bsqueda_dentro_de_una_consulta.html" class="no-ch">4.2.2. Búsqueda dentro de una consulta</a></li>
+         <li><a href="423_filtrado_de_registros.html" class="no-ch">4.2.3. Filtrado de registros</a></li>
+         <li><a href="424_significado_de_null.html" class="no-ch">4.2.4. Significado de NULL</a></li>
+         <li><a href="425_consultas_sobre_varias_tablas.html" class="no-ch">4.2.5. Consultas sobre varias tablas</a></li>
+         <li><a href="426_consultas_de_agrupacin_y_totales.html" class="no-ch">4.2.6. Consultas de agrupación y totales</a></li>
+      </ul>
+      </li>
+      <li><a href="43_modo_sql.html" class="no-ch">4.3. Modo SQL</a></li>
+      <li><a href="44_vistas.html" class="no-ch">4.4. Vistas</a></li>
+      <li><a href="45_actividades.html" class="no-ch">4.5. Actividades</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="tema_5_formularios.html" class="current-page-parent daddy">Tema 5. Formularios</a>
+   <ul>
+      <li id="active"><a href="51_asistente_para_crear_formularios.html" class="active no-ch">5.1. Asistente para crear Formularios</a></li>
+      <li><a href="52_trabajar_con_formularios.html" class="no-ch">5.2. Trabajar con Formularios</a></li>
+      <li><a href="53_editar_un_formulario.html" class="no-ch">5.3. Editar un Formulario</a></li>
+      <li><a href="54_formas_de_mostrar_un_campo.html" class="no-ch">5.4. Formas de mostrar un Campo</a></li>
+      <li><a href="55_acontecimientos.html" class="no-ch">5.5. Acontecimientos</a></li>
+      <li><a href="56_crear_formularios_en_modo_diseo.html" class="no-ch">5.6. Crear Formularios en modo Diseño</a></li>
+      <li><a href="57_subformularios.html" class="no-ch">5.7. Subformularios</a></li>
+      <li><a href="58_actividades.html" class="no-ch">5.8. Actividades</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="tema_5_formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="52_trabajar_con_formularios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.1. Asistente para crear Formularios</h1></header>
+<article class="iDevice_wrapper FreeTextIdevice" id="id247">
+<div class="iDevice emphasis0">
+<div id="ta247_1" class="block iDevice_content">
+<p>El Asistente para crear formularios es una utilidad que nos proporciona LibreOffice Base para facilitarnos la creación de todo tipo de formularios de la manera más sencilla posible. Esto no significa que el Asistente para formularios sea la única forma que podemos utilizar para crear los formularios, pero sí la más cómoda.</p>
+<p>El Asistente para formularios nos ayudará a crear nuestros formularios siguiendo una serie de pasos.</p>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id248">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Práctica guiada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta248_23_2" class="block iDevice_content">
+
+<p>
+En esta práctica vamos a crear un formulario utilizando el asistente.
+</p>
+<p>
+Nos basaremos en la tabla Datos Amigos de la Base de Datos <a href="Amigos.odb">Amigos</a>. 
+</p>
+<p>
+<b>Paso 1: </b>Abrimos la base de datos y dentro de Formularios elegimos la opción <i>Usar el asistente ... </i>
+</p>
+<p>
+<b>Paso 2:</b> Nos aparecerá una ventana en donde elegiremos la tabla o consulta de la cual queremos realizar el Formulario  y tenemos que pasar todos los campos a la columna de la derech, como se muestra en la siguiente figura.
+</p>
+<p align="center">
+<img src="formulario1.png" width="400" height="222" /> 
+</p>
+<p>
+<b>Paso 3:</b> Tras pulsar el botón <i>Siguiente</i>, obtendremos una ventana en donde nos pregunta si queremos añadir un subformulario (ver imagen). Los subformularios los podemos utilizar para mostrar los datos de
+tablas o consultas con una relación de uno a varios. Así, por ejemplo,
+podemos mostrar un departamento en el formulario principal y en el
+subformulario los trabajadores que pertenecen a dicho departamento.En este paso no hacemos nada y pulsamos el botón <i>Siguiente</i>.  
+</p>
+<p align="center">
+<img src="formulario2.png" width="400" height="221" />
+</p>
+<p>
+<b>Paso 4:</b> Ahora el asistente nospregunta como queremos organizar los campo (ver figura). Elegimos las opciones de la figura y pulsamos el botón <i>Siguiente</i>. 
+</p>
+<p>
+&nbsp;
+</p>
+<div style="text-align: center">
+<img src="formulario4.png" width="400" height="280" />
+</div>
+<br />
+<p>
+&nbsp;
+</p>
+<p>
+<b>Paso 5:</b> Seleccionamos el modo de entrada de datos como en la figura y pulsamos el botón <i>Siguiente</i>. 
+</p>
+<p align="center">
+<img src="formulario5.png" width="400" height="278" />
+</p>
+<p align="left">
+&nbsp;
+</p>
+<p>
+Si deseamos utilizar el formulario únicamente para rellenar los datos de una o más tablas marcaremos la primera opción: <b>El formulario se va a utilizar para introducir únicamente datos nuevos. No se mostrarán los datos existentes</b>.
+De este modo el formulario nos mostrará los campos vacíos y en ellos
+sólo podremos introducir nuevos datos. No podremos ni editar, ni
+modificar, ni siquiera ver los datos que ya están dentro de la tabla o
+tablas.
+</p>
+<p>
+Si deseamos que el formulario nos permita también
+ver los datos de la tabla o tablas con las que trabaja debemos marcar
+la segunda opción: <b>El formulario mostrará todos los datos</b>. Al seleccionar esta opción también podemos indicar todo lo que se podrá hacer con los datos que se muestran:
+</p>
+<ul>
+	<li><b>No permitir la modificación de los datos existentes</b>: los datos se muestran en el formulario, pero no podemos modificar el contenido de ninguno de sus campos.</li>
+	<li><b>No permitir el borrado de los datos existentes</b>: no permite que borremos ninguno de los campos.</li>
+	<li><b>No permitir la adición de datos nuevos</b>: si seleccionamos esta casilla no podremos introducir nuevos datos en la tabla o tablas a través del formulario.</li>
+</ul>
+<p>
+<b>Paso 6:</b>  Aplicamos el estilo deseado al formulario y pulsamos el botón <i>Siguiente</i>.
+</p>
+<p align="center">
+<img src="formulario6.png" width="400" height="282" />
+</p>
+<p>
+<b>Paso 7:</b> Introducimos el nombre del formulario y pulsamos <i>Finalizar</i>.
+</p>
+<p align="center">
+<img src="formulario7.png" width="400" height="283" />
+</p>
+<p>
+<b>
+Paso 8:</b> En la siguiente figura se muestra el formulario obtenido:
+</p>
+<p align="center">
+<img src="formulario8.png" width="400" height="269" />
+</p>
+<p>
+&nbsp;
+</p>
+
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="gfdl">
+<p><span>Obra publicada con</span> <a rel="license" href="http://www.gnu.org/copyleft/fdl.html">Licencia de Documentación Libre de GNU (GNU Free Documentation License)</a> <a href="fdl.html" class="local-version">(Versión local)</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="tema_5_formularios.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="52_trabajar_con_formularios.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter">Podeis distribuir estos materiales, o modificarlos y redistribuirlos bajo la licencia GNU FDL.
+</footer></div>
+<script type="text/javascript" src="_intef_js.js"></script></body></html>
