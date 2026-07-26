@@ -4,9 +4,13 @@
   --bg-card: #FFFFFF;
   --ink: #1C1C1A;
   --ink-soft: #6B6960;
-  --accent: #C4522A;
+  /*--accent: #C4522A;*/
+  --accent: #225C80;
   --accent-ink: #FFFFFF;
   --border: #E5E3DB;
+  /* --oposiciones: #1F3D3A; */
+  --oposiciones: #2177ad;
+  --oposiciones-ink: #FFFFFF;
   --radius-sm: 8px;
   --radius-md: 12px;
   --font-body: 'Inter', -apple-system, sans-serif;
@@ -133,6 +137,20 @@ ul{ list-style:none; }
   border:1px solid var(--border);
   aspect-ratio: 16/8;
   background: var(--bg-card);
+  position: relative;
+}
+.hero__video{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+  position:relative;
+  z-index:1;
+}
+.hero__media-fallback{
+  position:absolute;
+  inset:0;
+  z-index:0;
 }
 .hero__media-placeholder{
   height:100%;
@@ -183,6 +201,36 @@ ul{ list-style:none; }
 .hero__stats div{ display:flex; flex-direction:column; align-items:center; gap:2px; }
 .hero__stats strong{ font-family:var(--font-mono); font-size:18px; }
 .hero__stats span{ font-size:11.5px; color:var(--ink-soft); }
+
+/* ============ SPLIT / SEGMENTACIÓN ============ */
+.split{ max-width: var(--max); margin:0 auto; padding:100px 24px; }
+.split__cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+  margin-top:40px;
+}
+.split__card{
+  border-radius: var(--radius-md);
+  padding:36px;
+  border:1px solid var(--border);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.split__card:hover{ transform: translateY(-3px); }
+.split__card--carreras{ background: var(--accent); color:#fff; }
+.split__card--oposiciones{ background: var(--oposiciones); color:#fff; }
+.split__tag{
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  opacity:.75;
+  display:block;
+  margin-bottom:14px;
+}
+.split__card h3{ font-size:22px; margin-bottom:10px; }
+.split__card p{ opacity:.9; margin-bottom:22px; font-size:14.5px; }
+.split__link{ font-weight:600; font-size:14px; }
 
 /* ============ ABOUT ============ */
 .about{
@@ -383,7 +431,18 @@ ul{ list-style:none; }
   display:flex; flex-wrap:wrap; gap:16px;
   align-items:center; justify-content:space-between;
 }
-.footer__links{ display:flex; gap:20px; font-size:13px; color:var(--ink-soft); }
+.footer__links{ display:flex; align-items:center; gap:16px; color:var(--ink-soft); }
+.footer__links a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  border:1px solid var(--border);
+  transition: color .15s ease, border-color .15s ease;
+}
+.footer__links a:hover{ color: var(--accent); border-color: var(--accent); }
 .footer__legal{ font-size:12px; color:var(--ink-soft); width:100%; margin-top:8px; }
 
 /* ============ RESPONSIVE ============ */

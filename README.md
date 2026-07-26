@@ -1,1 +1,0 @@
-# jolosan.github.io
