@@ -15,11 +15,21 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Formulario de contacto
-// NOTA: esto es un placeholder. Para recibir los mensajes de verdad,
-// conecta este formulario a un servicio como Formspree o Web3Forms
-// (gratis para volumen bajo) sustituyendo el bloque de abajo por su
-// snippet de integración, o cambia el <form> para que apunte a su endpoint.
+// Formulario de contacto → WhatsApp
+// Al enviar, se abre WhatsApp (app o web) con un mensaje pre-rellenado
+// con los datos del visitante, listo para que solo pulse "Enviar".
+
+// TODO: sustituye este número por el tuyo, en formato internacional
+// SIN el símbolo "+", sin espacios ni guiones. Ejemplo España: "34600123456"
+const WHATSAPP_NUMBER = '34600123456';
+
+const OBJETIVO_LABELS = {
+  '5k': '5K',
+  '10k': '10K',
+  'media': 'Media maratón',
+  'maraton': 'Maratón'
+};
+
 const contactForm = document.getElementById('contactForm');
 
 contactForm.addEventListener('submit', (e) => {
@@ -28,10 +38,25 @@ contactForm.addEventListener('submit', (e) => {
   const formData = new FormData(contactForm);
   const data = Object.fromEntries(formData.entries());
 
-  console.log('Datos del formulario:', data);
+  const objetivoTexto = OBJETIVO_LABELS[data.objetivo] || data.objetivo;
 
-  // Sustituir este alert por la llamada real al servicio de formularios
-  alert('Gracias, ' + data.nombre + '. Te responderé en menos de 24h.');
+  let mensaje = `Hola, soy ${data.nombre}. Quiero información sobre un plan de ${objetivoTexto}.`;
+  if (data.mensaje && data.mensaje.trim() !== '') {
+    mensaje += `\n\nMi situación actual: ${data.mensaje.trim()}`;
+  }
+  mensaje += `\n\nMi email: ${data.email}`;
+
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, '_blank');
 
   contactForm.reset();
 });
+
+// Botón flotante de WhatsApp
+// Usa el mismo número que el formulario, con un mensaje genérico
+const whatsappFloat = document.getElementById('whatsappFloat');
+const mensajeGenerico = 'Hola, tengo una duda sobre tus planes de entrenamiento.';
+whatsappFloat.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensajeGenerico)}`;
+
+
