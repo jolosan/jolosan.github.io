@@ -174,6 +174,12 @@ ul{ list-style:none; }
   color: var(--accent);
   margin-bottom:16px;
 }
+.enlace{
+  font-family:var(--font-mono);
+  font-size:12px;
+  letter-spacing:.05em;
+  color: #B83318;
+}
 .hero h1{
   font-size:clamp(30px, 4.4vw, 46px);
   font-weight:600;
@@ -318,7 +324,7 @@ ul{ list-style:none; }
 .service-card__link{ font-weight:600; font-size:13.5px; color:var(--accent); }
 
 /* ============ TRUST ============ */
-.trust{ max-width: var(--max); margin:0 auto; padding:100px 24px; }
+.trust{ max-width: var(--max); margin:0 auto; padding:25px 24px; }
 .trust__signals{
   display:grid; grid-template-columns:repeat(3,1fr); gap:24px;
   margin-bottom:56px;

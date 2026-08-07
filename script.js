@@ -21,7 +21,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 
 // TODO: sustituye este número por el tuyo, en formato internacional
 // SIN el símbolo "+", sin espacios ni guiones. Ejemplo España: "34600123456"
-const WHATSAPP_NUMBER = '34600123456';
+const WHATSAPP_NUMBER = '+34711579381';
 
 const OBJETIVO_LABELS = {
   '5k': '5K',
