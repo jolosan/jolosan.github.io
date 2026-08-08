@@ -36,7 +36,7 @@ contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
 
 
-  let mensaje = `Hola, quiero información sobre tus planes de entrenamiento.`;
+  let mensaje = `¡Hola Carlos! 🏃🏻‍♂️Quiero información sobre los planes de entrenamiento del S-Athletes Team. ¿Me envías más información?`;
   
 
   const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
@@ -49,7 +49,7 @@ contactForm.addEventListener('submit', (e) => {
 // Botón flotante de WhatsApp
 // Usa el mismo número que el formulario, con un mensaje genérico
 const whatsappFloat = document.getElementById('whatsappFloat');
-const mensajeGenerico = 'Hola, quiero información sobre tus planes de entrenamiento.';
+const mensajeGenerico = '¡Hola Carlos! 🏃🏻‍♂️Quiero información sobre los planes de entrenamiento del S-Athletes Team. ¿Me envías más información?';
 whatsappFloat.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensajeGenerico)}`;
 
 
