@@ -17,6 +17,7 @@
   <div class="nav__inner">
     <a href="#top" class="nav__brand"><img src="assets/logo.png" alt="Carlos Athlete"></a>
     <nav class="nav__links" id="navLinks">
+      <a href="#ebook-foam-roller">Ebook gratis</a>
       <a href="#metodologia">Metodología</a>
       <a href="#servicios">Servicios</a>
       <a href="#resultados">Resultados</a>
@@ -55,13 +56,34 @@
     <p class="hero__sub">Planes 100% personalizados según tus forma física, tu disponibilidad y tu objetivo real — centrándonos en mejorar los puntos clave.</p>
     <div class="hero__actions">
       <a href="#contacto" class="btn btn--primary">Analiza tu punto de partida</a>
-      <p class="hero__microcopy">Cuestionario de 3 minutos + respuesta personal en 24h. Sin coste, sin compromiso.</p>
     </div>
     <div class="hero__stats">
       <div><strong>+3</strong><span>años de experiencia</span></div>
-      <div><strong>Entrenador</strong><span><a href="https://www.instagram.com/runaddictioncastellon/?hl=es">de @runaddiction</a></span></div>
+      <div ><strong>Entrenador</strong><span><a href="https://www.instagram.com/runaddictioncastellon/?hl=es" class="enlace">de @runaddiction</a></span></div>
       <div><strong>5K–42K</strong><span>todas las distancias</span></div>
     </div>
+  </div>
+</section>
+
+<!-- ============ EBOOK FOAM ROLLER (lead magnet) ============ -->
+<section class="lead-magnet" id="ebook-foam-roller">
+  <div class="lead-magnet__media">
+    <img src="assets/ebook-cover.jpg" alt="Portada del ebook Foam Roller para Corredores">
+  </div>
+  <div class="lead-magnet__content">
+    <p class="section-eyebrow">Descarga gratis</p>
+    <h2 class="section-title">Foam Roller para Corredores</h2>
+    <p class="lead-magnet__sub">Rutinas para gemelos, isquiotibiales, cuádriceps y cintilla iliotibial. Directo a tu email en menos de 1 minuto.</p>
+
+    <form class="lead-magnet__form" id="ebookForm" novalidate>
+      <input type="email" id="ebookEmail" name="email" placeholder="tu@email.com" autocomplete="email" required>
+      <label class="lead-magnet__consent">
+        <input type="checkbox" id="ebookConsent" required>
+        <span>Acepto recibir emails con contenido y ofertas de @carloss_athlete</span>
+      </label>
+      <button type="submit" class="btn btn--primary btn--full" id="ebookSubmit">Envíamelo gratis</button>
+      <p class="lead-magnet__status" id="ebookStatus" role="status" aria-live="polite"></p>
+    </form>
   </div>
 </section>
 
@@ -137,10 +159,10 @@
 <section class="services" id="servicios">
   <p class="section-eyebrow center">Servicios</p>
   <h2 class="section-title center">Planes de entrenamiento</h2>
-  <p class="section-lead center">Formato online, con seguimiento individual. Precios orientativos — se confirman según tu punto de partida.</p>
+  <p class="section-lead center">Formato online, con seguimiento individual.</p>
 
   <div class="services__grid">
-    <article class="service-card">
+    <article class="service-card" id="servicios-carreras">
       <span class="service-card__badge">Más demandado</span>
       <h3>Plan de Media Maratón</h3>
       <p class="service-card__result">Llega a la línea de salida con la marca que te propusiste, sin cargar entrenamientos que no sabes si te van a pasar factura el día de la carrera.</p>
@@ -176,25 +198,25 @@
       </div>
       <a href="#contacto" class="service-card__link">Consultar disponibilidad →</a>
     </article>
+    
+     <article class="service-card">
+      <h3>Plan trimestral</h3>
+      <p class="service-card__sub">Entrenamos por trimestres</p>
+      <p class="service-card__result">Los resultados se consiguen mejor con más tiempo y dedicación. </p>
+      <div class="service-card__meta">
+        <span>Online</span><span>24 semanas</span>
+      </div>
+      <a href="#contacto" class="service-card__link">Consultar disponibilidad →</a>
+    </article>
      <article class="service-card" id="servicios-oposiciones">
       <h3>Preparación física para Oposiciones</h3>
       <p class="service-card__sub">Policía Nacional · Policía Local · Bomberos</p>
       <p class="service-card__result">Llega al día del examen físico con la marca exacta que exige el baremo, entrenada y comprobada con antelación — no descubierta ese mismo día.</p>
       <div class="service-card__meta">
-        <span>Online / Presencial</span><span>8–24 semanas</span>
+        <span>Online</span><span>8–24 semanas</span>
       </div>
       <a href="#contacto" class="service-card__link">Consultar disponibilidad →</a>
     </article>
-     <article class="service-card" id="servicios-oposiciones">
-      <h3>Plan trimestral</h3>
-      <p class="service-card__sub">Entrenamos por trimestres</p>
-      <p class="service-card__result">xxxx</p>
-      <div class="service-card__meta">
-        <span>Online / Presencial</span><span>24 semanas</span>
-      </div>
-      <a href="#contacto" class="service-card__link">Consultar disponibilidad →</a>
-    </article>
-
   </div>
 </section>
 
@@ -280,18 +302,6 @@ Entrenaba sin motivación y sin constancia. En el mejor de los caos 3 días por 
   <p>Cuanto antes empecemos, más margen tienes para ajustar, corregir y llegar en tu mejor forma — no para improvisar en las últimas semanas. Corre, entrena, supera tus límites</p>
 
   <form class="cta-final__form" id="contactForm">
-    <div class="form-row">
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-    </div>
-    <select name="objetivo" required>
-      <option value="" disabled selected>¿Cuál es tu objetivo?</option>
-      <option value="5k">5K</option>
-      <option value="10k">10K</option>
-      <option value="media">Media maratón</option>
-      <option value="maraton">Maratón</option>
-    </select>
-    <textarea name="mensaje" placeholder="Cuéntame brevemente tu situación actual (opcional)" rows="3"></textarea>
     <button type="submit" class="btn btn--primary btn--full">Analiza tu punto de partida</button>
     <p class="cta-final__trust">Sin compromiso. Es una conversación para ver si encajamos, no una venta.</p>
   </form>
@@ -299,7 +309,7 @@ Entrenaba sin motivación y sin constancia. En el mejor de los caos 3 días por 
 
 <!-- ============ WHATSAPP FLOTANTE ============ -->
 <a
-  href="#"
+  href="https://wa.me/+34711579381"
   id="whatsappFloat"
   class="whatsapp-float"
   target="_blank"
@@ -330,12 +340,8 @@ Entrenaba sin motivación y sin constancia. En el mejor de los caos 3 días por 
           <path d="M13 3L6.5 15.5H10.5L9 21L17.5 8.5H13.3L15 3H13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
         </svg>
       </a>
-      <a href="#" aria-label="Escribir por WhatsApp">
-       <svg width="26" height="26" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.351-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.597 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.588-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.098-.084.212-.212.32-.318.113-.11.148-.183.222-.303.075-.118.036-.226-.014-.318-.05-.099-.415-.999-.567-1.372-.15-.36-.302-.315-.415-.315-.114 0-.24-.014-.36-.014a.601.601 0 0 0-.43.196c-.153.157-.582.573-.582 1.396 0 .823.598 1.626.68 1.74.084.114 1.147 1.792 2.821 2.518 1.677.727 1.677.48 1.973.454.297-.024.98-.402 1.115-.79.135-.39.135-.723.093-.792z"/>
-       </svg>
-      </a>
-       <a href="mailto:info@carlos-athlete.com" aria-label="Enviar email" title="Email">
+    
+       <a href="mailto:carloss.athlete.oficial@gmail.com" aria-label="Enviar email" title="Email">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
           <path d="M4 7l7.4 5.5a1 1 0 0 0 1.2 0L20 7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
