@@ -483,7 +483,7 @@ ul{ list-style:none; }
   font-size:14px;
 }
 .cta-final__form select{ color:#B8B6AC; }
-.cta-final__form ::placeholder{ color:#7A7A73; }
+.cta-final__form ::placeholder{ color:#8C8C85; }
 .cta-final__form textarea{ resize:vertical; }
 .cta-final__trust{ text-align:center; font-size:12.5px; color:#8A8A82; margin-top:6px; }
 

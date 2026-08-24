@@ -2,18 +2,20 @@
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
-navToggle.addEventListener('click', () => {
-  const isOpen = navLinks.classList.toggle('is-open');
-  navToggle.setAttribute('aria-expanded', isOpen);
-});
-
-// Cierra el menú al pulsar un enlace (útil en móvil)
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('is-open');
-    navToggle.setAttribute('aria-expanded', 'false');
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('is-open');
+    navToggle.setAttribute('aria-expanded', isOpen);
   });
-});
+
+  // Cierra el menú al pulsar un enlace (útil en móvil)
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('is-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
 
 
 // Formulario de contacto → WhatsApp
@@ -33,24 +35,28 @@ const OBJETIVO_LABELS = {
 
 const contactForm = document.getElementById('contactForm');
 
-contactForm.addEventListener('submit', (e) => {
-  e.preventDefault();
+if (contactForm) {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
 
 
-  let mensaje = `¡Hola Carlos! 🏃🏻‍♂️Quiero información sobre los planes de entrenamiento del S-Athletes Team. ¿Me envías más información?`;
-  
+    let mensaje = `¡Hola Carlos! 🏃🏻‍♂️Quiero información sobre los planes de entrenamiento del S-Athletes Team. ¿Me envías más información?`;
 
-  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
 
-  window.open(url, '_blank');
+    const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensaje)}`;
 
-  contactForm.reset();
-});
+    window.open(url, '_blank');
+
+    contactForm.reset();
+  });
+}
 
 // Botón flotante de WhatsApp
 // Usa el mismo número que el formulario, con un mensaje genérico
 const whatsappFloat = document.getElementById('whatsappFloat');
-const mensajeGenerico = '¡Hola Carlos! 🏃🏻‍♂️Quiero información sobre los planes de entrenamiento del S-Athletes Team. ¿Me envías más información?';
-whatsappFloat.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensajeGenerico)}`;
+if (whatsappFloat) {
+  const mensajeGenerico = '¡Hola Carlos! 🏃🏻‍♂️Quiero información sobre los planes de entrenamiento del S-Athletes Team. ¿Me envías más información?';
+  whatsappFloat.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(mensajeGenerico)}`;
+}
 
 
